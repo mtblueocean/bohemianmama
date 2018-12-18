@@ -1,0 +1,300 @@
+{% if section.settings.enable_section %}
+<div class="featured-collection-section" data-section-id="{{ section.id }}" data-section-type="featured-collection-section">
+  <div class="page-width">
+    {% if section.settings.title != blank %}
+<!--     <div class="section-header text-center">
+      <h2>{{ section.settings.title | escape }}</h2>
+    </div> -->
+    {% endif %}
+
+    {% if section.settings.show_view_all %}
+   <div class="text-center">
+      {% if template == 'page.gift-cards'%}
+      {% else %}
+      <a href="https://www.bohemianmama.com/collections/{{section.settings.collection}}" class="btn btn-svg btn--secondary btn--small" aria-label="{{ 'collections.general.view_all_label' | t: collection_name: collection.title }}">
+        <svg><rect x="0" y="0" fill="none" width="166" height="45" /></svg>
+        {{ 'collections.general.view_all' | t }}
+      </a>
+      {% endif %}
+      {% if template == 'page.gift-cards'%}
+        <a href="https://www.bohemianmama.com/collections/{{section.settings.collection}}" class="mb-2">
+        <img src="{{ section.settings.desktopimage | img_url: 'master' }}" class="img-fluid d-md-block d-none">
+        <img src="{{ section.settings.mobileimage | img_url: 'master' }}" class="img-fluid d-md-none">
+      </a>  
+      {% endif %}
+    </div>
+    {% endif %}
+
+    {%- assign collection = collections[section.settings.collection] -%}
+
+    {% case section.settings.grid %}
+    {% when 2 %}
+    {%- assign max_height = 530 -%}
+    {%- assign grid_item_width = 'medium-up--one-half' -%}
+    {% when 3 %}
+    {%- assign max_height = 345 -%}
+    {%- assign grid_item_width = 'small--one-half medium-up--one-third' -%}
+    {% when 4 %}
+    {%- assign max_height = 250 -%}
+    {%- assign grid_item_width = 'small--one-half medium-up--one-quarter' -%}
+    {% when 5 %}
+    {%- assign max_height = 195 -%}
+    {%- assign grid_item_width = 'small--one-half medium-up--one-fifth' -%}
+    {% endcase %}
+
+    {%- assign product_limit = section.settings.grid | times: section.settings.rows -%}
+
+    {% if section.settings.enable_carousel %} 
+
+    <div class="product_carousel arrow-{{section.id}}">
+      {% for product in collection.products limit: product_limit %}
+      <div class="grid__item--{{section.id}}">
+        {% include 'product-card-grid-new' %}
+      </div>
+      {% else %}
+
+      {% for i in (1..product_limit) %}
+      <div class="grid__item--{{section.id}}">
+        <div class="grid-view-item product-card">
+          <a class="grid-view-item__link grid-view-item__image-container full-width-link" href="#">
+            <span class="visually-hidden">{{ 'homepage.onboarding.product_title' | t }}</span>
+          </a>
+          <div class="grid-view-item__image-wrapper">
+            {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
+            {{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+          </div>
+          <div class="h4 grid-view-item__title" aria-hidden="true">{{ 'homepage.onboarding.product_title' | t }}</div>
+          {% include 'product-price' %}
+        </div>
+      </div>
+      {% endfor %}
+      {% endfor %}
+    </div>
+
+    {% else %}
+    <ul class="grid grid--uniform grid--view-items">
+      {% for product in collection.products limit: product_limit %}
+      <li class="grid__item grid__item--{{section.id}} {{ grid_item_width }}">
+        {% include 'product-card-grid', max_height: max_height %}
+      </li>
+      {% else %}
+
+      {% for i in (1..product_limit) %}
+      <li class="grid__item grid__item--{{section.id}} {{ grid_item_width }}">
+        <div class="grid-view-item product-card">
+          <a class="grid-view-item__link grid-view-item__image-container full-width-link" href="#">
+            <span class="visually-hidden">{{ 'homepage.onboarding.product_title' | t }}</span>
+          </a>
+          <div class="grid-view-item__image-wrapper">
+            {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
+            {{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+          </div>
+          <div class="h4 grid-view-item__title" aria-hidden="true">{{ 'homepage.onboarding.product_title' | t }}</div>
+          {% include 'product-price' %}
+        </div>
+      </li>
+      {% endfor %}
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+</div>
+   {% endif %}
+
+{% schema %}
+{
+  "name": {
+    "de": "Featured Kategorie",
+    "en": "Featured collection",
+    "es": "Colección destacada",
+    "fr": "Collection vedette",
+    "it": "Collezione in evidenza",
+    "ja": "特集コレクション",
+    "pt-BR": "Coleção em destaque"
+  },
+  "class": "index-section",
+  "settings": [
+{
+		"type": "checkbox",
+		"id": "enable_section",
+		"label": "Enable Section"
+	},
+    {
+      "type": "text",
+      "id": "title",
+      "label": {
+        "de": "Titel",
+        "en": "Heading",
+        "es": "Título",
+        "fr": "En-tête",
+        "it": "Heading",
+        "ja": "見出し",
+        "pt-BR": "Título"
+      },
+      "default": {
+        "de": "Featured Kategorie",
+        "en": "Featured collection",
+        "es": "Colección destacada",
+        "fr": "Collection vedette",
+        "it": "Collezione in evidenza",
+        "ja": "特集コレクション",
+        "pt-BR": "Coleção em destaque"
+      }
+    },
+	{
+		"type": "checkbox",
+		"id": "enable_carousel",
+		"label": "Enable carousel"
+	},
+{
+        "type": "image_picker",
+        "id": "desktopimage",
+        "label": "Desktop image"
+      },
+{
+        "type": "image_picker",
+        "id": "mobileimage",
+        "label": "Mobile image"
+      },
+    {
+       "type":      "select",
+       "id":        "arrow_position",
+       "label":     "Arrow Position",
+       "options": [
+         {
+           "value": "top",
+           "label": "Top"
+         },
+         {
+           "value": "middle",
+           "label": "Middle"
+         },
+         {
+           "value": "bottom",
+           "label": "Bottom"
+         }
+       ],
+       "default":   "middle"
+    },
+    {
+      "id": "collection",
+      "type": "collection",
+      "label": {
+        "de": "Kategorie",
+        "en": "Collection",
+        "es": "Colección",
+        "fr": "Collection",
+        "it": "Collezione",
+        "ja": "コレクション",
+        "pt-BR": "Coleção"
+      }
+    },
+    {
+      "type": "range",
+      "id": "grid",
+      "label": {
+        "de": "Produkte per Reihe",
+        "en": "Products per row",
+        "es": "Productos por fila",
+        "fr": "Produits par rangée",
+        "it": "Prodotti per riga",
+        "ja": "行あたりの商品数",
+        "pt-BR": "Produtos por linha"
+      },
+      "min": 2,
+      "max": 5,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "range",
+      "id": "rows",
+      "label": {
+        "de": "Reihen",
+        "en": "Rows",
+        "es": "Filas",
+        "fr": "Rangées",
+        "it": "Righe",
+        "ja": "行",
+        "pt-BR": "Linhas"
+      },
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 2
+    },
+    {
+      "type": "checkbox",
+      "id": "show_vendor",
+      "label": {
+        "de": "Produkt-Lieferanten anzeigen",
+        "en": "Show product vendors",
+        "es": "Mostrar proveedores del producto",
+        "fr": "Afficher les vendeurs",
+        "it": "Mostra fornitori prodotto",
+        "ja": "商品の販売元を表示する",
+        "pt-BR": "Exibir fornecedores do produto"
+      },
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_view_all",
+      "label": {
+        "de": "'Alle anzeigen' Button anzeigen",
+        "en": "Show 'View all' button",
+        "es": "Mostrar el botón 'Ver todo'",
+        "fr": "Afficher le bouton “Tout voir”",
+        "it": "Mostra il pulsante \"Visualizza tutto\"",
+        "ja": "「すべて表示」ボタンを表示する",
+        "pt-BR": "Exibir botão 'Visualizar tudo'"
+      },
+      "default": false
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "de": "Featured Kategorie",
+        "en": "Featured collection",
+        "es": "Colección destacada",
+        "fr": "Collection vedette",
+        "it": "Collezione in evidenza",
+        "ja": "特集コレクション",
+        "pt-BR": "Coleção em destaque"
+      },
+      "category": {
+        "de": "Kategorie",
+        "en": "Collection",
+        "es": "Colección",
+        "fr": "Collection",
+        "it": "Collezione",
+        "ja": "コレクション",
+        "pt-BR": "Coleção"
+      }
+    }
+  ]
+}
+{% endschema %}
+<style>
+  {% if section.settings.arrow_position == 'top' %}
+  .arrow-{{section.id}} .slick-prev, .arrow-{{section.id}} .slick-next {
+    top: -20%;
+  }
+  {% elsif section.settings.arrow_position == 'middle'%}
+  .arrow-{{section.id}} .slick-prev, .arrow-{{section.id}} .slick-next {
+    top: 50%;
+    margin-top: -25px;
+  }
+  @media screen and (max-width:480px) {
+    .arrow-{{section.id}} .slick-prev, .arrow-{{section.id}} .slick-next {
+      top: 35%;
+      margin-top: -25px;
+    }
+  }
+  {% elsif section.settings.arrow_position == 'bottom'%}
+  .arrow-{{section.id}} .slick-prev, .arrow-{{section.id}} .slick-next {
+    top: 100%;
+  }
+  {% endif %}
+</style>

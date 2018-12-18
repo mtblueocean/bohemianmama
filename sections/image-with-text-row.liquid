@@ -1,0 +1,128 @@
+<div class="image-with-text-row" data-section-id="{{section.id}}">
+  {% if section.blocks.size > 0 %}
+  <div class="image_with_text_wrap">
+    {% for block in section.blocks %}
+    <div class="image_with_text_flex {% if block.settings.image_on_right %} row-reverse{% endif %}" {{ block.shopify_attributesw }}>
+      <div class="image_block">
+        {% if block.settings.image == blank %}
+        <div>
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        </div>
+        {% else %}
+        <div>
+          <img src="{{ block.settings.image | img_url: 'grande' }}" alt="{{block.settings.image.alt}}"/>
+        </div>
+        {% endif %}
+      </div>
+      <div class="text_block">
+        {% if block.settings.title != blank %}
+        <h3>{{block.settings.title}}</h3>
+        {% endif %}
+        {% if block.settings.content != blank %}
+        <p>{{block.settings.content}}</p>
+        {% endif %}
+        {% if block.settings.btn_text != blank %}
+        <a class="btn btn-svg btn--secondary btn--small" href="{{block.settings.btn_link}}">
+          <svg><rect x="0" y="0" fill="none" width="166" height="45" /></svg>
+          {{block.settings.btn_text}}
+        </a>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+  {% if section.blocks.size == 0 %}
+  <div class="placeholder-noblocks">
+    {{ 'homepage.onboarding.no_content' | t }}
+  </div>
+  {% endif %}
+</div>
+{% if section.settings.section_bg != blank %}
+<style>
+.image-with-text-row{background-image:url({{ section.settings.section_bg | img_url: "master" }});}
+</style>
+{% endif %}
+{% schema %}
+  {
+    "name": "Image with text row",
+	"class": "index-section",
+	"max_blocks": 2,
+    "settings": [
+	  {
+		"type": "image_picker",
+		"id": "section_bg",
+		"label": "Section background"
+	  }
+	],
+	"blocks":[
+		{
+          "type": "image-with-text",
+          "name": "Image with text",
+          "settings": [
+             {
+				"type": "image_picker",
+				"id": "image",
+				"label": "Image"
+			 },
+			 {
+				"type": "checkbox",
+				"id": "image_on_right",
+				"label": "Show image on right"
+			 },
+			 {
+				"type": "text",
+				"id": "title",
+				"label": "Title",
+				"default": "Heading"
+			 },
+			 {
+				"type": "textarea",
+				"id": "content",
+				"label": "Content",
+				"default": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
+			 },
+			 {
+				"type": "text",
+				"id": "btn_text",
+				"label": "Button text",
+				"default": "SHOP NOW"
+			 },
+			 {
+				"type": "url",
+				"id": "btn_link",
+				"label": "Button link"
+			 }
+          ]
+        }
+	],
+    "presets": [
+      {
+        "name": "Image with text row",
+        "category": {
+          "de": "Foto",
+          "en": "Image",
+          "es": "Imagen",
+          "fr": "Image",
+          "it": "Immagine",
+          "ja": "画像",
+          "pt-BR": "Imagem"
+        },
+        "blocks": [
+          {
+            "type": "image-with-text"
+          },
+          {
+            "type": "image-with-text"
+          }
+        ] 
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

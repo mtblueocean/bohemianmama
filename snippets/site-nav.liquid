@@ -1,0 +1,219 @@
+<nav id="navigation2" class="navigation navigation-centered">
+  <div class="navigation-header">
+    <div class="navigation-button-toggler">
+      <i class="hamburger-icon"></i>
+    </div>
+  </div>
+  <div class="navigation-body">
+    <div class="navigation-body-header">
+      <span class="navigation-body-close-button">&#10005;</span>
+    </div>
+    <ul class="navigation-menu">
+      {% capture megamenu %}
+        {% if settings.mega_menu_1_enable %}
+          <li class="navigation-item">
+            <a class="navigation-link" href="/collections/{{ settings.mega_menu_1_link }}">{{ settings.mega_menu_1_text }}</a>
+            <div class="navigation-megamenu">
+              <div class="navigation-megamenu-container">
+                <div class="navigation-row">
+                  <div class="navigation-col col-5-colum">
+                    <ul class="navigation-list">
+                      {% for link in linklists[settings.mega_menu_1_left_links].links %}
+                        <li class="navigation-list-heading"><a href="{{ link.url }}">{{ link.title }}</a></li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+
+                  {% if settings.mega_menu_1_collection_4_image != blank %}
+                    {%- assign column_count = 3 -%}
+                  {% else %}
+                    {%- assign column_count = 4 -%}
+                  {% endif %}
+
+                  {% for i in (1..column_count) %}
+                    {% capture mega_menu_link %}mega_menu_1_collection_{{i}}_title_link{% endcapture %}
+                    {% capture mega_menu_heading %}mega_menu_1_collection_{{i}}_text{% endcapture %}
+                    {% capture mega_menu_links %}mega_menu_1_collection_{{i}}_links{% endcapture %}
+
+                    <div class="navigation-col col-5-colum">
+                      <ul class="navigation-list">
+                        <li class="navigation-list-heading"> {{ settings[mega_menu_heading] }} </li>
+                        {% for link in linklists[settings[mega_menu_links]].links %}
+                          <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  {% endfor %}
+
+                  {% if settings.mega_menu_1_collection_4_image != blank %}
+                  <div class="navigation-col col-5-colum">
+                    <img src="{{ settings.mega_menu_1_collection_4_image | img_url: '250x' }}" class="img-fluid">
+                  </div>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </li>
+        {% endif %}
+        {% if settings.mega_menu_2_enable %}
+          <li class="navigation-item">
+            <a class="navigation-link" href="/collections/{{ settings.mega_menu_2_link }}">{{ settings.mega_menu_2_text }}</a>
+            <div class="navigation-megamenu">
+              <div class="navigation-megamenu-container">
+                <div class="navigation-row">
+                  <div class="navigation-col col-5-colum">
+                    <ul class="navigation-list">
+                      {% for link in linklists[settings.mega_menu_2_left_links].links %}
+                        <li class="navigation-list-heading"><a href="{{ link.url }}">{{ link.title }}</a></li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+
+                  {% if settings.mega_menu_2_collection_4_image != blank %}
+                    {%- assign column_count = 3 -%}
+                  {% else %}
+                    {%- assign column_count = 4 -%}
+                  {% endif %}
+
+                  {% for i in (1..column_count) %}
+                    {% capture mega_menu_link %}mega_menu_2_collection_{{i}}_title_link{% endcapture %}
+                    {% capture mega_menu_heading %}mega_menu_2_collection_{{i}}_text{% endcapture %}
+                    {% capture mega_menu_links %}mega_menu_2_collection_{{i}}_links{% endcapture %}
+
+                    <div class="navigation-col col-5-colum">
+                      <ul class="navigation-list">
+                        <li class="navigation-list-heading">{{ settings[mega_menu_heading] }}</li>
+                        {% for link in linklists[settings[mega_menu_links]].links %}
+                          <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  {% endfor %}
+
+                  {% if settings.mega_menu_2_collection_4_image != blank %}
+                  <div class="navigation-col col-5-colum">
+                    <img src="{{ settings.mega_menu_2_collection_4_image | img_url: '250x' }}" class="img-fluid">
+                  </div>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </li>
+        {% endif %}
+        {% if settings.mega_menu_3_enable %}
+          <li class="navigation-item">
+            <a class="navigation-link" href="/collections/{{ settings.mega_menu_3_link }}">{{ settings.mega_menu_3_text }}</a>
+            <div class="navigation-megamenu">
+              <div class="navigation-megamenu-container">
+                <div class="navigation-row">
+                  <div class="navigation-col col-5-colum">
+                    <ul class="navigation-list">
+                      {% for link in linklists[settings.mega_menu_3_left_links].links %}
+                        <li class="navigation-list-heading"><a href="{{ link.url }}">{{ link.title }}</a></li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+
+                  {% if settings.mega_menu_3_collection_4_image != blank %}
+                    {%- assign column_count = 3 -%}
+                  {% else %}
+                    {%- assign column_count = 4 -%}
+                  {% endif %}
+
+                  {% for i in (1..column_count) %}
+                    {% capture mega_menu_link %}mega_menu_3_collection_{{i}}_title_link{% endcapture %}
+                    {% capture mega_menu_heading %}mega_menu_3_collection_{{i}}_text{% endcapture %}
+                    {% capture mega_menu_links %}mega_menu_3_collection_{{i}}_links{% endcapture %}
+
+                    <div class="navigation-col col-5-colum">
+                      <ul class="navigation-list">
+                        <li class="navigation-list-heading">{{ settings[mega_menu_heading] }}</li>
+                        {% for link in linklists[settings[mega_menu_links]].links %}
+                          <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  {% endfor %}
+
+                  {% if settings.mega_menu_3_collection_4_image != blank %}
+                  <div class="navigation-col col-5-colum">
+                    <img src="{{ settings.mega_menu_3_collection_4_image | img_url: '250x' }}" class="img-fluid">
+                  </div>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </li>
+        {% endif %}
+        {% if settings.megamenu_brands_enable %}
+          <li class="navigation-item has-submenu">
+            <a class="navigation-link" href="#">{{settings.megamenu_brands_text}} </a>
+            <div class="navigation-megamenu brands-megamenu">
+              <div class="navigation-megamenu-container">
+                <div class="navigation-row">
+                  <div class="navigation-col brands-col">
+                    <h4><a href="{{settings.megamenu_brands_link_link_1}}">{{settings.megamenu_brands_link_text_1}}</a></h4>
+                  </div>
+                  {% for link in linklists[settings.megamenu_brands_collection_1].links limit:6%}
+                    {% if link.type == 'collection_link' %}
+                      {% assign collection = link.object %}
+    
+                      {% if collection.image %}
+                        {% assign src = collection | img_url: 'master' %}
+                      {% else %}
+                        {% assign src = collection.products.first | img_url:  'master' %}
+                      {% endif %}
+
+                      <div class="navigation-col">
+                        <a href="{{ collection.url }}"><img src="{{ src }}" alt="image"></a>
+                        <h5>{{ collection.title }}</h5>
+                      </div>
+                      {% endif %}
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+          </li>
+        {% endif %}
+      {% endcapture %}
+
+      {{megamenu}}
+
+      {% for link in linklists[section.settings.main_linklist].links %}
+        {% assign child_list_handle = link.title | handle %}
+        {% if linklists[child_list_handle] and linklists[child_list_handle].links.size > 0 %}
+          <li class="navigation-item {% if link.active %} is-active{% endif %}">
+            <a class="navigation-link {% if link.title == 'Holiday Gifts' %}red-link{% endif %}" href="{{ link.url }}">{{ link.title }}</a>
+            <ul class="navigation-dropdown">
+              {% for child_link in linklists[child_list_handle].links %}
+              {% assign grand_child_list_handle = child_link.title | handle %}
+              {% if linklists[grand_child_list_handle] and linklists[grand_child_list_handle].links.size > 0 %}
+              <li class="navigation-dropdown-item">
+                <a class="navigation-dropdown-link" href="{{ child_link.url }}">{{ child_link.title | escape }}</a>
+                {% if child_link.links != blank %}
+                <ul class="navigation-dropdown">
+                  {% for grand_child_link in linklists[grand_child_list_handle].links %}
+                  <li class="navigation-dropdown-item">
+                    <a class="navigation-dropdown-link" href="{{grand_child_link.url}}">{{grand_child_link.title}}</a>
+                  </li>
+                  {% endfor %}
+                </ul>
+                {% endif %}
+              </li>
+              {% else %}
+              <li class="navigation-dropdown-item aad">
+                <a class="navigation-dropdown-link" href="{{child_link.url}}">{{child_link.title}}</a>
+              </li>
+              {% endif %}
+              {% endfor %}
+            </ul>
+          </li>
+        {% else %}
+          <li class="navigation-item {% if link.active %} is-active{% endif %}">
+            <a class="navigation-link" href="{{ link.url }}">{{ link.title }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</nav>

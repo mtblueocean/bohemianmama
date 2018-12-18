@@ -1,0 +1,1004 @@
+{
+  "current": {
+    "color_text": "#000000",
+    "color_body_text": "#000000",
+    "color_sale_text": "#f8a778",
+    "color_button": "#000000",
+    "color_button_text": "#fff",
+    "color_small_button_text_border": "#000000",
+    "color_text_field_text": "#000",
+    "color_text_field_border": "#949494",
+    "color_text_field": "#fff",
+    "color_image_overlay_text": "#fff",
+    "color_image_overlay": "#3d4246",
+    "image_overlay_opacity": 40,
+    "color_borders": "#e8e9eb",
+    "color_body_bg": "#fff",
+    "type_header_font": "montserrat_n6",
+    "type_header_base_size": 30,
+    "type_base_font": "montserrat_n5",
+    "type_base_size": 14,
+    "type_bold_product_titles": false,
+    "share_image": "",
+    "share_facebook": true,
+    "share_twitter": true,
+    "share_pinterest": true,
+    "social_twitter_link": "https:\/\/twitter.com\/shopbohomama",
+    "social_facebook_link": "https:\/\/www.facebook.com\/thebohemianmama\/",
+    "social_pinterest_link": "https:\/\/www.pinterest.com\/TheBohemianMama\/",
+    "social_instagram_link": "https:\/\/www.instagram.com\/thebohemianmama\/",
+    "social_tumblr_link": "",
+    "social_snapchat_link": "",
+    "social_youtube_link": "",
+    "social_vimeo_link": "",
+    "favicon": "shopify:\/\/shop_images\/favicon.jpg",
+    "show_multiple_currencies": true,
+    "currency_format": "money_with_currency_format",
+    "supported_currencies": "GBP CAD USD AUD EUR",
+    "default_currency": "USD",
+    "megamenu_1_enable": true,
+    "megamenu_1_text": "Womens",
+    "megamenu_1_default_collection": "womens-clothing-and-accessories",
+    "megamenu_1_link_text_1": "Womens Clothing",
+    "megamenu_1_collection_1": "womens-clothing",
+    "megamenu_1_link_text_2": "Accessories",
+    "megamenu_1_collection_2": "womens-accessories",
+    "megamenu_1_link_text_3": "",
+    "megamenu_1_collection_3": "",
+    "megamenu_1_link_text_4": "",
+    "megamenu_1_collection_4": "",
+    "megamenu_1_link_text_5": "",
+    "megamenu_1_collection_5": "",
+    "megamenu_1_link_text_6": "",
+    "megamenu_1_collection_6": "",
+    "megamenu_1_link_text_7": "",
+    "megamenu_1_collection_7": "",
+    "megamenu_1_staticlinks": "megamenu-1-static-links",
+    "megamenu_2_enable": true,
+    "megamenu_2_text": "Kids",
+    "megamenu_2_default_collection": "kids",
+    "megamenu_2_link_text_1": "Minis | 0-2 years",
+    "megamenu_2_collection_1": "minis",
+    "megamenu_2_link_text_2": "Little Girls | 3-8 years",
+    "megamenu_2_collection_2": "girls-3-8",
+    "megamenu_2_link_text_3": "Little Boys | 3-8 years",
+    "megamenu_2_collection_3": "boys-3-8",
+    "megamenu_2_link_text_4": "",
+    "megamenu_2_collection_4": "",
+    "megamenu_2_link_text_5": "",
+    "megamenu_2_collection_5": "",
+    "megamenu_2_link_text_6": "",
+    "megamenu_2_collection_6": "",
+    "megamenu_2_link_text_7": "",
+    "megamenu_2_collection_7": "",
+    "megamenu_2_staticlinks": "megamenu-2-static-links",
+    "megamenu_3_enable": true,
+    "megamenu_3_text": "BoMa Home",
+    "megamenu_3_default_collection": "home-interior",
+    "megamenu_3_link_text_1": "Decor",
+    "megamenu_3_collection_1": "decor",
+    "megamenu_3_link_text_2": "",
+    "megamenu_3_collection_2": "",
+    "megamenu_3_link_text_3": "",
+    "megamenu_3_collection_3": "",
+    "megamenu_3_link_text_4": "",
+    "megamenu_3_collection_4": "",
+    "megamenu_3_link_text_5": "",
+    "megamenu_3_collection_5": "",
+    "megamenu_3_link_text_6": "",
+    "megamenu_3_collection_6": "",
+    "megamenu_3_link_text_7": "",
+    "megamenu_3_collection_7": "",
+    "megamenu_3_staticlinks": "megamenu-3-static-links",
+    "megamenu_brands_enable": false,
+    "megamenu_brands_text": "Shop",
+    "megamenu_brands_default_collection": "free-people",
+    "megamenu_brands_link_text_1": "",
+    "megamenu_brands_link_link_1": "",
+    "megamenu_brands_collection_1": "",
+    "mega_menu_1_enable": true,
+    "mega_menu_1_text": "Womens",
+    "mega_menu_1_link": "womens-bohemian-clothing-accessories",
+    "mega_menu_1_left_links": "womens-static-links",
+    "mega_menu_1_collection_1_text": "Clothing",
+    "mega_menu_1_collection_1_title_link": "babes-clothing",
+    "mega_menu_1_collection_1_links": "womens-clothing",
+    "mega_menu_1_collection_2_text": "Accessories",
+    "mega_menu_1_collection_2_title_link": "womens-accessories",
+    "mega_menu_1_collection_2_links": "womens-accessories",
+    "mega_menu_1_collection_3_text": "SALE",
+    "mega_menu_1_collection_3_title_link": "womens-sale",
+    "mega_menu_1_collection_3_links": "womens-sale",
+    "mega_menu_1_collection_4_text": "",
+    "mega_menu_1_collection_4_title_link": "",
+    "mega_menu_1_collection_4_links": "",
+    "mega_menu_1_collection_4_image": "shopify:\/\/shop_images\/womens.jpg",
+    "mega_menu_2_enable": true,
+    "mega_menu_2_text": "Kids",
+    "mega_menu_2_link": "kids",
+    "mega_menu_2_left_links": "kids-static-left",
+    "mega_menu_2_collection_1_text": "Minis | 0-2 years",
+    "mega_menu_2_collection_1_title_link": "mini",
+    "mega_menu_2_collection_1_links": "minis",
+    "mega_menu_2_collection_2_text": "Little Girls | 3-8 years",
+    "mega_menu_2_collection_2_title_link": "girls-3-8-years",
+    "mega_menu_2_collection_2_links": "girls-3-8",
+    "mega_menu_2_collection_3_text": "Little Boys | 3-8 years",
+    "mega_menu_2_collection_3_title_link": "boys-3-8",
+    "mega_menu_2_collection_3_links": "boys-3-8",
+    "mega_menu_2_collection_4_text": "Tweens | 9-14 years",
+    "mega_menu_2_collection_4_title_link": "tweens",
+    "mega_menu_2_collection_4_links": "tweens",
+    "mega_menu_2_collection_4_image": "",
+    "mega_menu_3_enable": true,
+    "mega_menu_3_text": "BoMa Home",
+    "mega_menu_3_link": "boma-home",
+    "mega_menu_3_left_links": "",
+    "mega_menu_3_collection_1_text": "Home Decor",
+    "mega_menu_3_collection_1_title_link": "decor",
+    "mega_menu_3_collection_1_links": "decor",
+    "mega_menu_3_collection_2_text": "Gifts",
+    "mega_menu_3_collection_2_title_link": "gifts",
+    "mega_menu_3_collection_2_links": "home-gifts",
+    "mega_menu_3_collection_3_text": "Nursery Decor",
+    "mega_menu_3_collection_3_title_link": "nursery",
+    "mega_menu_3_collection_3_links": "nursery",
+    "mega_menu_3_collection_4_text": "menu 4",
+    "mega_menu_3_collection_4_title_link": "",
+    "mega_menu_3_collection_4_links": "kids-mega-collection-4",
+    "mega_menu_3_collection_4_image": "shopify:\/\/shop_images\/nursery.jpg",
+    "checkout_header_image": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/Bohemian_Mama_Logo-copy-_1.png",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "Lato",
+    "checkout_body_font": "Open Sans",
+    "checkout_accent_color": "#f2d0bc",
+    "checkout_button_color": "#f8caaf",
+    "checkout_error_color": "#e32c2b",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "align_logo": "center",
+          "logo": "shopify:\/\/shop_images\/Bohemian_Mama_Logo-copy-_1.png",
+          "logo_max_width": 305,
+          "main_linklist": "main-menu3",
+          "mobile_menu": "mobile",
+          "message": true,
+          "home_page_only": false,
+          "message_text": "3rd Day of Xmas! Spend $200, Get $25. Spend $500, Get $100. Spend $1,000, Get $250.",
+          "message_link": "https:\/\/www.bohemianmama.com\/",
+          "color_bg": "#000000",
+          "color_text": "#ffffff"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "link_list": {
+            "type": "link_list",
+            "settings": {
+              "title": "Quick links",
+              "menu": "footer"
+            }
+          },
+          "link_list-1": {
+            "type": "link_list",
+            "settings": {
+              "title": "Quick links",
+              "menu": "footer"
+            }
+          },
+          "text": {
+            "type": "text",
+            "settings": {
+              "title": "Talk about your business",
+              "text": "<p>Share store details, promotions, or brand content with your customers.<\/p>"
+            }
+          },
+          "newsletter": {
+            "type": "newsletter",
+            "settings": {
+              "title": "Newsletter"
+            }
+          }
+        },
+        "block_order": [
+          "link_list",
+          "link_list-1",
+          "text",
+          "newsletter"
+        ],
+        "settings": {
+          "show_payment_icons": true,
+          "color_footer_bg": "#f2dccf",
+          "color_footer_text": "#333333"
+        }
+      },
+      "1539770890528": {
+        "type": "carousel-slider",
+        "blocks": {
+          "1545064592721": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/12days-xmas3.png",
+              "link": "https:\/\/www.bohemianmama.com\/"
+            }
+          }
+        },
+        "block_order": [
+          "1545064592721"
+        ],
+        "settings": {}
+      },
+      "1539774767765": {
+        "type": "feature-columns",
+        "blocks": {
+          "1539774767765-0": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "swap_image": true,
+              "image": "shopify:\/\/shop_images\/organic_childrens_pajamas_skylar_luna.jpg",
+              "title": "GIFTS FOR LITTLES",
+              "text": "<p>Shop gifts for babies, gifts for kids, and gifts for Teens with the coolest gear from Rylee + Cru, Skylar Luna, LouLou Lolipop, Omamimini, Quincy Mae and more.<\/p>",
+              "button_label": "SHOP NOW",
+              "button_link": "https:\/\/www.bohemianmama.com\/collections\/gifts-for-littles"
+            }
+          },
+          "1539774767765-1": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "swap_image": false,
+              "image": "shopify:\/\/shop_images\/Screen_Shot_2018-12-12_at_10.40.41_AM.png",
+              "title": "GIFTS FOR HER",
+              "text": "<p>Shop one-of-a-kind gifts for her from Spell, Show Me Your Mumu, Freepeople, Cleobella and more.<\/p>",
+              "button_label": "SHOP NOW",
+              "button_link": "https:\/\/www.bohemianmama.com\/collections\/gifts-for-her"
+            }
+          },
+          "1539774767765-2": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "swap_image": true,
+              "image": "shopify:\/\/shop_images\/bohemian_home_decor_flour_poufs_for_home_real_leather.jpg",
+              "title": "GIFTS FOR HOME",
+              "text": "<p>Shop the perfect gifts for your home, gifts for a hostess or gifts for your in-laws with cozy blankets, ornaments, pillows, and candles.<\/p>\n<p>&nbsp;<\/p>\n<p><\/p>",
+              "button_label": "SHOP NOW",
+              "button_link": "https:\/\/www.bohemianmama.com\/collections\/gifts-for-home"
+            }
+          }
+        },
+        "block_order": [
+          "1539774767765-0",
+          "1539774767765-1",
+          "1539774767765-2"
+        ],
+        "settings": {
+          "title": "",
+          "align_text": "center"
+        }
+      },
+      "featured-collections": {
+        "type": "collection",
+        "settings": {
+          "title": "Our Faves for babies",
+          "enable_carousel": true,
+          "desktopimage": "",
+          "mobileimage": "",
+          "arrow_position": "middle",
+          "collection": "our-faves-for-babies",
+          "grid": 4,
+          "rows": 5,
+          "show_vendor": true,
+          "show_view_all": true
+        }
+      },
+      "1539866522679": {
+        "type": "image-with-text-row",
+        "blocks": {
+          "1539866522679-0": {
+            "type": "image-with-text",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/boys-pajamas.jpg",
+              "image_on_right": false,
+              "title": "BOYS",
+              "content": "From newborn to teens and everything in between. Shop our hand curated boys collection.",
+              "btn_text": "SHOP NOW",
+              "btn_link": "shopify:\/\/collections\/boys"
+            }
+          },
+          "1539866522679-1": {
+            "type": "image-with-text",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/girls_19e7c15f-816d-4a56-97cb-add3e45bb156.jpg",
+              "image_on_right": true,
+              "title": "GIRLS",
+              "content": "From Mommy n' Me, to one-of-a-kind frilly boho dresses, tops + tees, and raglan pants",
+              "btn_text": "SHOP NOW",
+              "btn_link": "shopify:\/\/collections\/girls"
+            }
+          }
+        },
+        "block_order": [
+          "1539866522679-0",
+          "1539866522679-1"
+        ],
+        "settings": {
+          "section_bg": "shopify:\/\/shop_images\/section_bg_1.jpg"
+        }
+      },
+      "1540200984195": {
+        "type": "custom-content",
+        "blocks": {
+          "1540200998171": {
+            "type": "html",
+            "settings": {
+              "code": "<div id=\"insta-feed\"><\/div>",
+              "width": "100%"
+            }
+          }
+        },
+        "block_order": [
+          "1540200998171"
+        ],
+        "settings": {
+          "section_full_width": true,
+          "title": "Shop Our Instagram"
+        }
+      },
+      "1540204785071": {
+        "type": "featured-blog-grid",
+        "settings": {
+          "section_bg": "",
+          "title": "BoMa Blog",
+          "blog": "bohemian-mama-lifestyle-blog",
+          "blog_show_author": false,
+          "blog_show_date": true,
+          "show_view_all": true
+        }
+      },
+      "1540210764690": {
+        "type": "collection",
+        "settings": {
+          "title": "Stocking Stuffers",
+          "enable_carousel": true,
+          "desktopimage": "",
+          "mobileimage": "",
+          "arrow_position": "middle",
+          "collection": "stocking-stuffers",
+          "grid": 5,
+          "rows": 3,
+          "show_vendor": false,
+          "show_view_all": true
+        }
+      },
+      "custom-footer": {
+        "type": "custom-footer",
+        "blocks": {
+          "1540275548117": {
+            "type": "logo-section",
+            "settings": {
+              "footer_logo": "shopify:\/\/shop_images\/Bohemian_Mama_Logo.png",
+              "footer_text": "<p>Luxurious bohemian clothing brands for women, babies, children, and tweens.<\/p>"
+            }
+          },
+          "1540273848226": {
+            "type": "link_list",
+            "settings": {
+              "title": "Shopping",
+              "menu": "footer-shop"
+            }
+          },
+          "1540273739392": {
+            "type": "link_list",
+            "settings": {
+              "title": "Kids",
+              "menu": "footer-kids"
+            }
+          },
+          "1540273734430": {
+            "type": "link_list",
+            "settings": {
+              "title": "Explore",
+              "menu": "newsite-footer-explore"
+            }
+          },
+          "1540274329879": {
+            "type": "text",
+            "settings": {
+              "title": "Contact Info",
+              "text": "<p>(866) 545-2662&nbsp;<\/p>\n<p><\/p>\n<p>(609) 938-6466&nbsp;<\/p>\n<p><span>741 ASBURY AVENUE, OCEAN CITY, NJ 08226<\/span><\/p>"
+            }
+          },
+          "1540273754983": {
+            "type": "newsletter",
+            "settings": {
+              "title": "Join Our Tribe",
+              "sub_title": "<p>BoMa Rewards and exclusive discounts. Join Today!<\/p>\n<p><\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1540275548117",
+          "1540273848226",
+          "1540273739392",
+          "1540273734430",
+          "1540274329879",
+          "1540273754983"
+        ],
+        "settings": {
+          "show_payment_icons": false,
+          "color_footer_bg": "#f2dccf",
+          "color_footer_text": "#3d4246"
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "cart_notes_enable": false
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "image_size": "medium",
+          "show_quantity_selector": true,
+          "show_variant_labels": true,
+          "show_vendor": false,
+          "enable_zoom": true,
+          "enable_payment_button": false,
+          "show_share_buttons": true
+        }
+      },
+      "related-products": {
+        "type": "related-products",
+        "settings": {
+          "show_related_products": true,
+          "related_title": "BOHO Mama's Love",
+          "related_grid_num": "5",
+          "related_grid_row": "2"
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "blocks": {
+          "1541488791362": {
+            "type": "image",
+            "settings": {
+              "sort-dropdown-a-check": true,
+              "filter1heading": "Type",
+              "sort_a": "Dresses, Tops + Tees, Bottoms, Sweaters, Skirts, Holiday, Jumpsuits + Rompers, Jewelry, Pajamas, Skirts, Swimwear, Maternity, Skincare, Candles, Ornaments, Pillows, Wall Art, Swaddles, Quilts, Bibs, Towels, Crib Sheets, Throws, Belts, Fragrance, Kimonos, Fedoras, Beanies, Berets, Sailor Hats, Boater Hats, Trucker Hats, Sun Hats, Headbands,  Sunglasses, Hats, Flats, Platforms, Slides, Boots, Sneakers, Sandals, Clogs, Mules, Clutches, Crossbody Bags, Weekenders, Backpacks + Messengers, Totes, Top Handle Bags, Bag Accessories, Earrings, Necklaces, Chokers, Bracelets, Rings, Bikini Tops, Bikini Bottoms, One Pieces, Sarongs + Wraps, Denim, Bells, Pants, Mini Skirts, Midi Skirts, Maxi Skirts, Shorts, Maxi Dresses, Midi Dresses, Tees, Tunics, Shirts, Crop Tops, Blouses, Graphic Tees, Camis + Tanks, Thermals + Pullovers + Henleys, Intimates, Greeting Cards, Nail Polish, Mini Dresses, Day Dresses, Party Dresses, Printed Dresses, White Dresses, Black Dresses, Sweater Dresses, Knit Dresses, Sets, Sweatshirts, Pullovers, Cardigans, Tunics, Turtlenecks, Sweater Jackets, Statement Sweaters, Jumpsuits, Rompers, Maternity Dresses, Denim Jackets, Moto Jackets, Blazers, Statement Jackets, Military Jackets, Faux Fur + Vegan Leather, Maxi Jackets + Dusters, Lightweight Jackets, Cleansers, Moisturizers, Oils + Serums, Eye Creams, Scrubs + Exfoliators, Masks, Toners + Face Mists, Essential Oils, Bath + Shower, Perfumes, Room Sprays,  Onesies, Baby Pants, Maternity Swim, Kids Swim"
+            }
+          },
+          "1543448752616": {
+            "type": "image",
+            "settings": {
+              "sort-dropdown-a-check": false,
+              "filter1heading": "Brand",
+              "sort_a": "417 Press,Ace of Something,Albetta,Alimrose Australia,Allia,ASH,Auguste the Label,Arnhem,Beach Riot,Bersuse,Blabla Kids,Blue Life,Canyon Leaf,Chaser,Chaser Kids,Chasing Unicorns,Cleobella,Courtney and The Babes,Coveted Things,Deco Miami,Dazey LA,Dolce Vita,Ettika,Fiona Walker,Five and Two,Flynn Skye,Free People,Full Unicorn,Glitter & Spice,Grom Squad,Handloom,Harlow Jade,Henny and Coco,House of Lloyd,Innkas,iiixkids Apparel,JaxKelly,Jen's Pirate Booty,Jolie,Junk Food Clothing,Kinsley Armelle,Kita Dua,Kivari,Lack of Color,Lilya,Little Shop of Oils,Lovestrength,Lost + Wander,Loulou LOLLIPOP,Madeleine Maternity,Mia Shoes,Miki Miette,Mer St. Barth,Moon Water Co.,Mother Denim,Mother Trucker & Co.,Mushmina,Novella Royale,Omamimini,Ondade Mar,One Hundred Eighty Degrees,Pez D'Or,Quay,Quincy Mae,Raga,Red Carter,Route508,Rylee and Cru,Rubyyaya,Stillwater,Sticks + Stones,Spiritual Gangster,Spell &,The Gypsy,Somedays Lovin',So Nikki,Snapper Rock,Skylar Luna,Show Me Your Mumu,Shilla The Label,The River Haze,Tiare Hawaii,Tigerlily,Tori Praver,Tulle & Batiste,Wish"
+            }
+          }
+        },
+        "block_order": [
+          "1541488791362",
+          "1543448752616"
+        ],
+        "settings": {
+          "rows": 30,
+          "show_collection_image": false,
+          "enable-filters": true
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "settings": {
+          "display_type": "all",
+          "sort": "alphabetical",
+          "grid": 3
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "settings": {
+          "layout": "list",
+          "blog_show_author": true,
+          "blog_show_date": true
+        }
+      },
+      "collection": {
+        "type": "collection",
+        "settings": {
+          "title": "Gifts for her",
+          "enable_carousel": true,
+          "desktopimage": "",
+          "mobileimage": "",
+          "arrow_position": "middle",
+          "collection": "gifts-for-her",
+          "grid": 3,
+          "rows": 3,
+          "show_vendor": false,
+          "show_view_all": true
+        }
+      },
+      "collection2": {
+        "type": "collection2",
+        "settings": {
+          "enable_section": true,
+          "title": "Gifts for Littles",
+          "enable_carousel": true,
+          "desktopimage": "shopify:\/\/shop_images\/Xmas_gifts_for_children.jpg",
+          "mobileimage": "shopify:\/\/shop_images\/Xmas_gifts_for_children.jpg",
+          "arrow_position": "middle",
+          "collection": "gifts-for-littles",
+          "grid": 4,
+          "rows": 1,
+          "show_vendor": false,
+          "show_view_all": true
+        }
+      },
+      "collection3": {
+        "type": "collection3",
+        "settings": {
+          "enable_section": true,
+          "title": "Gifts for Home",
+          "enable_carousel": true,
+          "desktopimage": "shopify:\/\/shop_images\/gifts-for-home_021e76a1-ed1f-4792-906d-2fac2b03bcb4.jpg",
+          "mobileimage": "shopify:\/\/shop_images\/gifts-for-home-mobile.jpg",
+          "arrow_position": "middle",
+          "collection": "gifts-for-home",
+          "grid": 3,
+          "rows": 3,
+          "show_vendor": false,
+          "show_view_all": true
+        }
+      },
+      "giftbanner": {
+        "type": "giftbanner",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Giftcard_Banner1.jpg",
+          "link": ""
+        }
+      },
+      "2imagesection": {
+        "type": "2imagesection",
+        "settings": {
+          "image1": "shopify:\/\/shop_images\/merry-xmas-gift-card.jpg",
+          "link1": "shopify:\/\/collections\/holiday-gift-cards-1",
+          "image2": "shopify:\/\/shop_images\/holiday-gift-card.jpg",
+          "link2": "shopify:\/\/collections\/holiday-gift-cards-1"
+        }
+      },
+      "4imagesection": {
+        "type": "4imagesection",
+        "settings": {
+          "image1": "shopify:\/\/shop_images\/giftsunder25_2048x_645e327f-ee98-4753-b8ef-cd40505f9a79.jpg",
+          "link1": "https:\/\/www.bohemianmama.com\/collections\/gifts-under-25",
+          "image2": "shopify:\/\/shop_images\/giftsunder50_2048x_f86538e2-c35b-4372-866b-7d4c6cb42c47.jpg",
+          "link2": "https:\/\/www.bohemianmama.com\/collections\/gifts-under-50",
+          "image3": "shopify:\/\/shop_images\/giftsunder100_2048x_3a944cf1-1e72-4700-8144-b822fe8f3d56.jpg",
+          "link3": "https:\/\/www.bohemianmama.com\/collections\/gifts-under-100",
+          "image4": "shopify:\/\/shop_images\/giftsunder200_2048x_08826a23-5bd7-46b4-a125-edfe84c54f5d.jpg",
+          "link4": "https:\/\/www.bohemianmama.com\/collections\/gifts-under-200"
+        }
+      },
+      "giftbanner1": {
+        "type": "giftbanner1",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/banner_7e2d42da-1a6a-4ab6-920a-ef124d73298a.jpg",
+          "link": "shopify:\/\/collections\/health-beauty"
+        }
+      },
+      "collection4": {
+        "type": "collection4",
+        "settings": {
+          "enable_section": false,
+          "title": "Featured collection",
+          "enable_carousel": true,
+          "desktopimage": "",
+          "mobileimage": "",
+          "arrow_position": "middle",
+          "collection": "accessories",
+          "grid": 2,
+          "rows": 1,
+          "show_vendor": false,
+          "show_view_all": false
+        }
+      },
+      "collection1": {
+        "type": "collection1",
+        "settings": {
+          "enable_section": true,
+          "title": "Gifts for Her",
+          "enable_carousel": true,
+          "desktopimage": "shopify:\/\/shop_images\/gifts-for-her.jpg",
+          "mobileimage": "shopify:\/\/shop_images\/home_decor_mobile_image.jpg",
+          "arrow_position": "middle",
+          "collection": "gifts-for-her",
+          "grid": 4,
+          "rows": 1,
+          "show_vendor": false,
+          "show_view_all": true
+        }
+      },
+      "1544898153341": {
+        "type": "collection",
+        "settings": {
+          "title": "Holiday Gift Cards",
+          "enable_carousel": true,
+          "desktopimage": "",
+          "mobileimage": "",
+          "arrow_position": "middle",
+          "collection": "gift-cards",
+          "grid": 4,
+          "rows": 1,
+          "show_vendor": false,
+          "show_view_all": true
+        }
+      }
+    },
+    "content_for_index": [
+      "1539770890528",
+      "1539774767765",
+      "1540210764690",
+      "1539866522679",
+      "1544898153341",
+      "featured-collections",
+      "1540204785071",
+      "1540200984195"
+    ]
+  },
+  "presets": {
+    "Default": {
+      "color_text": "#3d4246",
+      "color_body_text": "#69727b",
+      "color_sale_text": "#557B97",
+      "color_borders": "#e8e9eb",
+      "color_button": "#557B97",
+      "color_button_text": "#fff",
+      "color_small_button_text_border": "#3d4246",
+      "color_text_field": "#fff",
+      "color_text_field_text": "#000",
+      "color_text_field_border": "#949494",
+      "color_image_overlay_text": "#fff",
+      "color_image_overlay": "#3d4246",
+      "image_overlay_opacity": 40,
+      "color_body_bg": "#fff",
+      "type_header_font": "work_sans_n6",
+      "type_header_base_size": 26,
+      "type_base_font": "work_sans_n4",
+      "type_base_size": 16,
+      "type_bold_product_titles": false,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {}
+        },
+        "hero": {
+          "type": "hero",
+          "settings": {
+            "text_size": "large"
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "image",
+              "settings": {}
+            },
+            "slideshow-1": {
+              "type": "image",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "slideshow-1"
+          ],
+          "settings": {}
+        },
+        "featured-collections": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "feature-row": {
+          "type": "feature-row",
+          "settings": {}
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "link_list": {
+              "type": "link_list",
+              "settings": {}
+            },
+            "link_list-1": {
+              "type": "link_list",
+              "settings": {}
+            },
+            "text": {
+              "type": "text",
+              "settings": {}
+            },
+            "newsletter": {
+              "type": "newsletter",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "link_list",
+            "link_list-1",
+            "text",
+            "newsletter"
+          ],
+          "settings": {}
+        }
+      },
+      "content_for_index": [
+        "hero",
+        "featured-collections",
+        "feature-row",
+        "slideshow"
+      ]
+    },
+    "Light": {
+      "color_text": "#162950",
+      "color_body_text": "#6d6d6d",
+      "color_sale_text": "#DA2F0C",
+      "color_borders": "#e4e4e4",
+      "color_button": "#DA2F0C",
+      "color_button_text": "#ffffff",
+      "color_small_button_text_border": "#162950",
+      "color_text_field": "#ffffff",
+      "color_text_field_text": "#162950",
+      "color_text_field_border": "#909090",
+      "color_image_overlay_text": "#ffffff",
+      "color_image_overlay": "#3d3d3d",
+      "image_overlay_opacity": 40,
+      "color_body_bg": "#f8f8f8",
+      "type_header_font": "muli_n6",
+      "type_header_base_size": 26,
+      "type_base_font": "muli_n4",
+      "type_base_size": 18,
+      "type_bold_product_titles": true,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "favicon": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#e8f3f6",
+      "checkout_heading_font": "Roboto",
+      "checkout_body_font": "Source Sans Pro",
+      "checkout_accent_color": "#1990c6",
+      "checkout_button_color": "#23314e",
+      "checkout_error_color": "#ff6d6d",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "align_logo": "left",
+            "logo": "",
+            "logo_max_width": 135,
+            "main_linklist": "main-menu",
+            "message": true,
+            "color_bg": "#162950",
+            "color_text": "#ffffff"
+          }
+        },
+        "hero": {
+          "type": "hero",
+          "settings": {
+            "alignment": "center",
+            "hero_size": "x-large",
+            "text_size": "large"
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center"
+              }
+            },
+            "1492095993817": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "1492095993817"
+          ],
+          "settings": {
+            "autoplay": true,
+            "autoplay_speed": 6,
+            "slideshow_height": "medium",
+            "text_size": "medium"
+          }
+        },
+        "featured-collections": {
+          "type": "collection",
+          "settings": {
+            "grid": 3,
+            "rows": 3,
+            "show_vendor": true,
+            "show_view_all": true
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "image_size": "medium",
+            "show_quantity_selector": false,
+            "show_variant_labels": true,
+            "show_vendor": false,
+            "enable_zoom": true,
+            "show_share_buttons": true
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "rows": 3,
+            "show_collection_image": true
+          }
+        },
+        "1492033809691": {
+          "type": "map",
+          "settings": {}
+        },
+        "1492033877875": {
+          "type": "quotes",
+          "blocks": {
+            "1492033877875-0": {
+              "type": "quote",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1492033877875-0"
+          ],
+          "settings": {}
+        },
+        "1492033924902": {
+          "type": "custom-content",
+          "blocks": {
+            "1492033924902-0": {
+              "type": "text",
+              "settings": {
+                "width": "100%",
+                "alignment": "center",
+                "align_text": "center"
+              }
+            }
+          },
+          "block_order": [
+            "1492033924902-0"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "1492096252560": {
+          "type": "collection-list",
+          "blocks": {
+            "1492096252560-0": {
+              "type": "featured_collection",
+              "settings": {}
+            },
+            "1492096252560-1": {
+              "type": "featured_collection",
+              "settings": {}
+            },
+            "1492096252560-2": {
+              "type": "featured_collection",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1492096252560-0",
+            "1492096252560-1",
+            "1492096252560-2"
+          ],
+          "settings": {
+            "grid": 3
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "layout": "grid",
+            "blog_show_author": true,
+            "blog_show_date": false
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_show_author": true,
+            "blog_show_date": true,
+            "show_share_buttons": true
+          }
+        },
+        "cart-template": {
+          "type": "cart-template",
+          "settings": {
+            "cart_notes_enable": false
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "link_list": {
+              "type": "link_list",
+              "settings": {}
+            },
+            "link_list-1": {
+              "type": "link_list",
+              "settings": {}
+            },
+            "text": {
+              "type": "text",
+              "settings": {}
+            },
+            "newsletter": {
+              "type": "newsletter",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "link_list",
+            "link_list-1",
+            "text",
+            "newsletter"
+          ],
+          "settings": {}
+        }
+      },
+      "content_for_index": [
+        "hero",
+        "featured-collections",
+        "slideshow",
+        "1492033924902",
+        "1492096252560",
+        "1492033877875",
+        "1492033809691"
+      ]
+    }
+  }
+}

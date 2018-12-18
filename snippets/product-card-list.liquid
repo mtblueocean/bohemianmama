@@ -1,0 +1,67 @@
+{% comment %}
+<div class="product-card product-card--list">
+  <a class="full-width-link" href="{{ product.url | within: collection }}">
+    <span class="visually-hidden">{{ product.title }}</span>
+  </a>
+
+  <div class="list-view-item__link">
+    <div class="list-view-item__image-column">
+      <div class="list-view-item__image-wrapper product-card__image-wrapper">
+        <img class="list-view-item__image" src="{{ product.featured_image.src | img_url: '95x95', scale: 2 }}" alt="">
+      </div>
+    </div>
+
+    <div class="list-view-item__title-column">
+      <div class="list-view-item__title" aria-hidden="true">
+        <span class="product-card__title">{{ product.title }}</span>
+      </div>
+      {% if product.compare_at_price > product.price %}
+        <div class="list-view-item__on-sale">{{ 'products.product.on_sale' | t }}</div>
+      {% endif %}
+      {% if section.settings.show_vendor %}
+        <div class="list-view-item__vendor medium-up--hide">{{ product.vendor }}</div>
+      {% endif %}
+      {% unless product.available %}
+        <div class="list-view-item__sold-out">{{ 'products.product.sold_out' | t }}</div>
+      {% endunless %}
+    </div>
+
+    <div class="list-view-item__price-column">
+      {% if product.available %}
+        {% include 'product-price', variant: product %}
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endcomment %}
+ 
+
+<div class=" product-card card-new">
+        <a class="grid-view-item__link grid-view-item__image-container full-width-link" href="{{ product.url | within: collection }}" tabindex="0">
+            <span class="visually-hidden">{{product.title}}</span>
+        </a>
+
+        <div id="{{ wrapper_id }}" class="grid-view-item__image-wrapper product-card__image-wrapper">
+            <div class="product_card_image">
+                {% if product.available %}
+          {% else %}
+          <p class="coldout"> Sold Out</p>
+          {% endif %}
+           {% if product.compare_at_price >=  product.price %}
+              {% if product.available %}
+                <p class="sle"> Sale</p>
+              {% endif %}
+          {% endif %}
+                <img src="{{ product.featured_image.src | img_url: 'large' }}" alt="{{product.title}}">
+                <div class="text-center custom-shop">
+                    <a href="{{ product.url | within: collection }}" tabindex="0">SHOP NOW</a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+
+      		{% include 'product-price-new', variant: product %}
+
+      	</div>
+
+</div>

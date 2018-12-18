@@ -1,0 +1,37 @@
+<div class="{% unless product.available %} grid-view-item--sold-out{% endunless %} product-card card-new">
+  
+  
+  {% if product.compare_at_price >=  product.price and product.available %}
+      	<p class="sle"> Sale</p>
+      {% endif %}
+  
+  <a class="grid-view-item__link grid-view-item__image-container full-width-link" href="{{ product.url | within: collection }}">
+    <span class="visually-hidden">{{ product.title }}</span>
+  </a>
+
+  {% capture img_id %}ProductCardImage-{{ section.id }}-{{ product.id }}{% endcapture %}
+  {% capture wrapper_id %}ProductCardImageWrapper-{{ section.id }}-{{ product.id }}{% endcapture %}
+  {%- assign img_url = product.featured_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+ 
+  <div id="{{ wrapper_id }}" class="grid-view-item__image-wrapper product-card__image-wrapper">
+    
+    {% if product.available %}
+      {% else %}
+      <p class="coldout"> Sold Out</p>
+      {% endif %}
+    <div class="product_card_image">
+      
+       
+      
+      <img src="{{ product.featured_image | img_url: 'large' }}" alt="{{ product.featured_image.alt }}"/>
+     <div class="text-center custom-shop">
+    <a href="{{ product.url }}">SHOP NOW</a>
+  </div>
+    </div>
+  </div>
+
+  <div class="text-center">
+    {% include 'product-price-new', variant: product %}
+  </div>
+
+</div>

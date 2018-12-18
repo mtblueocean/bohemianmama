@@ -1,0 +1,363 @@
+<div class="featured-blog-grid" data-section-id="{{section.id}}">
+  {% if section.settings.title != blank %}
+  <header class="section-header text-center">
+    <h2>{{ section.settings.title | escape }}</h2>
+  </header>
+  {% endif %}
+
+  {%- assign blog = blogs[section.settings.blog] -%}
+
+  {% if section.settings.show_view_all %}
+  <div class="text-center">
+    <a href="{{ blog.url }}" class="btn btn-svg btn--secondary btn--small" aria-label="{{ 'blogs.article.view_all_blogs' | t }}">
+      <svg><rect x="0" y="0" fill="none" width="166" height="45" /></svg>
+      {{ 'blogs.article.view_all' | t }}
+    </a>
+  </div>
+  {% endif %}
+
+  {% unless blog.articles_count == 0 %}
+  <div class="featured_blog_wrap">
+    <div class="blog_items">
+      {% for article in blog.articles limit: 3 %}
+      {% if forloop.index == 1 %}
+      <div class="blog_box">
+        <div class="image_block">
+          {{ article | img_url: 'grande', scale: 2 | img_tag: article.title }} 
+        </div>
+        <div class="text_block">
+          {% if section.settings.blog_show_author %}
+          <span class="article__author">{{ 'blogs.article.by_author' | t: author: article.author }}</span>
+          {% endif %}
+
+          {% if section.settings.blog_show_date %}
+          <span class="article__date">
+            {{ article.published_at | time_tag: format: 'month_day_year' }}
+          </span>
+          {% endif %}
+          <h3 class="article__title{% if article.image %} article__title--has-image{% endif %}">
+            <a href="{{ article.url }}">{{ article.title }}</a>
+          </h3>
+          <div class="rte article__grid-excerpt">
+            {% if article.excerpt.size > 0 %}
+            {{ article.excerpt }}
+            {% else %}
+            {{ article.content | strip_html | truncate: 150 }}
+            {% endif %}
+          </div>
+          <a href="{{ article.url }}" class="btn btn-svg btn--secondary btn--small" aria-label="{{ 'blogs.article.read_more_title' | t: title: article.title }}">
+            <svg><rect x="0" y="0" fill="none" width="166" height="45" /></svg>
+            {{ 'blogs.article.read_more' | t }}
+          </a>
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+      {% for article in blog.articles limit: 3 %}
+      {% if forloop.index == 2 %}
+      <div class="blog_box row-reverse">
+        <div class="image_block">
+          {{ article | img_url: 'grande', scale: 2 | img_tag: article.title }} 
+        </div>
+        <div class="text_block">
+          {% if section.settings.blog_show_author %}
+          <span class="article__author">{{ 'blogs.article.by_author' | t: author: article.author }}</span>
+          {% endif %}
+
+          {% if section.settings.blog_show_date %}
+          <span class="article__date">
+            {{ article.published_at | time_tag: format: 'month_day_year' }}
+          </span>
+          {% endif %}
+          <h3 class="article__title{% if article.image %} article__title--has-image{% endif %}">
+            <a href="{{ article.url }}"> {{ article.title }}</a>
+          </h3>
+          <div class="rte article__grid-excerpt">
+            {% if article.excerpt.size > 0 %}
+            {{ article.excerpt }}
+            {% else %}
+            {{ article.content | strip_html | truncate: 150 }}
+            {% endif %}
+          </div>
+          <a href="{{ article.url }}" class="btn btn-svg btn--secondary btn--small" aria-label="{{ 'blogs.article.read_more_title' | t: title: article.title }}">
+            <svg><rect x="0" y="0" fill="none" width="166" height="45" /></svg>
+            {{ 'blogs.article.read_more' | t }}
+          </a>
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+    <div class="blog_items">
+      <div class="blog_box big_box">
+        {% for article in blog.articles limit: 3 %}
+        {% if forloop.index == 3 %}
+        <div class="blog_items">
+          <div class="image_block">
+            {{ article | img_url: 'grande', scale: 2 | img_tag: article.title }} 
+          </div>
+          <div class="text_block">
+            {% if section.settings.blog_show_author %}
+            <span class="article__author">{{ 'blogs.article.by_author' | t: author: article.author }}</span>
+            {% endif %}
+
+            {% if section.settings.blog_show_date %}
+            <span class="article__date">
+              {{ article.published_at | time_tag: format: 'month_day_year' }}
+            </span>
+            {% endif %}
+            <h3 class="article__title{% if article.image %} article__title--has-image{% endif %}">
+              <a href="{{ article.url }}">{{ article.title }}</a>
+            </h3>
+            <div class="rte article__grid-excerpt">
+              {% if article.excerpt.size > 0 %}
+              {{ article.excerpt }}
+              {% else %}
+              {{ article.content | strip_html | truncate: 150 }}
+              {% endif %}
+            </div>
+            <a href="{{ article.url }}" class="btn btn-svg btn--secondary btn--small" aria-label="{{ 'blogs.article.read_more_title' | t: title: article.title }}">
+              <svg><rect x="0" y="0" fill="none" width="166" height="45" /></svg>
+              {{ 'blogs.article.read_more' | t }}
+            </a>
+          </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% else %}
+  <div class="grid grid--uniform grid--blog">
+    <div class="featured_blog_wrap">
+    <div class="blog_items">
+      {% for i in (1..3) %}
+      {% if forloop.index == 1 %}
+      <div class="blog_box">
+        <div class="image_block">
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        </div>
+        <div class="text_block">
+          {% if section.settings.blog_show_author %}
+          <span class="article__author">{{ 'homepage.onboarding.blog_author' | t }}</span>
+          {% endif %}
+
+          {% if section.settings.blog_show_date %}
+          <span class="article__date">
+            {{ article.published_at | time_tag: format: 'month_day_year' }}
+          </span>
+          {% endif %}
+          <h3 class="article__title article__title--has-image">
+            <a href="{{ article.url }}">{{ 'homepage.onboarding.blog_title' | t }}</a>
+          </h3>
+          <div class="rte article__grid-excerpt">
+            {{ 'homepage.onboarding.blog_excerpt' | t }}
+          </div>
+          <a href="#" class="btn btn-svg btn--secondary btn--small" aria-label="{{ 'blogs.article.read_more_title' | t: title: article.title }}">
+            <svg><rect x="0" y="0" fill="none" width="166" height="45" /></svg>
+            {{ 'blogs.article.read_more' | t }}
+          </a>
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+      {% for i in (1..3) %}
+      {% if forloop.index == 2 %}
+      <div class="blog_box row-reverse">
+        <div class="image_block">
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        </div>
+        <div class="text_block">
+          {% if section.settings.blog_show_author %}
+          <span class="article__author">{{ 'homepage.onboarding.blog_author' | t }}</span>
+          {% endif %}
+
+          {% if section.settings.blog_show_date %}
+          <span class="article__date">
+            {{ article.published_at | time_tag: format: 'month_day_year' }}
+          </span>
+          {% endif %}
+          <h3 class="article__title article__title--has-image">
+            <a href="{{ article.url }}">{{ article.title }}</a>
+          </h3>
+          <div class="rte article__grid-excerpt">
+            {{ 'homepage.onboarding.blog_excerpt' | t }}
+          </div>
+          <a href="{{ article.url }}" class="btn btn-svg btn--secondary btn--small" aria-label="{{ 'blogs.article.read_more_title' | t: title: article.title }}">
+            <svg><rect x="0" y="0" fill="none" width="166" height="45" /></svg>
+            {{ 'blogs.article.read_more' | t }}
+          </a>
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+    <div class="blog_items">
+      <div class="blog_box big_box">
+        {% for i in (1..3) %}
+        {% if forloop.index == 3 %}
+        <div class="blog_items">
+          <div class="image_block">
+             {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+          </div>
+          <div class="text_block">
+            {% if section.settings.blog_show_author %}
+            <span class="article__author">{{ 'blogs.article.by_author' | t: author: article.author }}</span>
+            {% endif %}
+
+            {% if section.settings.blog_show_date %}
+            <span class="article__date">
+              {{ article.published_at | time_tag: format: 'month_day_year' }}
+            </span>
+            {% endif %}
+            <h3 class="article__title{% if article.image %} article__title--has-image{% endif %}">
+              <a href="{{ article.url }}">{{ article.title }}</a>
+            </h3>
+            <div class="rte article__grid-excerpt">
+              {{ 'homepage.onboarding.blog_excerpt' | t }}
+            </div>
+            <a href="{{ article.url }}" class="btn btn-svg btn--secondary btn--small" aria-label="{{ 'blogs.article.read_more_title' | t: title: article.title }}">
+              <svg><rect x="0" y="0" fill="none" width="166" height="45" /></svg>
+              {{ 'blogs.article.read_more' | t }}
+            </a>
+          </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  </div>
+  {% endunless %}
+  
+</div>
+
+{% if section.settings.section_bg != blank %}
+<style>
+  .featured-blog-grid{background-image:url({{ section.settings.section_bg | img_url: "master" }});}
+</style>
+{% endif %}
+
+{% schema %}
+{
+  "name": {
+    "de": "Blogposts grid",
+    "en": "Blog posts grid",
+    "es": "Entradas del blog grid",
+    "fr": "Articles de blog grid",
+    "it": "Articoli del blog grid",
+    "ja": "ブログ記事",
+    "pt-BR": "Posts do blog grid"
+  },
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "section_bg",
+      "label": "Section background"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": {
+        "de": "Titel",
+        "en": "Heading",
+        "es": "Título",
+        "fr": "En-tête",
+        "it": "Heading",
+        "ja": "見出し",
+        "pt-BR": "Título"
+      },
+      "default": {
+        "de": "Blogposts",
+        "en": "Blog posts",
+        "es": "Entradas del blog",
+        "fr": "Articles de blog",
+        "it": "Articoli del blog",
+        "ja": "ブログ記事",
+        "pt-BR": "Posts do blog"
+      }
+    },
+    {
+      "id": "blog",
+      "type": "blog",
+      "label": {
+        "de": "Blog",
+        "en": "Blog",
+        "es": "Blog",
+        "fr": "Blog",
+        "it": "Blog",
+        "ja": "ブログ",
+        "pt-BR": "Blog"
+      }
+    },
+    {
+      "type": "checkbox",
+      "id": "blog_show_author",
+      "label": {
+        "de": "Autor anzeigen",
+        "en": "Show author",
+        "es": "Mostrar autor",
+        "fr": "Afficher l'auteur",
+        "it": "Mostra autore",
+        "ja": "執筆者を表示する",
+        "pt-BR": "Mostrar autor"
+      },
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "blog_show_date",
+      "label": {
+        "de": "Datum anzeigen",
+        "en": "Show date",
+        "es": "Mostrar fecha",
+        "fr": "Afficher la date",
+        "it": "Mostra data",
+        "ja": "日付を表示する",
+        "pt-BR": "Exibir data"
+      },
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_view_all",
+      "label": {
+        "de": "'Alle anzeigen' Button anzeigen",
+        "en": "Show 'View all' button",
+        "es": "Mostrar el botón 'Ver todo'",
+        "fr": "Afficher le bouton “Voir tout”",
+        "it": "Mostra il pulsante \"Visualizza tutto\"",
+        "ja": "「すべて表示」ボタンを表示する",
+        "pt-BR": "Exibir botão 'Ver tudo'"
+      },
+      "default": false
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "de": "Blogposts grid",
+        "en": "Blog posts grid",
+        "es": "Entradas del blog grid",
+        "fr": "Articles de blog grid",
+        "it": "Articoli del blog grid",
+        "ja": "ブログ記事",
+        "pt-BR": "Posts do blog grid"
+      },
+      "category": {
+        "de": "Blog",
+        "en": "Blog",
+        "es": "Blog",
+        "fr": "Blog",
+        "it": "Blog",
+        "ja": "ブログ",
+        "pt-BR": "Blog"
+      },
+      "settings": {
+        "blog": "News"
+      }
+    }
+  ]
+}
+{% endschema %}
