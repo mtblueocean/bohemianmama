@@ -79,8 +79,8 @@ function ProductCarousel(){
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-  		//centerMode: true,
-  		//centerPadding: '40px',
+  		    //centerMode: true,
+  		    //centerPadding: '40px',
         }
       }
 
@@ -88,10 +88,6 @@ function ProductCarousel(){
   });
 }
 
-
-
-$('.collapse').collapse();
-
-
- 
-
+if ($('.collapse').length > 0) {
+  $('.collapse').collapse();
+}
