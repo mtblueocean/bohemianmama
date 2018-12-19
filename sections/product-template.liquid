@@ -161,7 +161,7 @@
                   </label>
                   <select class="single-option-selector single-option-selector-{{ section.id }} product-form__input {% unless product.available %}sold-out-dropdown{% endunless %}" id="SingleOptionSelector-{{ forloop.index0 }}" data-index="option{{ forloop.index }}">
                     {% for value in option.values %}
-                      <option value="{{ value | escape }}"{% if option.selected_value == value %} selected="selected"{% endif %}>{% if product.available %}{{ value }}{% else %}{{ value }} - Notify me when in stock{% endif %}</option>
+                      <option value="{{ value | escape }}"{% if option.selected_value == value %} selected="selected"{% endif %}>{% unless product.available %}{{ value }} - Notify me when in stock{% else %}{{ value }}{% endunless %}</option>
                     {% endfor %}
                   </select>
                 </div>

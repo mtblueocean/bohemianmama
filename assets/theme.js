@@ -612,6 +612,15 @@ slate.Variants = (function() {
     this.enableHistoryState = options.enableHistoryState;
     this.currentVariant = this._getVariantFromOptions();
 
+    if (!this.currentVariant.available) {
+      var variantSelectBox = $('.single-option-selector-product-template');
+      var notifyText = ' - Notify me when in stock';
+
+      variantSelectBox.addClass('sold-out-dropdown');
+      variantSelectBox.find('option[value="' + this.currentVariant.option1 + '"]').html(this.currentVariant.option1 + notifyText);
+      variantSelectBox.find('option[value="' + this.currentVariant.option2 + '"]').html(this.currentVariant.option2 + notifyText);
+    }
+
     $(this.singleOptionSelector, this.$container).on(
       'change',
       this._onSelectChange.bind(this)
@@ -695,11 +704,46 @@ slate.Variants = (function() {
       this._updateImages(variant);
       this._updatePrice(variant);
       this._updateSKU(variant);
+      this._updateVariantOpitions(variant);
       this.currentVariant = variant;
 
       if (this.enableHistoryState) {
         this._updateHistoryState(variant);
       }
+    },
+
+    /**
+     * Trigger event when variant option changes
+     *
+     * @param  {object} variant - Currently selected variant
+     * @return {event}  variantOptionChange
+     */
+    _updateVariantOpitions: function(variant) {
+
+      var option1 = variant.option1;
+      var option2 = variant.option2;
+
+      $('.option-unavailable').each(function() {
+        $(this).html($(this).attr('value'));
+        $(this).removeClass('option-unavailable');
+      });
+      if (!variant.available){
+        option1 += ' - Notify me when in stock';
+        option2 += ' - Notify me when in stock';
+        $('option[value="' + variant.option1 + '"]').addClass('option-unavailable');
+        $('option[value="' + variant.option2 + '"]').addClass('option-unavailable');
+        $('option[value="' + variant.option1 + '"]').html(option1);
+        $('option[value="' + variant.option2 + '"]').html(option2);
+
+        $('select.single-option-selector-product-template').addClass('sold-out-dropdown');
+      } else {
+        $('select.single-option-selector-product-template').removeClass('sold-out-dropdown');
+      }
+
+      this.$container.trigger({
+        type: 'variantOptionChange',
+        variant: variant
+      });
     },
 
     /**
