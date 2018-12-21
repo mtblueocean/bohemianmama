@@ -3326,17 +3326,6 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
   @include flex(0 0 100px);
 }
 
-.product-form__input {
-  display: block;
-  width: 100%;
-
-  &.sold-out-dropdown {
-    font-size: 10px;
-    font-style: italic;
-    color: grey;
-  }
-}
-
 .product-form__cart-submit {
   display: block;
   width: 100%;
@@ -6595,3 +6584,82 @@ $toolbar-height-small: 46px;
 .sezzle-button-text.sezzle-left, .afterpay-paragraph{font-size:12px !important;}
 .sezzle-checkout-button-wrapper.sezzle-left{margin-top:10px !important;}
 .product-card .price-item{font-size:14px;/* font-family:"Lato", sans-serif; */ font-weight:400; line-height:1.8;}
+
+// Custom Variant Options SelectBox For Product Page
+.variant-custom-select {
+  position: relative;
+  background-color: #fff;
+  border-bottom: none;
+
+  .selected-option {
+    padding-top: 10px;
+    padding-left: 18px;
+    padding-bottom: 10px;
+    min-height: 44px;
+    color: #000;
+    max-width: 100%;
+    border-radius: 2px;
+    cursor: pointer;
+    border: 1px solid #949494;
+
+    &:after {
+      content: "\f107";
+      font-family: fontawesome;
+      position: absolute;
+      right: 10px;
+      font-size: 18px;
+      color: #666;
+    }
+
+    &.expand {
+      border-bottom: none;
+      &:after {
+        content: "\f106";
+      }
+    }
+  }
+
+  .variant-options {
+    display: none;
+    border: 1px solid #949494;
+    position: absolute;
+    left: 0;
+    top: 44px;
+    width: 100%;
+    background-color: #FFF;
+    z-index: 2;
+  }
+
+  .v-option {
+    position: relative;
+    padding-top: 6px;
+    padding-left: 18px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #CCC;
+    max-width: 100%;
+    cursor: pointer;
+    min-height: 44px;
+    line-height: 2rem;
+
+    label {
+      cursor: pointer;
+      color: #999;
+      font-size: 10px;
+      font-style: italic;
+      margin-bottom: 0;
+      line-height: 1em;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    svg {
+      position: absolute;
+      left: 5px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 10px;
+    }
+  }
+}

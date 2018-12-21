@@ -172,7 +172,7 @@
           "mobile_menu": "mobile",
           "message": true,
           "home_page_only": false,
-          "message_text": "3rd Day of Xmas! Spend $200, Get $25. Spend $500, Get $100. Spend $1,000, Get $250.",
+          "message_text": "Last day for Free Holiday Priority Shipping",
           "message_link": "https:\/\/www.bohemianmama.com\/",
           "color_bg": "#000000",
           "color_text": "#ffffff"
@@ -227,8 +227,8 @@
           "1545064592721": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/12days-xmas3.png",
-              "link": "https:\/\/www.bohemianmama.com\/"
+              "image": "shopify:\/\/shop_images\/bohemian-xmas-clothing.jpg",
+              "link": "shopify:\/\/pages\/the-gift-shop"
             }
           }
         },

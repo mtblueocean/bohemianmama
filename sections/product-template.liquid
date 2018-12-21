@@ -127,7 +127,6 @@
             {% include 'product-price', variant: current_variant %}
             
           </div>
-        
 
           {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
             <div class="product__policies rte">
@@ -159,11 +158,28 @@
                   <label {% if option.name == 'default' %}class="label--hidden" {% endif %}for="SingleOptionSelector-{{ forloop.index0 }}">
                     {{ option.name }}
                   </label>
+                  {% comment %}
                   <select class="single-option-selector single-option-selector-{{ section.id }} product-form__input {% unless product.available %}sold-out-dropdown{% endunless %}" id="SingleOptionSelector-{{ forloop.index0 }}" data-index="option{{ forloop.index }}">
                     {% for value in option.values %}
                       <option value="{{ value | escape }}"{% if option.selected_value == value %} selected="selected"{% endif %}>{% unless product.available %}{{ value }} - Notify me when in stock{% else %}{{ value }}{% endunless %}</option>
                     {% endfor %}
                   </select>
+                  {% endcomment %}
+                  <div class="variant-custom-select custom-single-option-selector-{{ section.id }}" id="SingleOptionSelector-{{ forloop.index0 }}" data-index="option{{ forloop.index }}" data-value="{{ option.selected_value }}">
+                    <div class="selected-option">{{ option.selected_value }}</div>
+                    <ul class="variant-options">
+                      {% for value in option.values %}
+                        <li class="v-option {% if option.selected_value == value %}selected{% endif %}" data-value="{{ value | escape }}">
+                          {% unless product.available %}
+                            {{ value }}
+                            <label class="unavailable-notification">Notify me when in stock</label>
+                          {% else %}
+                            {{ value }}
+                          {% endunless %}
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
                 </div>
               {% endfor %}
             {% endunless %}

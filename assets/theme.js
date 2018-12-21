@@ -605,29 +605,64 @@ slate.Variants = (function() {
    * @param {object} options - Settings from `product.js`
    */
   function Variants(options) {
+    var _this = this;
     this.$container = options.$container;
     this.product = options.product;
     this.singleOptionSelector = options.singleOptionSelector;
+    this.customSingleOptionSelectorWrap = options.customSingleOptionSelectorWrap;
+    this.customSingleOptionSelector = options.customSingleOptionSelector;
     this.originalSelectorId = options.originalSelectorId;
     this.enableHistoryState = options.enableHistoryState;
     this.currentVariant = this._getVariantFromOptions();
-
-    if (!this.currentVariant.available) {
-      var variantSelectBox = $('.single-option-selector-product-template');
-      var notifyText = ' - Notify me when in stock';
-
-      variantSelectBox.addClass('sold-out-dropdown');
-      variantSelectBox.find('option[value="' + this.currentVariant.option1 + '"]').html(this.currentVariant.option1 + notifyText);
-      variantSelectBox.find('option[value="' + this.currentVariant.option2 + '"]').html(this.currentVariant.option2 + notifyText);
-    }
 
     $(this.singleOptionSelector, this.$container).on(
       'change',
       this._onSelectChange.bind(this)
     );
+
+    $(this.customSingleOptionSelector, this.$container).on(
+      'click', function() {
+      $(this).parents(this.customSingleOptionSelectorWrap).attr('data-value', $(this).data('value'));
+      _this._onCustomSelectChange();
+    });
+
+    this._checkUnavailableVariants(this.currentVariant);
   }
 
   Variants.prototype = _.assignIn({}, Variants.prototype, {
+    /**
+     * Render unavailable variants into dropdown.
+     *
+     * @return {array} options - Unavailable variant options
+     */
+    _checkUnavailableVariants: function(currentVariant) {
+      $('.variant-custom-select .v-option').removeClass('available');
+
+      // Get option1 items by selected option2 item.
+      var option1_available_variants = $.map( this.product.variants, function( variant ) {
+        return variant.option2 == currentVariant.option2 ? variant : null;
+      });
+
+      // Get option2 items by selected option1 item.
+      var option2_available_variants = $.map( this.product.variants, function( variant ) {
+        return variant.option1 == currentVariant.option1 ? variant : null;
+      });
+
+      $.each(option1_available_variants, function( index, variant ) {
+        var optionVal = variant.available ? variant.option1 : variant.option1 + '<label class="unavailable-notification">Notify me when in stock</label>';
+        $('.variant-custom-select[data-index="option1"] .v-option[data-value="' + variant.option1 + '"]').html(optionVal).addClass('available');
+      });
+
+      $.each(option2_available_variants, function( index, variant ) {
+        var optionVal = variant.available ? variant.option2 : variant.option2 + '<label class="unavailable-notification">Notify me when in stock</label>';
+        $('.variant-custom-select[data-index="option2"] .v-option[data-value="' + variant.option2 + '"]').html(optionVal).addClass('available');
+      });
+
+      $('.variant-custom-select .v-option:not(.available)').each(function() {
+        $(this).html($(this).data('value') + '<label class="unavailable-notification">Unavailable</label>');
+      });
+    },
+
     /**
      * Get the currently selected options from add-to-cart form. Works with all
      * form input elements.
@@ -636,7 +671,7 @@ slate.Variants = (function() {
      */
     _getCurrentOptions: function() {
       var currentOptions = _.map(
-        $(this.singleOptionSelector, this.$container),
+        $(this.customSingleOptionSelectorWrap, this.$container),
         function(element) {
           var $element = $(element);
           var type = $element.attr('type');
@@ -652,7 +687,7 @@ slate.Variants = (function() {
               return false;
             }
           } else {
-            currentOption.value = $element.val();
+            currentOption.value = $element.attr('data-value');
             currentOption.index = $element.data('index');
 
             return currentOption;
@@ -683,6 +718,33 @@ slate.Variants = (function() {
       });
 
       return found;
+    },
+
+    /**
+     * Event handler for when a variant custom select changes.
+     */
+    _onCustomSelectChange: function() {
+      var variant = this._getVariantFromOptions();
+
+      this.$container.trigger({
+        type: 'variantChange',
+        variant: variant
+      });
+
+      if (!variant) {
+        return;
+      }
+
+      this._updateMasterSelect(variant);
+      this._updateImages(variant);
+      this._updatePrice(variant);
+      this._updateSKU(variant);
+      this.currentVariant = variant;
+      this._checkUnavailableVariants(variant);
+
+      if (this.enableHistoryState) {
+        this._updateHistoryState(variant);
+      }
     },
 
     /**
@@ -2794,6 +2856,8 @@ theme.Product = (function() {
       productThumbsWrapper: '.thumbnails-wrapper',
       saleLabel: '.product-price__sale-label-' + sectionId,
       singleOptionSelector: '.single-option-selector-' + sectionId,
+      customSingleOptionSelectorWrap: '.custom-single-option-selector-' + sectionId,
+      customSingleOptionSelector: '.custom-single-option-selector-' + sectionId + ' .v-option',
       shopifyPaymentButton: '.shopify-payment-button',
       priceContainer: '[data-price]',
       regularPrice: '[data-regular-price]',
@@ -2826,9 +2890,37 @@ theme.Product = (function() {
     this._initImageSwitch();
     this._initAddToCart();
     this._setActiveThumbnail();
+    this._initVariantOptionSelectBox();
   }
 
   Product.prototype = _.assignIn({}, Product.prototype, {
+    _initVariantOptionSelectBox: function() {
+      var $selectedOption = $('.variant-custom-select .selected-option'),
+          $optionItem = $('.variant-options .v-option');
+
+      $selectedOption.on('click', function(event) {
+        event.stopPropagation();
+        $(this).toggleClass('expand');
+        $(this).siblings('.variant-options').slideToggle('fast');
+
+        $(this).parents('.product-form__item').siblings().find('.variant-custom-select .selected-option').removeClass('expand');
+        $(this).parents('.product-form__item').siblings().find('.variant-custom-select .variant-options').slideUp('fast');
+      });
+
+      $optionItem.on('click', function() {
+        var $selectedElem = $(this).parents('.variant-custom-select').find('.selected-option');
+        $selectedElem.html($(this).data('value'));
+        $(this).addClass('selected').siblings().removeClass('selected');
+        $(this).parent().slideUp('fast');
+        $selectedElem.removeClass('expand');
+      });
+
+      $(window).click(function() {
+        $('.variant-custom-select .selected-option').removeClass('expand');
+        $('.variant-custom-select .variant-options').slideUp('fast');
+      });
+    },
+
     _stringOverrides: function() {
       theme.productStrings = theme.productStrings || {};
       $.extend(theme.strings, theme.productStrings);
@@ -2879,6 +2971,8 @@ theme.Product = (function() {
         enableHistoryState:
           this.$container.data('enable-history-state') || false,
         singleOptionSelector: this.selectors.singleOptionSelector,
+        customSingleOptionSelectorWrap: this.selectors.customSingleOptionSelectorWrap,
+        customSingleOptionSelector: this.selectors.customSingleOptionSelector,
         originalSelectorId: this.selectors.originalSelectorId,
         product: this.productSingleObject
       };
