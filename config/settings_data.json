@@ -227,8 +227,8 @@
           "1545506957748": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/bohemian-clothing_8dcf74e7-ac2f-49a6-8ebf-c3ba2fbf680f.jpg",
-              "link": "shopify:\/\/collections\/we-love-spell-mumu"
+              "image": "shopify:\/\/shop_images\/bohemian-style-clothing-and-home-decor.jpg",
+              "link": "shopify:\/\/collections\/bohemian-womens-bestsellers"
             }
           }
         },
@@ -308,7 +308,7 @@
           "1539866522679-0": {
             "type": "image-with-text",
             "settings": {
-              "image": "shopify:\/\/shop_images\/boys-pajamas.jpg",
+              "image": "shopify:\/\/shop_images\/boys-collection.jpg",
               "image_on_right": false,
               "title": "BOYS",
               "content": "From newborn to teens and everything in between. Shop our hand curated boys collection.",
@@ -319,7 +319,7 @@
           "1539866522679-1": {
             "type": "image-with-text",
             "settings": {
-              "image": "shopify:\/\/shop_images\/girls_19e7c15f-816d-4a56-97cb-add3e45bb156.jpg",
+              "image": "shopify:\/\/shop_images\/Girls.jpg",
               "image_on_right": true,
               "title": "GIRLS",
               "content": "From Mommy n' Me, to one-of-a-kind frilly boho dresses, tops + tees, and raglan pants",
