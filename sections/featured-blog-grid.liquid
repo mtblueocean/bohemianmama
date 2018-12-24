@@ -19,80 +19,8 @@
   {% unless blog.articles_count == 0 %}
   <div class="featured_blog_wrap">
     <div class="blog_items">
-      {% for article in blog.articles limit: 3 %}
-      {% if forloop.index == 1 %}
-      <div class="blog_box">
-        <div class="image_block">
-          {{ article | img_url: 'grande', scale: 2 | img_tag: article.title }} 
-        </div>
-        <div class="text_block">
-          {% if section.settings.blog_show_author %}
-          <span class="article__author">{{ 'blogs.article.by_author' | t: author: article.author }}</span>
-          {% endif %}
-
-          {% if section.settings.blog_show_date %}
-          <span class="article__date">
-            {{ article.published_at | time_tag: format: 'month_day_year' }}
-          </span>
-          {% endif %}
-          <h3 class="article__title{% if article.image %} article__title--has-image{% endif %}">
-            <a href="{{ article.url }}">{{ article.title }}</a>
-          </h3>
-          <div class="rte article__grid-excerpt">
-            {% if article.excerpt.size > 0 %}
-            {{ article.excerpt }}
-            {% else %}
-            {{ article.content | strip_html | truncate: 150 }}
-            {% endif %}
-          </div>
-          <a href="{{ article.url }}" class="btn btn-svg btn--secondary btn--small" aria-label="{{ 'blogs.article.read_more_title' | t: title: article.title }}">
-            <svg><rect x="0" y="0" fill="none" width="166" height="45" /></svg>
-            {{ 'blogs.article.read_more' | t }}
-          </a>
-        </div>
-      </div>
-      {% endif %}
-      {% endfor %}
-      {% for article in blog.articles limit: 3 %}
-      {% if forloop.index == 2 %}
-      <div class="blog_box row-reverse">
-        <div class="image_block">
-          {{ article | img_url: 'grande', scale: 2 | img_tag: article.title }} 
-        </div>
-        <div class="text_block">
-          {% if section.settings.blog_show_author %}
-          <span class="article__author">{{ 'blogs.article.by_author' | t: author: article.author }}</span>
-          {% endif %}
-
-          {% if section.settings.blog_show_date %}
-          <span class="article__date">
-            {{ article.published_at | time_tag: format: 'month_day_year' }}
-          </span>
-          {% endif %}
-          <h3 class="article__title{% if article.image %} article__title--has-image{% endif %}">
-            <a href="{{ article.url }}"> {{ article.title }}</a>
-          </h3>
-          <div class="rte article__grid-excerpt">
-            {% if article.excerpt.size > 0 %}
-            {{ article.excerpt }}
-            {% else %}
-            {{ article.content | strip_html | truncate: 150 }}
-            {% endif %}
-          </div>
-          <a href="{{ article.url }}" class="btn btn-svg btn--secondary btn--small" aria-label="{{ 'blogs.article.read_more_title' | t: title: article.title }}">
-            <svg><rect x="0" y="0" fill="none" width="166" height="45" /></svg>
-            {{ 'blogs.article.read_more' | t }}
-          </a>
-        </div>
-      </div>
-      {% endif %}
-      {% endfor %}
-    </div>
-    <div class="blog_items">
-      <div class="blog_box big_box">
-        {% for article in blog.articles limit: 3 %}
-        {% if forloop.index == 3 %}
-        <div class="blog_items">
+      {% for article in blog.articles limit: 2 %}
+        <div class="blog_box {% if forloop.index == 2 %}row-reverse{% endif %}">
           <div class="image_block">
             {{ article | img_url: 'grande', scale: 2 | img_tag: article.title }} 
           </div>
@@ -122,9 +50,41 @@
             </a>
           </div>
         </div>
-        {% endif %}
-        {% endfor %}
-      </div>
+      {% endfor %}
+    </div>
+    <div class="blog_items">
+      {% for article in blog.articles offset: 2 limit: 2 %}
+        <div class="blog_box {% if forloop.index == 2 %}row-reverse{% endif %}">
+          <div class="image_block">
+            {{ article | img_url: 'grande', scale: 2 | img_tag: article.title }} 
+          </div>
+          <div class="text_block">
+            {% if section.settings.blog_show_author %}
+            <span class="article__author">{{ 'blogs.article.by_author' | t: author: article.author }}</span>
+            {% endif %}
+
+            {% if section.settings.blog_show_date %}
+            <span class="article__date">
+              {{ article.published_at | time_tag: format: 'month_day_year' }}
+            </span>
+            {% endif %}
+            <h3 class="article__title{% if article.image %} article__title--has-image{% endif %}">
+              <a href="{{ article.url }}">{{ article.title }}</a>
+            </h3>
+            <div class="rte article__grid-excerpt">
+              {% if article.excerpt.size > 0 %}
+              {{ article.excerpt }}
+              {% else %}
+              {{ article.content | strip_html | truncate: 150 }}
+              {% endif %}
+            </div>
+            <a href="{{ article.url }}" class="btn btn-svg btn--secondary btn--small" aria-label="{{ 'blogs.article.read_more_title' | t: title: article.title }}">
+              <svg><rect x="0" y="0" fill="none" width="166" height="45" /></svg>
+              {{ 'blogs.article.read_more' | t }}
+            </a>
+          </div>
+        </div>
+      {% endfor %}
     </div>
   </div>
   {% else %}
