@@ -172,8 +172,8 @@
           "mobile_menu": "mobile",
           "message": true,
           "home_page_only": false,
-          "message_text": "Last day for Free Holiday Priority Shipping",
-          "message_link": "https:\/\/www.bohemianmama.com\/",
+          "message_text": "Still searching? Let her pick the perfect present. Shop Gift Cards",
+          "message_link": "shopify:\/\/collections\/holiday-gift-cards",
           "color_bg": "#000000",
           "color_text": "#ffffff"
         }
@@ -224,16 +224,16 @@
       "1539770890528": {
         "type": "carousel-slider",
         "blocks": {
-          "1545064592721": {
+          "1545506957748": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/bohemian-xmas-clothing.jpg",
-              "link": "shopify:\/\/pages\/the-gift-shop"
+              "image": "shopify:\/\/shop_images\/bohemian-clothing_8dcf74e7-ac2f-49a6-8ebf-c3ba2fbf680f.jpg",
+              "link": "shopify:\/\/collections\/we-love-spell-mumu"
             }
           }
         },
         "block_order": [
-          "1545064592721"
+          "1545506957748"
         ],
         "settings": {}
       },
