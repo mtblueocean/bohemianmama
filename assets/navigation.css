@@ -176,6 +176,12 @@
   z-index: 1000;
 }
 
+@media screen and (max-width: 992px) and (min-width: 750px) {
+  .navigation-button-toggler {
+    top: -50px;
+  }
+}
+
 .navigation-button-toggler .hamburger-icon {
   width: 20px;
   height: 2px;

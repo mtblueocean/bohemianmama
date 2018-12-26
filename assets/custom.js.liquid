@@ -49,6 +49,15 @@ function CarouselSlider(){
     prevArrow:"<button type='button' class='slick-prev'><img src='{{'arrow_left.png' | asset_url}}'/></button>",
     nextArrow:"<button type='button' class='slick-next'><img src='{{'arrow_right.png' | asset_url}}'/></button>"
   });
+
+  $('.mobile-carousel-slider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    prevArrow:"<button type='button' class='slick-prev'><img src='{{'arrow_left.png' | asset_url}}'/></button>",
+    nextArrow:"<button type='button' class='slick-next'><img src='{{'arrow_right.png' | asset_url}}'/></button>"
+  });
 }
 function ProductCarousel(){
   $('.product_carousel').slick({
