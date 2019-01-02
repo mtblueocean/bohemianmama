@@ -3514,7 +3514,7 @@ theme.init = function() {
     },
     $links: $('a:not([aria-describedby], .product-single__thumbnail)')
   });
-
+  
   // Search Overlay Effect on mobile.
   $('.show-search-overlay').on('click', function() {
     $('.mobile-search-overlay').addClass('active');

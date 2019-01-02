@@ -235,7 +235,7 @@
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 3% 15px;
+    padding: 3% 15px 0;
     .article__title > a:hover{text-decoration:none;}
     .blog_items{
       width: 50%; 
@@ -639,7 +639,7 @@ a:active,a:focus,button:active,button:focus{outline:0px;}
   .collection-header h2{width:100%;}
   .instagram-wrap h2{font-size:30px;}
   
-  .main-content{ padding-top:129px !important; }
+  .main-content{padding-top:129px !important;}
   div[data-section-id="header"] {position:fixed;z-index:200; top:0; width:100%;}
 }
 .mobile-only{
@@ -661,20 +661,17 @@ p.coldout {
 }
 p.sle
  {
-  z-index: 9;
-  position: absolute;
-  background: #f2dccf;
-  color: #656464;
-  width: 46px;
-  right:0;
-  text-align: center;
-  padding: 16px 3px;
-  line-height: 13px;
-  text-transform: unset;
-  border-radius: 50%;
-  // background: url({{'sale-icon.png' | asset_url }});
-  // background-size: contain;
-  // height: 46px;
+   	z-index: 9;
+    position: absolute;
+    background: #f2dccf;
+    color: #656464;
+    width: 46px;
+    right:0;
+    text-align: center;
+    padding: 16px 3px;
+    line-height: 13px;
+    text-transform: unset;
+    border-radius: 50%;
 }
 
 .visible_mobile_menu{display:none;}
@@ -689,6 +686,7 @@ label.currency-picker__wrapper{
 
   @media screen and (max-width: 484px) {
     top: 16px;
+    right: 0;
   }
 }
 

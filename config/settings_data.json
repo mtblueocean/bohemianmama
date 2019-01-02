@@ -172,8 +172,8 @@
           "mobile_menu": "mobile",
           "message": true,
           "home_page_only": false,
-          "message_text": "Still searching? Let her pick the perfect present. Shop Gift Cards",
-          "message_link": "shopify:\/\/collections\/holiday-gift-cards",
+          "message_text": "New Year, New You. 25% OFF FLASH SALE. Use code NEWYEAR19 🎉(exclusions apply)",
+          "message_link": "shopify:\/\/collections\/sale",
           "color_bg": "#000000",
           "color_text": "#ffffff"
         }
@@ -224,16 +224,17 @@
       "1539770890528": {
         "type": "carousel-slider",
         "blocks": {
-          "1545506957748": {
+          "1545832531044": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/bohemian-style-clothing-and-home-decor.jpg",
-              "link": "shopify:\/\/collections\/bohemian-womens-bestsellers"
+              "image": "shopify:\/\/shop_images\/boho-style.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/bye-2018-banner.jpg",
+              "link": "https:\/\/www.bohemianmama.com\/collections\/sale"
             }
           }
         },
         "block_order": [
-          "1545506957748"
+          "1545832531044"
         ],
         "settings": {}
       },
@@ -245,11 +246,11 @@
             "settings": {
               "enable_image": true,
               "swap_image": true,
-              "image": "shopify:\/\/shop_images\/organic_childrens_pajamas_skylar_luna.jpg",
-              "title": "GIFTS FOR LITTLES",
-              "text": "<p>Shop gifts for babies, gifts for kids, and gifts for Teens with the coolest gear from Rylee + Cru, Skylar Luna, LouLou Lolipop, Omamimini, Quincy Mae and more.<\/p>",
+              "image": "shopify:\/\/shop_images\/Show_Me_Your_Mumu_Sweater_1024x1024_2x_6edbf8e1-a7db-46a1-817d-284c19c589f1.jpg",
+              "title": "COZY KNITS",
+              "text": "<p>Shop cozy sweaters and outerwear for women with this season's must haves. We'll keep you warm through the rest of winter with gorgeous sweaters from Show Me Your Mumu, Free People and Raga.&nbsp;<\/p>",
               "button_label": "SHOP NOW",
-              "button_link": "https:\/\/www.bohemianmama.com\/collections\/gifts-for-littles"
+              "button_link": "shopify:\/\/collections\/womens-sweaters-outerwear"
             }
           },
           "1539774767765-1": {
@@ -257,11 +258,11 @@
             "settings": {
               "enable_image": true,
               "swap_image": false,
-              "image": "shopify:\/\/shop_images\/Screen_Shot_2018-12-12_at_10.40.41_AM.png",
-              "title": "GIFTS FOR HER",
-              "text": "<p>Shop one-of-a-kind gifts for her from Spell, Show Me Your Mumu, Freepeople, Cleobella and more.<\/p>",
+              "image": "shopify:\/\/shop_images\/free-people-wrap-dress_3c3b1712-4fa9-433c-b36b-b503feca5534.jpeg",
+              "title": "HOTTEST DRESSES",
+              "text": "<p>Shop the hottest dresses and rompers from Arnhem, Show Me Your Mumu, and Free People. Whether you're in the mood for glitterati or flowy floral, we've got you covered.&nbsp;<\/p>",
               "button_label": "SHOP NOW",
-              "button_link": "https:\/\/www.bohemianmama.com\/collections\/gifts-for-her"
+              "button_link": "shopify:\/\/collections\/womens-dresses"
             }
           },
           "1539774767765-2": {
@@ -269,11 +270,11 @@
             "settings": {
               "enable_image": true,
               "swap_image": true,
-              "image": "shopify:\/\/shop_images\/bohemian_home_decor_flour_poufs_for_home_real_leather.jpg",
-              "title": "GIFTS FOR HOME",
-              "text": "<p>Shop the perfect gifts for your home, gifts for a hostess or gifts for your in-laws with cozy blankets, ornaments, pillows, and candles.<\/p>\n<p>&nbsp;<\/p>\n<p><\/p>",
+              "image": "shopify:\/\/shop_images\/Resort_Wear.jpg",
+              "title": "RESORT READY",
+              "text": "<p>Warm sand and ocean waters are calling and we have everything you need to make a splash. Shop this season's must have bikinis, one pieces, cover ups, dresses, accessories and more.<\/p>\n<p><\/p>",
               "button_label": "SHOP NOW",
-              "button_link": "https:\/\/www.bohemianmama.com\/collections\/gifts-for-home"
+              "button_link": "shopify:\/\/collections\/resort-ready"
             }
           }
         },
@@ -369,12 +370,12 @@
       "1540210764690": {
         "type": "collection",
         "settings": {
-          "title": "Stocking Stuffers",
+          "title": "DENIM EDIT",
           "enable_carousel": true,
           "desktopimage": "",
           "mobileimage": "",
           "arrow_position": "middle",
-          "collection": "stocking-stuffers",
+          "collection": "womens-denim",
           "grid": 5,
           "rows": 3,
           "show_vendor": false,
@@ -631,6 +632,7 @@
       },
       "1544898153341": {
         "type": "collection",
+        "disabled": true,
         "settings": {
           "title": "Holiday Gift Cards",
           "enable_carousel": true,
