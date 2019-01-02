@@ -3818,7 +3818,7 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
 }
 
 .cart__image {
-  max-height: 95px;
+  max-height: 150px;
 }
 
 .cart__image-wrapper div {
@@ -3827,6 +3827,18 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
 
   @include media-query($medium-up) {
     padding-right: $section-spacing-small;
+  }
+}
+
+.cart__remove {
+  border: none;
+  text-decoration: underline;
+  padding-left: 0;
+  font-weight: normal;
+  text-transform: initial;
+
+  &:hover {
+    text-decoration: underline;
   }
 }
 
@@ -3975,6 +3987,8 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
     
     .amazon-payments-pay-button {
       margin-bottom: 10px;
+      margin-right: 0;
+      margin-top: 10px;
     }
   }
 }
@@ -6675,5 +6689,85 @@ $toolbar-height-small: 46px;
       transform: translateY(-50%);
       width: 10px;
     }
+  }
+}
+
+.mobile-search-overlay {
+  display: none;
+  &.active {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    z-index: 20001;
+  }
+
+  .overlay-container {
+    width: 67%;
+    min-width: 300px;
+    margin: 36px auto 0;
+
+    form.search {
+      position: relative;
+      max-width: 100%;
+
+      label {
+        font-size: 16px;
+      }
+
+      input {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #000;
+        margin: 0;
+        width: 100%;
+        font-size: 14px;
+        color: #000;
+        padding-left: 0;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      .search-bar__submit, .search-header__submit {
+        right: 0;
+        top: auto;
+        bottom: 12px;
+        height: 18px;
+        width: 18px;
+        pointer-events: initial;
+      }
+
+      .clear-search {
+        right: 35px;
+        position: absolute;
+        display: block;
+        bottom: 8px;
+        background-color: #eee;
+        border-radius: 50%;
+        width: 18px;
+        height: 18px;
+        color: #999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+.cart__price-wrapper {
+  span.was {
+    font-weight: 600;
+  }
+  span.now {
+    font-weight: 800;
   }
 }

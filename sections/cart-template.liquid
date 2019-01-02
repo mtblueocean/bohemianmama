@@ -15,6 +15,11 @@
         </thead>
         <tbody>
           {% for item in cart.items %}
+            {% if item.variant.title %}
+              {%- assign compare_at_price = item.variant.compare_at_price -%}
+            {% else %}
+              {%- assign compare_at_price = 1999 -%}
+            {% endif %}
             <tr class="cart__row border-bottom line{{ forloop.index }}{% if forloop.first %} border-top{% endif %}">
               <td class="cart__image-wrapper">
                 <div>
@@ -72,18 +77,21 @@
                 </p>
               </td>
               <td class="cart__price-wrapper">
-                {{ item.price | money }}
+                <span class="was">Was:</span> <span class="was">{{ compare_at_price | money }}</span> <br/>
+                <span class="now">Now:</span> <span class="now">{{ item.price | money }}</span>
 
                 {% for discount in item.discounts %}
                   <div class="cart-item__discount medium-up--hide">{{ discount.title }}</div>
                 {% endfor %}
 
+                {% comment %}
                 <div class="cart__edit medium-up--hide">
                   <button type="button" class="btn btn--secondary btn--small js-edit-toggle cart__edit--active" data-target="line{{ forloop.index }}" aria-label="{{ 'cart.general.edit' | t }} {{ item.product.title }}" aria-expanded="false">
                     <span class="cart__edit-text--edit">{{ 'cart.general.edit' | t }}</span>
                     <span class="cart__edit-text--cancel">{{ 'cart.general.cancel' | t }}</span>
                   </button>
                 </div>
+                {% endcomment %}
               </td>
               <td class="text-right small--hide">
                 <div class="cart__qty">

@@ -48,15 +48,17 @@
         }
       </style>
 
+      {% if settings.show_multiple_currencies %}{% include 'currency-picker' %}{% endif %}
+
       {% if section.settings.message_link == blank %}
         <div class="announcement-bar">
       {% else %}
         <a href="{{ section.settings.message_link }}" class="announcement-bar announcement-bar--link">
       {% endif %}
 
-        <p class="announcement-bar__message">{% if section.settings.message %}{{ section.settings.message_text }} {% endif %}
-          {% if settings.show_multiple_currencies %}{% include 'currency-picker' %}{% endif %}
-          </p>
+      <p class="announcement-bar__message">{% if section.settings.message %}{{ section.settings.message_text }} {% endif %}
+        {% if settings.show_multiple_currencies %}{% include 'currency-picker' %}{% endif %}
+      </p>
 
       {% if section.settings.message_link == blank %}
         </div>
@@ -195,8 +197,23 @@
 					</div>
 					<div class="navigation-body scroll-momentum">
 						<div class="navigation-body-header">
+              <span class="show-search-overlay">{% include 'icon-search' %}</span>
 							<span class="navigation-body-close-button">✕</span>
 						</div>
+            <div class="mobile-search-overlay">
+              <div class="overlay-container">
+                <span class="navigation-body-close-button close-search-overlay">✕</span>
+                <form action="/search" method="get" class="search-header search" role="search">
+                  <label for="q">Search</label>
+                  <input type="text" placeholder="What are you looking for?" name="q" value="{{ search.terms | escape }}"  />
+                  <input type="hidden" name="type" value="product" />
+                  <span class="clear-search">✕</span>
+                  <button class="search-header__submit search__submit btn--link site-header__icon" type="submit">
+                    {% include 'icon-search' %}
+                  </button>
+                </form>
+              </div>
+            </div>
 						<ul class="navigation-menu">
               {% for link in linklists[section.settings.mobile_menu].links %}
                 {% assign child_list_handle = link.title | handle %}

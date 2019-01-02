@@ -3515,6 +3515,21 @@ theme.init = function() {
     $links: $('a:not([aria-describedby], .product-single__thumbnail)')
   });
 
+  // Search Overlay Effect on mobile.
+  $('.show-search-overlay').on('click', function() {
+    $('.mobile-search-overlay').addClass('active');
+    $('.mobile-search-overlay form.search input[type="text"]').val('');
+  });
+
+  $('.close-search-overlay').on('click', function() {
+    $('.mobile-search-overlay').removeClass('active');
+    $('.mobile-search-overlay form.search input[type="text"]').val('');
+  });
+
+  $('.clear-search').on('click', function() {
+    $('.mobile-search-overlay form.search input[type="text"]').val('');
+  });
+
   theme.FormStatus.init();
 };
 
