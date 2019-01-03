@@ -202,10 +202,9 @@
       .text_block{
         text-align:center;
         h3{
-          // font-family: 'NOVA';
-          // font-weight: 400;
+          font-family: 'NOVA';
+          font-weight: 400;
           letter-spacing: 0.1em;
-          font-size: 24px;
         }
         p{
           font-size: 12px;
@@ -335,10 +334,9 @@
           color: #616060;
         }
         h3{
-          // font-family: 'NOVA';
-          // font-weight: 400;
+          font-family: 'NOVA';
+          font-weight: 400;
           letter-spacing: 0.1em;
-          font-size: 24px;
         }
         .article__grid-excerpt{
           font-size: 12px;
@@ -679,7 +677,13 @@ p.sle
 .visible_mobile_menu{display:none;}
 
 
-.main-content{padding-top:10px;}
+.main-content{
+  padding-top:10px;
+  padding-bottom: 10px;
+  .template-index & {
+	padding-bottom: 0;
+  }
+}
 label.currency-picker__wrapper{
   position: absolute;
   right: 10px;

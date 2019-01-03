@@ -2636,7 +2636,7 @@ window.theme = window.theme || {};
 theme.HeaderSection = (function() {
   function Header() {
     theme.Search.init();
-
+    
     $('form#create_customer').on('submit', function (event) {
       var $mcForm = $(this);
       if ($mcForm.find('input[name=mailchimp]:checked').length > 0) {

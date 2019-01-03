@@ -172,8 +172,8 @@
           "mobile_menu": "mobile",
           "message": true,
           "home_page_only": false,
-          "message_text": "New Year, New You. 25% OFF FLASH SALE. Use code NEWYEAR19 🎉(exclusions apply)",
-          "message_link": "shopify:\/\/collections\/sale",
+          "message_text": "Get Resort Ready with an Extra 20% Off All Resort Styles!",
+          "message_link": "shopify:\/\/collections\/bohemian-resort-swim",
           "color_bg": "#000000",
           "color_text": "#ffffff"
         }
@@ -227,9 +227,9 @@
           "1545832531044": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/boho-style.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/bye-2018-banner.jpg",
-              "link": "https:\/\/www.bohemianmama.com\/collections\/sale"
+              "image": "shopify:\/\/shop_images\/Resort-banner.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/resort-banner-mobile.jpg",
+              "link": "shopify:\/\/collections\/bohemian-resort-swim"
             }
           }
         },
