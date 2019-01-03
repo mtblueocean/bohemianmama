@@ -290,6 +290,7 @@
       "last_name": "Last Name",
       "email": "Email",
       "password": "Password",
+      "mailchimp": "Get early access to flash sales, giveaways, and free shipping promotions",
       "submit": "Create"
     }
   },

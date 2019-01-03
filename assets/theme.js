@@ -2636,6 +2636,35 @@ window.theme = window.theme || {};
 theme.HeaderSection = (function() {
   function Header() {
     theme.Search.init();
+
+    $('form#create_customer').on('submit', function (event) {
+      var $mcForm = $(this);
+      if ($mcForm.find('input[name=mailchimp]:checked').length > 0) {
+        var ajaxUrl = 'https://BohemianMama.us12.list-manage.com/subscribe/post?u=1e7fdbd00315e64196e0d7c76&amp;id=4d4cf80b0f';
+        var formData = {
+          FNAME: $mcForm.find('input#FirstName').val(),
+          LNAME: $mcForm.find('input#LastName').val(),
+          EMAIL: $mcForm.find('input#Email').val()
+        };
+
+        $.ajax({
+          type: 'GET',
+          url: ajaxUrl.replace('/post?', '/post-json?') + '&c=?',
+          data: formData,
+          cache: false,
+          dataType: 'json',
+          contentType: 'application/json; charset=utf-8',
+          error: function(err) {
+            alert('Could not connect to the registration server. Please try again later.');
+          },
+          success: function(response) {
+            console.log(response.msg);
+          }
+        });
+      }
+
+      return true;
+    });
   }
 
   Header.prototype = _.assignIn({}, Header.prototype, {

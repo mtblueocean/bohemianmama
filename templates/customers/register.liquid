@@ -25,6 +25,8 @@
           <label for="CreatePassword">{{ 'customer.register.password' | t }}</label>
           <input type="password" name="customer[password]" id="CreatePassword" class="{% if form.errors contains 'password' %} input--error{% endif %}">
 
+          <input type="checkbox" name="mailchimp" checked> {{ 'customer.register.mailchimp' | t }}
+
           <p class="text-center">
             <input type="submit" value="{{ 'customer.register.submit' | t }}" class="btn">
           </p>
