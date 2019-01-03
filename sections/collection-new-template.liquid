@@ -13,6 +13,17 @@
       {% endfor %}
     </ol>
   </nav>
+  <div class="product-top-images">
+    {% for block in section.blocks %}
+      {% if block.type == 'text' %}
+        <div class="product-item">
+          <a href="{{ block.settings.product_link }}">
+            <img src="{{ block.settings.product_image | img_url: 'master' }}">
+          </a>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
   <div class="collection-wrap">
     <div class="collection_sidebar">
       <a href="javascript:;" class="btn btn-primary btn-dark mobile_Toggle visible-xs">Filters</a>
@@ -264,6 +275,22 @@
   ],
   "blocks": [
     {
+      "type": "text",
+      "name": "Top Product Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "product_image",
+          "label": "Product Image"
+        },
+        {
+          "type": "url",
+          "id": "product_link",
+          "label": "Product Link"
+        }
+      ]
+    },
+    {
       "type": "image",
       "name": "Collection filter",
       "settings": [
@@ -283,6 +310,6 @@
         }
       ]
     }
-  ] 
+  ]
 }
 {% endschema %}
