@@ -1,0 +1,33 @@
+<div class="full-width-wrapper" style="background-image: url('{{ section.settings.subscribe_form_bg | img_url: 'master' }}')">
+  <div class="subscribe-form">
+    <div class="section-header text-center">
+      <h1>{{ page.title }}</h1>
+    </div>
+
+    <form action="#" onsubmit="return false;" id="subscribe_form">
+      <p>
+        <input class="form-control" type="email" name="email" placeholder="Email Address *" required>
+      </p>
+      <p>
+        <input class="form-control" type="text" name="fname" placeholder="First Name">
+      </p>
+      <p>
+        <input class="btn form-control" type="submit" value="Submit">
+      </p>
+      <p class="subscribe-msg alert-success"></p>
+    </form>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Subscribe Form",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "subscribe_form_bg",
+      "label": "Background Image"
+    }
+  ]
+}
+{% endschema %}

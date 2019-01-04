@@ -2665,6 +2665,35 @@ theme.HeaderSection = (function() {
 
       return true;
     });
+
+    $('form#subscribe_form').on('submit', function (event) {
+      var $mcForm = $(this);
+      var ajaxUrl = 'https://BohemianMama.us12.list-manage.com/subscribe/post?u=1e7fdbd00315e64196e0d7c76&amp;id=1cd78efd14';
+      var formData = {
+        FNAME: $mcForm.find('input[name=fname]').val(),
+        EMAIL: $mcForm.find('input[name=email]').val()
+      };
+
+      $.ajax({
+        type: 'GET',
+        url: ajaxUrl.replace('/post?', '/post-json?') + '&c=?',
+        data: formData,
+        cache: false,
+        dataType: 'json',
+        contentType: 'application/json; charset=utf-8',
+        error: function(err) {
+          alert('Could not connect to the registration server. Please try again later.');
+        },
+        success: function(response) {
+          console.log(response.msg);
+          $mcForm.find('.subscribe-msg').html(response.msg);
+
+          setTimeout(function() {
+            $mcForm.find('.subscribe-msg').html('');
+          }, 2000)
+        }
+      });
+    });
   }
 
   Header.prototype = _.assignIn({}, Header.prototype, {
