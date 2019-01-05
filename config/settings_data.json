@@ -668,7 +668,7 @@
           "1546544750518": {
             "type": "text",
             "settings": {
-              "product_image": "shopify:\/\/shop_images\/Bohemian_Mama_-_Adult_-_Women_-_Dresses_-_Show_Me_Your_Mumu_-_Iggy_Dress_Frosty_Beaded_Sequins_2.jpg",
+              "product_image": "shopify:\/\/shop_images\/phi-phi-islands-thailand.jpg",
               "product_link": ""
             }
           },
@@ -714,6 +714,12 @@
           "rows": 30,
           "show_collection_image": false,
           "enable-filters": true
+        }
+      },
+      "subscribe-form": {
+        "type": "subscribe-form",
+        "settings": {
+          "subscribe_form_bg": "shopify:\/\/shop_images\/background.png"
         }
       }
     },
