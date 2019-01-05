@@ -3349,7 +3349,8 @@ theme.Product = (function() {
   function _enableZoom(el) {
     var zoomUrl = $(el).data('zoom');
     $(el).zoom({
-      url: zoomUrl
+      url: zoomUrl,
+      magnify: 2
     });
   }
 
