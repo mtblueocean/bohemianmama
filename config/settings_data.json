@@ -172,7 +172,7 @@
           "mobile_menu": "mobile",
           "message": true,
           "home_page_only": false,
-          "message_text": "New Arrivals for 2019 with FREE Shipping on orders over $150",
+          "message_text": "Shop New Arrivals for 2019 with FREE Shipping on Orders Over $150 or More.",
           "message_link": "shopify:\/\/collections\/new-bohemian-clothing-for-women-and-children",
           "color_bg": "#000000",
           "color_text": "#ffffff"
@@ -737,7 +737,39 @@
       "subscribe-form": {
         "type": "subscribe-form",
         "settings": {
-          "subscribe_form_bg": "shopify:\/\/shop_images\/shopping-spree.jpg"
+          "heading": "Enter To Win",
+          "description": "Feeling Lucky? \nEnter to win a $200 shopping spree by completing the form below. Winners will be announced Feb 1st via email. One entry per person. Shipping fees apply.",
+          "subscribe_form_bg": "shopify:\/\/shop_images\/Uruguay.jpg"
+        }
+      },
+      "collection-template-new-arrivals": {
+        "type": "collection-template-new-arrivals",
+        "blocks": {
+          "1546890796765": {
+            "type": "image",
+            "settings": {
+              "sort-dropdown-a-check": true,
+              "filter1heading": "Type",
+              "sort_a": "Dresses, Tops + Tees, Bottoms, Sweaters, Skirts, Holiday, Jumpsuits + Rompers, Jewelry, Pajamas, Skirts, Swimwear, Maternity, Skincare, Candles, Ornaments, Pillows, Wall Art, Swaddles, Quilts, Bibs, Towels, Crib Sheets, Throws, Belts, Fragrance, Kimonos, Fedoras, Beanies, Berets, Sailor Hats, Boater Hats, Trucker Hats, Sun Hats, Headbands,  Sunglasses, Hats, Flats, Platforms, Slides, Boots, Sneakers, Sandals, Clogs, Mules, Clutches, Crossbody Bags, Weekenders, Backpacks + Messengers, Totes, Top Handle Bags, Bag Accessories, Earrings, Necklaces, Chokers, Bracelets, Rings, Bikini Tops, Bikini Bottoms, One Pieces, Sarongs + Wraps, Denim, Bells, Pants, Mini Skirts, Midi Skirts, Maxi Skirts, Shorts, Maxi Dresses, Midi Dresses, Tees, Tunics, Shirts, Crop Tops, Blouses, Graphic Tees, Camis + Tanks, Thermals + Pullovers + Henleys, Intimates, Greeting Cards, Nail Polish, Mini Dresses, Day Dresses, Party Dresses, Printed Dresses, White Dresses, Black Dresses, Sweater Dresses, Knit Dresses, Sets, Sweatshirts, Pullovers, Cardigans, Tunics, Turtlenecks, Sweater Jackets, Statement Sweaters, Jumpsuits, Rompers, Maternity Dresses, Denim Jackets, Moto Jackets, Blazers, Statement Jackets, Military Jackets, Faux Fur + Vegan Leather, Maxi Jackets + Dusters, Lightweight Jackets, Cleansers, Moisturizers, Oils + Serums, Eye Creams, Scrubs + Exfoliators, Masks, Toners + Face Mists, Essential Oils, Bath + Shower, Perfumes, Room Sprays,  Onesies, Baby Pants, Maternity Swim, Kids Swim"
+            }
+          },
+          "1546890815359": {
+            "type": "image",
+            "settings": {
+              "sort-dropdown-a-check": false,
+              "filter1heading": "Brand",
+              "sort_a": "417 Press,Ace of Something,Albetta,Alimrose Australia,Allia,ASH,Auguste the Label,Arnhem,Beach Riot,Bersuse,Blabla Kids,Blue Life,Canyon Leaf,Chaser,Chaser Kids,Chasing Unicorns,Cleobella,Courtney and The Babes,Coveted Things,Deco Miami,Dazey LA,Dolce Vita,Ettika,Fiona Walker,Five and Two,Flynn Skye,Free People,Full Unicorn,Glitter & Spice,Grom Squad,Handloom,Harlow Jade,Henny and Coco,House of Lloyd,Innkas,iiixkids Apparel,JaxKelly,Jen's Pirate Booty,Jolie,Junk Food Clothing,Kinsley Armelle,Kita Dua,Kivari,Lack of Color,Lilya,Little Shop of Oils,Lovestrength,Lost + Wander,Loulou LOLLIPOP,Madeleine Maternity,Mia Shoes,Miki Miette,Mer St. Barth,Moon Water Co.,Mother Denim,Mother Trucker & Co.,Mushmina,Novella Royale,Omamimini,Ondade Mar,One Hundred Eighty Degrees,Pez D'Or,Quay,Quincy Mae,Raga,Red Carter,Route508,Rylee and Cru,Rubyyaya,Stillwater,Sticks + Stones,Spiritual Gangster,Spell &,The Gypsy,Somedays Lovin',So Nikki,Snapper Rock,Skylar Luna,Show Me Your Mumu,Shilla The Label,The River Haze,Tiare Hawaii,Tigerlily,Tori Praver,Tulle & Batiste,Wish"
+            }
+          }
+        },
+        "block_order": [
+          "1546890796765",
+          "1546890815359"
+        ],
+        "settings": {
+          "rows": 30,
+          "show_collection_image": false,
+          "enable-filters": true
         }
       }
     },
