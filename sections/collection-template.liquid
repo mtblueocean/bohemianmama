@@ -166,7 +166,18 @@
 
         {% for product in collection.products %}
         {% capture wrapper_id %}ProductCardImageWrapper-{{ section.id }}-{{ product.id }}{% endcapture %}
-        <div class=" product-card card-new">
+
+        {% if collection.title == "NEW ARRIVALS FOR WOMEN" %}
+          {% assign date_published = product.published_at | date:'%s' %}
+          {% assign date_now = 'now' | date:'%s' %}
+          {% assign date_difference = date_now | minus: date_published %}
+
+          {% if date_difference > 2592000 %}
+            {% break %}
+          {% endif %}
+        {% endif %}
+
+        <div class="product-card card-new">
           <a class="grid-view-item__link grid-view-item__image-container full-width-link" href="{{ product.url | within: collection }}" tabindex="0">
             <span class="visually-hidden">{{product.title}}</span>
           </a>

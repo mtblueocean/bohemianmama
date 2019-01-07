@@ -172,8 +172,8 @@
           "mobile_menu": "mobile",
           "message": true,
           "home_page_only": false,
-          "message_text": "Get Resort Ready with an Extra 20% Off All Resort Styles!",
-          "message_link": "shopify:\/\/collections\/bohemian-resort-swim",
+          "message_text": "New Arrivals for 2019 with FREE Shipping on orders over $150",
+          "message_link": "shopify:\/\/collections\/new-bohemian-clothing-for-women-and-children",
           "color_bg": "#000000",
           "color_text": "#ffffff"
         }
@@ -227,14 +227,23 @@
           "1545832531044": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Resort-banner.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/resort-banner-mobile.jpg",
-              "link": "shopify:\/\/collections\/bohemian-resort-swim"
+              "image": "shopify:\/\/shop_images\/NEW-SUNNIES.gif",
+              "mobile_image": "",
+              "link": "shopify:\/\/collections\/new-bohemian-clothing-for-women-and-children"
+            }
+          },
+          "1546837163858": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/FortheKids_1500x750_01.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/FortheKids_1500x750_01.jpg",
+              "link": "shopify:\/\/collections\/kids"
             }
           }
         },
         "block_order": [
-          "1545832531044"
+          "1545832531044",
+          "1546837163858"
         ],
         "settings": {}
       },
@@ -668,36 +677,44 @@
           "1546544750518": {
             "type": "text",
             "settings": {
-              "product_image": "shopify:\/\/shop_images\/phi-phi-islands-thailand.jpg",
-              "product_link": ""
-            }
-          },
-          "1546544816224": {
-            "type": "text",
-            "settings": {
-              "product_image": "shopify:\/\/shop_images\/free-people-wrap-dress_3c3b1712-4fa9-433c-b36b-b503feca5534.jpeg",
-              "product_link": ""
+              "product_image": "shopify:\/\/shop_images\/mini_461d21c6-bc2d-4141-bbb2-ebf5045997c5.jpg",
+              "product_link": "shopify:\/\/collections\/mini-dresses-boho"
             }
           },
           "1546544826908": {
             "type": "text",
             "settings": {
-              "product_image": "shopify:\/\/shop_images\/sayulita-header.jpg",
-              "product_link": ""
+              "product_image": "shopify:\/\/shop_images\/midi-dresses.jpg",
+              "product_link": "shopify:\/\/collections\/midi-dresses"
             }
           },
           "1546544840386": {
             "type": "text",
             "settings": {
-              "product_image": "shopify:\/\/shop_images\/chiang-mai-thailand.jpg",
-              "product_link": ""
+              "product_image": "shopify:\/\/shop_images\/wrap-dresses.jpg",
+              "product_link": "shopify:\/\/collections\/wrap-dresses"
             }
           },
           "1546544850955": {
             "type": "text",
             "settings": {
-              "product_image": "shopify:\/\/shop_images\/Koh-Tao-Thailand.jpg",
-              "product_link": ""
+              "product_image": "shopify:\/\/shop_images\/Tunic-Dresses.jpg",
+              "product_link": "shopify:\/\/collections\/tunic-dresses"
+            }
+          },
+          "1546834066621": {
+            "type": "image",
+            "settings": {
+              "sort-dropdown-a-check": false,
+              "filter1heading": "",
+              "sort_a": ""
+            }
+          },
+          "1546834080909": {
+            "type": "text",
+            "settings": {
+              "product_image": "shopify:\/\/shop_images\/maxi-dresses.jpg",
+              "product_link": "shopify:\/\/collections\/maxi-dresses"
             }
           }
         },
@@ -705,10 +722,11 @@
           "1546544712724",
           "1546544727489",
           "1546544750518",
-          "1546544816224",
           "1546544826908",
           "1546544840386",
-          "1546544850955"
+          "1546544850955",
+          "1546834066621",
+          "1546834080909"
         ],
         "settings": {
           "rows": 30,
@@ -719,7 +737,7 @@
       "subscribe-form": {
         "type": "subscribe-form",
         "settings": {
-          "subscribe_form_bg": "shopify:\/\/shop_images\/background.png"
+          "subscribe_form_bg": "shopify:\/\/shop_images\/shopping-spree.jpg"
         }
       }
     },
