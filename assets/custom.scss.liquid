@@ -12,6 +12,18 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Northwell';
+  src: url('{{ "Northwell.eot" | asset_url }}');
+  src: url('{{ "Northwell.eot" | asset_url }}?#iefix') format('embedded-opentype'),
+    url('{{ "Northwell.woff2" | asset_url }}') format('woff2'),
+    url('{{ "Northwell.woff" | asset_url }}') format('woff'),
+    url('{{ "Northwell.ttf" | asset_url }}') format('truetype'),
+    url('{{ "Northwell.svg" | asset_url }}#Northwell') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /*-=-=-=-=-=Custom-CSS-=-=-=-=*/
 .full-width-wrapper {
   display: flex;
@@ -43,10 +55,24 @@
 
   h1 {
     color: #FFF;
+    font-family: 'Northwell';
+    font-size: 80px;
+    letter-spacing: 10px;
+    margin-bottom: 0;
+
+    @media screen and (max-width: 835px) {
+      font-size: 70px;
+    }
+
+    @media screen and (max-width: 484px) {
+      font-size: 40px;
+      font-weight: bold;
+    }
   }
 
   p {
     margin-bottom: 10px;
+    color: #FFF;
   }
 
   input {

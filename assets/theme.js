@@ -2686,7 +2686,7 @@ theme.HeaderSection = (function() {
         },
         success: function(response) {
           console.log(response.msg);
-          $mcForm.find('.subscribe-msg').html(response.msg);
+          $mcForm.find('.subscribe-msg').html('Thanks for entering');
 
           setTimeout(function() {
             $mcForm.find('.subscribe-msg').html('');

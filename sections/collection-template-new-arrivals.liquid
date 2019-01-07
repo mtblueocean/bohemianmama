@@ -1,8 +1,18 @@
 
 {%- assign limit = section.settings.rows -%}
+{%- assign products_count = 0 -%}
 
+{% for product in collection.products %}
+  {% assign date_published = product.published_at | date:'%s' %}
+  {% assign date_now = 'now' | date:'%s' %}
+  {% assign date_difference = date_now | minus: date_published %}
 
-{% paginate collection.products by limit %}
+  {% if date_difference > 2592000 %}
+    {% continue %}
+  {% endif %}
+  {% assign products_count = products_count | plus: 1 %}
+{% endfor %}
+
 <div class="page-width">
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
@@ -124,7 +134,7 @@
           {{tag}}  
           {% endif %}
           {% endfor %}
-          ({{ collection.products_count }})</h2>
+          ({{ products_count }})</h2>
 
         <div class="collection_filter_dropdwon">
 
@@ -166,6 +176,15 @@
 
         {% for product in collection.products %}
         {% capture wrapper_id %}ProductCardImageWrapper-{{ section.id }}-{{ product.id }}{% endcapture %}
+
+          {% assign date_published = product.published_at | date:'%s' %}
+          {% assign date_now = 'now' | date:'%s' %}
+          {% assign date_difference = date_now | minus: date_published %}
+
+          {% if date_difference > 2592000 %}
+            {% continue %}
+          {% endif %}
+
         <div class="product-card card-new" data-published-at="{{product.published_at}}">
           <a class="grid-view-item__link grid-view-item__image-container full-width-link" href="{{ product.url | within: collection }}" tabindex="0">
             <span class="visually-hidden">{{product.title}}</span>
@@ -225,11 +244,6 @@
         {% endfor %}
       </div>
 
-      {% if paginate.pages > 1 %}
-      {% include 'pagination' %}
-      {% endif %}
-
-
       <div class="collec_desc">{{collection.description}}</div>
     </div>
 
@@ -237,7 +251,6 @@
 
   </div>
 </div>
-{% endpaginate %}
 {% comment %}
 <div class="instagram-wrap">
   <h2>Shop Our Instagram</h2>
@@ -259,7 +272,7 @@
   });
 
 
-  (function($) {	
+  (function($) {  
 
     var md = new MobileDetect(window.navigator.userAgent);
 
