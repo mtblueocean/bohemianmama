@@ -172,8 +172,8 @@
           "mobile_menu": "mobile",
           "message": true,
           "home_page_only": false,
-          "message_text": "Shop New Arrivals for 2019 with FREE Shipping on Orders Over $150 or More.",
-          "message_link": "shopify:\/\/collections\/new-bohemian-clothing-for-women-and-children",
+          "message_text": "More Styles Added To Sale! Free Shipping on $150+.",
+          "message_link": "shopify:\/\/collections\/warm-cozy",
           "color_bg": "#000000",
           "color_text": "#ffffff"
         }
@@ -221,32 +221,6 @@
           "color_footer_text": "#333333"
         }
       },
-      "1539770890528": {
-        "type": "carousel-slider",
-        "blocks": {
-          "1545832531044": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/NEW-SUNNIES.gif",
-              "mobile_image": "",
-              "link": "shopify:\/\/collections\/new-bohemian-clothing-for-women-and-children"
-            }
-          },
-          "1546837163858": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/FortheKids_1500x750_01.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/FortheKids_1500x750_01.jpg",
-              "link": "shopify:\/\/collections\/kids"
-            }
-          }
-        },
-        "block_order": [
-          "1545832531044",
-          "1546837163858"
-        ],
-        "settings": {}
-      },
       "1539774767765": {
         "type": "feature-columns",
         "blocks": {
@@ -255,9 +229,9 @@
             "settings": {
               "enable_image": true,
               "swap_image": true,
-              "image": "shopify:\/\/shop_images\/Show_Me_Your_Mumu_Sweater_1024x1024_2x_6edbf8e1-a7db-46a1-817d-284c19c589f1.jpg",
+              "image": "shopify:\/\/shop_images\/Bohemian_Clothing_by_Show_Me_Your_Mumu.jpg",
               "title": "COZY KNITS",
-              "text": "<p>Shop cozy sweaters and outerwear for women with this season's must haves. We'll keep you warm through the rest of winter with gorgeous sweaters from Show Me Your Mumu, Free People and Raga.&nbsp;<\/p>",
+              "text": "<p>Shop cozy sweaters and outerwear for women with this season's must haves. We'll keep you warm through the rest of winter with gorgeous sweaters from Show Me Your Mumu, Free People, and more for your fave bohemian clothing looks.<\/p>",
               "button_label": "SHOP NOW",
               "button_link": "shopify:\/\/collections\/womens-sweaters-outerwear"
             }
@@ -267,9 +241,9 @@
             "settings": {
               "enable_image": true,
               "swap_image": false,
-              "image": "shopify:\/\/shop_images\/free-people-wrap-dress_3c3b1712-4fa9-433c-b36b-b503feca5534.jpeg",
+              "image": "shopify:\/\/shop_images\/Bohemian_Clothing_and_Dresses.jpeg",
               "title": "HOTTEST DRESSES",
-              "text": "<p>Shop the hottest dresses and rompers from Arnhem, Show Me Your Mumu, and Free People. Whether you're in the mood for glitterati or flowy floral, we've got you covered.&nbsp;<\/p>",
+              "text": "<p>Shop the hottest dresses and rompers from Arnhem, Show Me Your Mumu, and Free People. In the mood for glitterati or flowy floral? We've got you covered for all your bohemian clothing needs.&nbsp;<\/p>",
               "button_label": "SHOP NOW",
               "button_link": "shopify:\/\/collections\/womens-dresses"
             }
@@ -279,9 +253,9 @@
             "settings": {
               "enable_image": true,
               "swap_image": true,
-              "image": "shopify:\/\/shop_images\/Resort_Wear.jpg",
+              "image": "shopify:\/\/shop_images\/Bohemian_style_clothing_resort_wear_and_swim.jpg",
               "title": "RESORT READY",
-              "text": "<p>Warm sand and ocean waters are calling and we have everything you need to make a splash. Shop this season's must have bikinis, one pieces, cover ups, dresses, accessories and more.<\/p>\n<p><\/p>",
+              "text": "<p>Warm sand and ocean waters are calling and we have everything you need to make a splash. Shop this season's must have bikinis, one pieces, cover ups, dresses, accessories and more. Shop our fave boho style looks from top brands.<\/p>\n<p><\/p>",
               "button_label": "SHOP NOW",
               "button_link": "shopify:\/\/collections\/resort-ready"
             }
@@ -318,7 +292,7 @@
           "1539866522679-0": {
             "type": "image-with-text",
             "settings": {
-              "image": "shopify:\/\/shop_images\/boys-collection.jpg",
+              "image": "shopify:\/\/shop_images\/bohemian_clothing_for_kids.jpg",
               "image_on_right": false,
               "title": "BOYS",
               "content": "From newborn to teens and everything in between. Shop our hand curated boys collection.",
@@ -329,7 +303,7 @@
           "1539866522679-1": {
             "type": "image-with-text",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Girls.jpg",
+              "image": "shopify:\/\/shop_images\/Bohemian_clothing_for_girls.jpg",
               "image_on_right": true,
               "title": "GIRLS",
               "content": "From Mommy n' Me, to one-of-a-kind frilly boho dresses, tops + tees, and raglan pants",
@@ -486,7 +460,7 @@
             "settings": {
               "sort-dropdown-a-check": true,
               "filter1heading": "Type",
-              "sort_a": "Dresses, Tops + Tees, Bottoms, Sweaters, Skirts, Holiday, Jumpsuits + Rompers, Jewelry, Pajamas, Skirts, Swimwear, Maternity, Skincare, Candles, Ornaments, Pillows, Wall Art, Swaddles, Quilts, Bibs, Towels, Crib Sheets, Throws, Belts, Fragrance, Kimonos, Fedoras, Beanies, Berets, Sailor Hats, Boater Hats, Trucker Hats, Sun Hats, Headbands,  Sunglasses, Hats, Flats, Platforms, Slides, Boots, Sneakers, Sandals, Clogs, Mules, Clutches, Crossbody Bags, Weekenders, Backpacks + Messengers, Totes, Top Handle Bags, Bag Accessories, Earrings, Necklaces, Chokers, Bracelets, Rings, Bikini Tops, Bikini Bottoms, One Pieces, Sarongs + Wraps, Denim, Bells, Pants, Mini Skirts, Midi Skirts, Maxi Skirts, Shorts, Maxi Dresses, Midi Dresses, Tees, Tunics, Shirts, Crop Tops, Blouses, Graphic Tees, Camis + Tanks, Thermals + Pullovers + Henleys, Intimates, Greeting Cards, Nail Polish, Mini Dresses, Day Dresses, Party Dresses, Printed Dresses, White Dresses, Black Dresses, Sweater Dresses, Knit Dresses, Sets, Sweatshirts, Pullovers, Cardigans, Tunics, Turtlenecks, Sweater Jackets, Statement Sweaters, Jumpsuits, Rompers, Maternity Dresses, Denim Jackets, Moto Jackets, Blazers, Statement Jackets, Military Jackets, Faux Fur + Vegan Leather, Maxi Jackets + Dusters, Lightweight Jackets, Cleansers, Moisturizers, Oils + Serums, Eye Creams, Scrubs + Exfoliators, Masks, Toners + Face Mists, Essential Oils, Bath + Shower, Perfumes, Room Sprays,  Onesies, Baby Pants, Maternity Swim, Kids Swim"
+              "sort_a": "Dresses, Tops + Tees, Bodysuits,  Bottoms, Sweaters, Skirts, Holiday, Jumpsuits + Rompers, Jewelry, Pajamas, Skirts, Swimwear, Maternity, Skincare, Candles, Ornaments, Pillows, Wall Art, Swaddles, Quilts, Bibs, Towels, Crib Sheets, Throws, Belts, Fragrance, Kimonos, Fedoras, Beanies, Berets, Sailor Hats, Boater Hats, Trucker Hats, Sun Hats, Headbands,  Sunglasses, Hats, Flats, Platforms, Slides, Boots, Sneakers, Sandals, Clogs, Mules, Clutches, Crossbody Bags, Weekenders, Backpacks + Messengers, Totes, Top Handle Bags, Bag Accessories, Earrings, Necklaces, Chokers, Bracelets, Rings, Bikini Tops, Bikini Bottoms, One Pieces, Sarongs + Wraps, Denim, Bells, Pants, Mini Skirts, Midi Skirts, Maxi Skirts, Shorts, Maxi Dresses, Midi Dresses, Tees, Tunics, Shirts, Crop Tops,  Blouses, Graphic Tees, Camis + Tanks, Thermals + Pullovers + Henleys, Intimates, Greeting Cards, Nail Polish, Mini Dresses, Day Dresses, Party Dresses, Printed Dresses, White Dresses, Black Dresses, Sweater Dresses, Knit Dresses, Sets, Sweatshirts, Pullovers, Cardigans, Tunics, Turtlenecks, Sweater Jackets, Statement Sweaters, Jumpsuits, Rompers, Maternity Dresses, Denim Jackets, Moto Jackets, Blazers, Statement Jackets, Military Jackets, Faux Fur + Vegan Leather, Maxi Jackets + Dusters, Lightweight Jackets, Cleansers, Moisturizers, Oils + Serums, Eye Creams, Scrubs + Exfoliators, Masks, Toners + Face Mists, Essential Oils, Bath + Shower, Perfumes, Room Sprays,  Onesies, Baby Pants, Maternity Swim, Kids Swim"
             }
           },
           "1543448752616": {
@@ -737,9 +711,9 @@
       "subscribe-form": {
         "type": "subscribe-form",
         "settings": {
-          "heading": "Enter To Win",
-          "description": "Feeling Lucky? \nEnter to win a $200 shopping spree by completing the form below. Winners will be announced Feb 1st via email. One entry per person. Shipping fees apply.",
-          "subscribe_form_bg": "shopify:\/\/shop_images\/Uruguay.jpg"
+          "heading": "Feeling Lucky?",
+          "description": "Enter to win a $200 shopping spree by completing the form below. One entry per person. Shipping fees apply.",
+          "subscribe_form_bg": "shopify:\/\/shop_images\/bohemian-mama-contest.jpg"
         }
       },
       "collection-template-new-arrivals": {
@@ -771,10 +745,36 @@
           "show_collection_image": false,
           "enable-filters": true
         }
+      },
+      "1547449221153": {
+        "type": "carousel-slider",
+        "blocks": {
+          "1547449221153-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/NEW-SUNNIES.gif",
+              "mobile_image": "shopify:\/\/shop_images\/New-Sunnies-600x_ed3170f7-7c4e-4219-b74b-f99203b86996.png",
+              "link": "shopify:\/\/collections\/bonnie-clyde"
+            }
+          },
+          "1547449221153-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/FortheKids_1500x750_01.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/kids-square.jpg",
+              "link": "shopify:\/\/collections\/kids"
+            }
+          }
+        },
+        "block_order": [
+          "1547449221153-0",
+          "1547449221153-1"
+        ],
+        "settings": {}
       }
     },
     "content_for_index": [
-      "1539770890528",
+      "1547449221153",
       "1539774767765",
       "1540210764690",
       "1539866522679",
