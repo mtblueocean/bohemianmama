@@ -2,13 +2,13 @@
   <div class="subscribe-form">
     <div class="section-header text-center">
       {% if section.settings.heading != blank %}
-        <h1>{{ section.settings.heading }}</h1>
+        <h1 style="font-size: {{ section.settings.heading_font_size }}px; color: {{ section.settings.heading_color  }}">{{ section.settings.heading }}</h1>
       {% else %}
-        <h1>{{ page.title }}</h1>
+        <h1 style="font-size: {{ section.settings.heading_font_size }}px; color: {{ section.settings.heading_color  }}">{{ page.title }}</h1>
       {% endif %}
 
       {% if section.settings.description != blank %}
-        <p class="description">{{ section.settings.description }}</p>
+        <p class="description" style="font-size: {{ section.settings.description_font_size }}px; color: {{ section.settings.description_color  }}">{{ section.settings.description }}</p>
       {% endif %}
     </div>
 
@@ -34,12 +34,70 @@
     {
       "type": "text",
       "id": "heading",
-      "label": "Form Title"
+      "label": "Form Heading"
+    },
+    {
+      "type": "range",
+      "id": "heading_font_size",
+      "label": "Heading Font Size",
+      "default": 40,
+      "min": 10,
+      "max": 100,
+      "step": 1,
+      "unit": {
+        "de": "px",
+        "en": "px",
+        "es": "px",
+        "fr": "px",
+        "it": "px",
+        "ja": "px",
+        "pt-BR": "px"
+      }
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading Color",
+      "default": "#ffffff"
     },
     {
       "type": "textarea",
       "id": "description",
       "label": "Form Description"
+    },
+    {
+      "type": "range",
+      "id": "description_font_size",
+      "label": "Description Font Size",
+      "default": 16,
+      "min": 10,
+      "max": 100,
+      "step": 1,
+      "unit": {
+        "de": "px",
+        "en": "px",
+        "es": "px",
+        "fr": "px",
+        "it": "px",
+        "ja": "px",
+        "pt-BR": "px"
+      }
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Description Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "text",
+      "id": "hyperlink_text",
+      "label": "HyperLink Text"
+    },
+    {
+      "type": "url",
+      "id": "hyperlink_link",
+      "label": "HyperLink Link"
     },
     {
       "type": "image_picker",

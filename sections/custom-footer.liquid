@@ -315,7 +315,7 @@
           {% endcomment %}
           {%- else -%}
           <div class="small--hide">
-            <small class="site-footer__copyright-content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: '/' }}. All Rights Reserved</small>
+            <small class="site-footer__copyright-content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: '/' }}. <a href="/pages/privacy-policy" target="_blank">All Rights Reserved</a></small>
             {% comment %}<small class="site-footer__copyright-content site-footer__copyright-content-powered-by">{{ powered_by_link }}</small>{% endcomment %}
           </div>
           {%- endif -%}
@@ -340,7 +340,7 @@
           {% endcomment %}
         </div>
         <div class="grid__item{% unless social_icons %} medium-up--hide{% endunless %} text-center">
-          <small class="site-footer__copyright-content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: '/' }}. All Rights Reserved | Site Design: <a href="http://www.mcapartners.io/" target="_blank">MCA Partners</a></small>
+          <small class="site-footer__copyright-content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: '/' }}. <a href="/pages/privacy-policy" target="_blank">All Rights Reserved</a> | Site Design: <a href="http://www.mcapartners.io/" target="_blank">MCA Partners</a></small>
           {% comment %}<small class="site-footer__copyright-content site-footer__copyright-content--powered-by">{{ powered_by_link }}</small>{% endcomment %}
         </div>
       </div>

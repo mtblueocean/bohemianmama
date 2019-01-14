@@ -764,11 +764,20 @@
               "mobile_image": "shopify:\/\/shop_images\/kids-square.jpg",
               "link": "shopify:\/\/collections\/kids"
             }
+          },
+          "1547492089253": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/BoMa_MoonWater_1500x750_01_04942986-818e-4108-b7f2-ac832670fa47.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/Bohemian_Mama_MoonWater_600x600_01.jpg",
+              "link": "shopify:\/\/collections\/moon-water-co-bags"
+            }
           }
         },
         "block_order": [
           "1547449221153-0",
-          "1547449221153-1"
+          "1547449221153-1",
+          "1547492089253"
         ],
         "settings": {}
       }
