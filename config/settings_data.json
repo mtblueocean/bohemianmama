@@ -392,15 +392,8 @@
           "1540273734430": {
             "type": "link_list",
             "settings": {
-              "title": "Explore",
+              "title": "Help & Info",
               "menu": "newsite-footer-explore"
-            }
-          },
-          "1540274329879": {
-            "type": "text",
-            "settings": {
-              "title": "Contact Info",
-              "text": "<p>(866) 545-2662&nbsp;<\/p>\n<p><\/p>\n<p>(609) 938-6466&nbsp;<\/p>\n<p><span>741 ASBURY AVENUE, OCEAN CITY, NJ 08226<\/span><\/p>"
             }
           },
           "1540273754983": {
@@ -409,6 +402,13 @@
               "title": "Join Our Tribe",
               "sub_title": "<p>BoMa Rewards and exclusive discounts. Join Today!<\/p>\n<p><\/p>"
             }
+          },
+          "1547665107033": {
+            "type": "link_list",
+            "settings": {
+              "title": "About Us",
+              "menu": "newsite-footer-about-us"
+            }
           }
         },
         "block_order": [
@@ -416,7 +416,7 @@
           "1540273848226",
           "1540273739392",
           "1540273734430",
-          "1540274329879",
+          "1547665107033",
           "1540273754983"
         ],
         "settings": {
