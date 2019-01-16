@@ -19,7 +19,7 @@
     "type_base_font": "montserrat_n5",
     "type_base_size": 14,
     "type_bold_product_titles": false,
-    "share_image": "",
+    "share_image": "shopify:\/\/shop_images\/Bohemian_clothing_for_girls.jpg",
     "share_facebook": true,
     "share_twitter": true,
     "share_pinterest": true,
@@ -353,14 +353,14 @@
       "1540210764690": {
         "type": "collection",
         "settings": {
-          "title": "DENIM EDIT",
+          "title": "NEW ARRIVALS",
           "enable_carousel": true,
           "desktopimage": "",
           "mobileimage": "",
           "arrow_position": "middle",
-          "collection": "womens-denim",
+          "collection": "womens-new-arrivals",
           "grid": 5,
-          "rows": 3,
+          "rows": 4,
           "show_vendor": false,
           "show_view_all": true
         }
@@ -460,7 +460,7 @@
             "settings": {
               "sort-dropdown-a-check": true,
               "filter1heading": "Type",
-              "sort_a": "Dresses, Tops + Tees, Bodysuits,  Bottoms, Sweaters, Skirts, Holiday, Jumpsuits + Rompers, Jewelry, Pajamas, Skirts, Swimwear, Maternity, Skincare, Candles, Ornaments, Pillows, Wall Art, Swaddles, Quilts, Bibs, Towels, Crib Sheets, Throws, Belts, Fragrance, Kimonos, Fedoras, Beanies, Berets, Sailor Hats, Boater Hats, Trucker Hats, Sun Hats, Headbands,  Sunglasses, Hats, Flats, Platforms, Slides, Boots, Sneakers, Sandals, Clogs, Mules, Clutches, Crossbody Bags, Weekenders, Backpacks + Messengers, Totes, Top Handle Bags, Bag Accessories, Earrings, Necklaces, Chokers, Bracelets, Rings, Bikini Tops, Bikini Bottoms, One Pieces, Sarongs + Wraps, Denim, Bells, Pants, Mini Skirts, Midi Skirts, Maxi Skirts, Shorts, Maxi Dresses, Midi Dresses, Tees, Tunics, Shirts, Crop Tops,  Blouses, Graphic Tees, Camis + Tanks, Thermals + Pullovers + Henleys, Intimates, Greeting Cards, Nail Polish, Mini Dresses, Day Dresses, Party Dresses, Printed Dresses, White Dresses, Black Dresses, Sweater Dresses, Knit Dresses, Sets, Sweatshirts, Pullovers, Cardigans, Tunics, Turtlenecks, Sweater Jackets, Statement Sweaters, Jumpsuits, Rompers, Maternity Dresses, Denim Jackets, Moto Jackets, Blazers, Statement Jackets, Military Jackets, Faux Fur + Vegan Leather, Maxi Jackets + Dusters, Lightweight Jackets, Cleansers, Moisturizers, Oils + Serums, Eye Creams, Scrubs + Exfoliators, Masks, Toners + Face Mists, Essential Oils, Bath + Shower, Perfumes, Room Sprays,  Onesies, Baby Pants, Maternity Swim, Kids Swim"
+              "sort_a": "Dresses, Tops + Tees, Bodysuits,  Bottoms, Sweaters, Skirts, Holiday, Jumpsuits + Rompers, Jewelry, Pajamas, Skirts, Swimwear, Maternity, Skincare, Candles, Ornaments, Pillows, Wall Art, Swaddles, Quilts, Bibs, Towels, Crib Sheets, Throws, Belts, Fragrance, Kimonos, Fedoras, Beanies, Berets, Sailor Hats, Boater Hats, Trucker Hats, Sun Hats, Headbands,  Sunglasses, Hats, Flats, Platforms, Slides, Boots, Sneakers, Sandals, Clogs, Mules, Clutches, Crossbody Bags, Weekenders, Backpacks + Messengers, Totes, Top Handle Bags, Bag Accessories, Earrings, Necklaces, Chokers, Bracelets, Rings, Bikini Tops, Bikini Bottoms, One Pieces, Sarongs + Wraps, Denim, Bells, Pants, Mini Skirts, Midi Skirts, Maxi Skirts, Shorts, Maxi Dresses, Midi Dresses, Tees, Tunics, Shirts, Crop Tops,  Blouses, Graphic Tees, Camis + Tanks, Thermals + Pullovers + Henleys, Intimates, Greeting Cards, Nail Polish, Mini Dresses, Day Dresses, Party Dresses, Printed Dresses, White Dresses, Black Dresses, Sweater Dresses, Knit Dresses, Sets, Sweatshirts, Pullovers, Cardigans, Tunics, Turtlenecks, Sweater Jackets, Statement Sweaters, Jumpsuits, Rompers, Maternity Dresses, Denim Jackets, Moto Jackets, Blazers, Statement Jackets, Military Jackets, Faux Fur + Vegan Leather, Maxi Jackets + Dusters, Lightweight Jackets, Cleansers, Moisturizers, Oils + Serums, Eye Creams, Scrubs + Exfoliators, Masks, Toners + Face Mists, Essential Oils, Bath + Shower, Perfumes, Room Sprays,  Onesies, Baby Pants, Maternity Swim, Kids Swim, Pins, Tassels"
             }
           },
           "1543448752616": {
@@ -637,7 +637,7 @@
             "settings": {
               "sort-dropdown-a-check": true,
               "filter1heading": "Type",
-              "sort_a": "Dresses, Tops + Tees, Bottoms, Sweaters, Skirts, Holiday, Jumpsuits + Rompers, Jewelry, Pajamas, Skirts, Swimwear, Maternity, Skincare, Candles, Ornaments, Pillows, Wall Art, Swaddles, Quilts, Bibs, Towels, Crib Sheets, Throws, Belts, Fragrance, Kimonos, Fedoras, Beanies, Berets, Sailor Hats, Boater Hats, Trucker Hats, Sun Hats, Headbands,  Sunglasses, Hats, Flats, Platforms, Slides, Boots, Sneakers, Sandals, Clogs, Mules, Clutches, Crossbody Bags, Weekenders, Backpacks + Messengers, Totes, Top Handle Bags, Bag Accessories, Earrings, Necklaces, Chokers, Bracelets, Rings, Bikini Tops, Bikini Bottoms, One Pieces, Sarongs + Wraps, Denim, Bells, Pants, Mini Skirts, Midi Skirts, Maxi Skirts, Shorts, Maxi Dresses, Midi Dresses, Tees, Tunics, Shirts, Crop Tops, Blouses, Graphic Tees, Camis + Tanks, Thermals + Pullovers + Henleys, Intimates, Greeting Cards, Nail Polish, Mini Dresses, Day Dresses, Party Dresses, Printed Dresses, White Dresses, Black Dresses, Sweater Dresses, Knit Dresses, Sets, Sweatshirts, Pullovers, Cardigans, Tunics, Turtlenecks, Sweater Jackets, Statement Sweaters, Jumpsuits, Rompers, Maternity Dresses, Denim Jackets, Moto Jackets, Blazers, Statement Jackets, Military Jackets, Faux Fur + Vegan Leather, Maxi Jackets + Dusters, Lightweight Jackets, Cleansers, Moisturizers, Oils + Serums, Eye Creams, Scrubs + Exfoliators, Masks, Toners + Face Mists, Essential Oils, Bath + Shower, Perfumes, Room Sprays,  Onesies, Baby Pants, Maternity Swim, Kids Swim"
+              "sort_a": "Dresses, Tops + Tees, Bottoms, Sweaters, Skirts, Holiday, Jumpsuits + Rompers, Jewelry, Pajamas, Skirts, Swimwear, Maternity, Skincare, Candles, Ornaments, Pillows, Wall Art, Swaddles, Quilts, Bibs, Towels, Crib Sheets, Throws, Belts, Fragrance, Kimonos, Fedoras, Beanies, Berets, Sailor Hats, Boater Hats, Trucker Hats, Sun Hats, Headbands,  Sunglasses, Hats, Flats, Platforms, Slides, Boots, Sneakers, Sandals, Clogs, Mules, Clutches, Crossbody Bags, Weekenders, Backpacks + Messengers, Totes, Top Handle Bags, Bag Accessories, Earrings, Necklaces, Chokers, Bracelets, Rings, Bikini Tops, Bikini Bottoms, One Pieces, Sarongs + Wraps, Denim, Bells, Pants, Mini Skirts, Midi Skirts, Maxi Skirts, Shorts, Maxi Dresses, Midi Dresses, Tees, Tunics, Shirts, Crop Tops, Blouses, Graphic Tees, Camis + Tanks, Thermals + Pullovers + Henleys, Intimates, Greeting Cards, Nail Polish, Mini Dresses, Day Dresses, Party Dresses, Printed Dresses, White Dresses, Black Dresses, Sweater Dresses, Knit Dresses, Sweatshirts, Pullovers, Cardigans, Tunics, Turtlenecks, Sweater Jackets, Statement Sweaters, Jumpsuits, Rompers, Maternity Dresses, Tunic Dresses, Denim Jackets, Moto Jackets, Blazers, Statement Jackets, Military Jackets, Faux Fur + Vegan Leather, Maxi Jackets + Dusters, Lightweight Jackets, Cleansers, Moisturizers, Oils + Serums, Eye Creams, Scrubs + Exfoliators, Masks, Toners + Face Mists, Essential Oils, Bath + Shower, Perfumes, Room Sprays,  Onesies, Baby Pants, Maternity Swim, Kids Swim"
             }
           },
           "1546544727489": {
@@ -712,8 +712,13 @@
         "type": "subscribe-form",
         "settings": {
           "heading": "Feeling Lucky?",
-          "description": "Enter to win a $200 shopping spree by completing the form below. One entry per person. Shipping fees apply.",
-          "subscribe_form_bg": "shopify:\/\/shop_images\/bohemian-mama-contest.jpg"
+          "heading_font_size": 40,
+          "heading_color": "#ffffff",
+          "description_font_size": 16,
+          "description_color": "#ffffff",
+          "hyperlink_text": "Bohemian Mama Sweepstakes Rules",
+          "hyperlink_link": "shopify:\/\/pages\/rules-and-regulations",
+          "subscribe_form_bg": "shopify:\/\/shop_images\/bohemian-vacation-ocean_108f1118-585f-42ba-bc8c-11edb10a7089.jpg"
         }
       },
       "collection-template-new-arrivals": {
@@ -749,6 +754,22 @@
       "1547449221153": {
         "type": "carousel-slider",
         "blocks": {
+          "1547615104913": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/banner_fromdownunder_1500x750_d424a3bf-521a-4de6-9af9-59b8c2094274.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/banner_fromdownunder_600x600_3c56715c-a60b-4f9d-9dfa-beb87be4306c.png",
+              "link": "shopify:\/\/collections\/favorite-australian-brands"
+            }
+          },
+          "1547492089253": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/BoMa_MoonWater_1500x750_01_04942986-818e-4108-b7f2-ac832670fa47.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/Bohemian_Mama_MoonWater_600x600_01.jpg",
+              "link": "https:\/\/www.bohemianmama.com\/collections\/moon-water-co"
+            }
+          },
           "1547449221153-0": {
             "type": "image",
             "settings": {
@@ -764,20 +785,13 @@
               "mobile_image": "shopify:\/\/shop_images\/kids-square.jpg",
               "link": "shopify:\/\/collections\/kids"
             }
-          },
-          "1547492089253": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/BoMa_MoonWater_1500x750_01_04942986-818e-4108-b7f2-ac832670fa47.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/Bohemian_Mama_MoonWater_600x600_01.jpg",
-              "link": "shopify:\/\/collections\/moon-water-co-bags"
-            }
           }
         },
         "block_order": [
+          "1547615104913",
+          "1547492089253",
           "1547449221153-0",
-          "1547449221153-1",
-          "1547492089253"
+          "1547449221153-1"
         ],
         "settings": {}
       }
