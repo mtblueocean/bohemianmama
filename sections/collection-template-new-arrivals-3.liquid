@@ -1,0 +1,377 @@
+
+{%- assign limit = section.settings.rows -%}
+{%- assign products_count = 0 -%}
+
+{% for product in collection.products %}
+  {% assign date_published = product.published_at | date:'%s' %}
+  {% assign date_now = 'now' | date:'%s' %}
+  {% assign date_difference = date_now | minus: date_published %}
+
+  {% if date_difference > 7776000 %}
+    {% continue %}
+  {% endif %}
+  {% assign products_count = products_count | plus: 1 %}
+{% endfor %}
+
+<div class="page-width">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="https://www.bohemianmama.com{{collection.url}}">{{collection.title}} </a></li>
+      {% for tag in tags %}
+      {% if current_tags contains tag %}
+      <li class="breadcrumb-item active" aria-current="page">{{tag}} </li>
+      {% endif %}
+      {% endfor %}
+    </ol>
+  </nav>
+  <div class="collection-wrap">
+    <div class="collection_sidebar">
+      <a href="javascript:;" class="btn btn-primary btn-dark mobile_Toggle visible-xs">Filters</a>
+      <div class="toggleMobile">
+
+       {% for block in section.blocks %}
+        {% if block.settings.sort-dropdown-a-check %}
+        <div class="collection_cateogry">
+          <a href="#{{block.settings.filter1heading | handle}}" class="collection_list_heading collapse {% for tag in tags %}
+                                                                       {% if current_tags contains tag %}
+                                                                       filteractivetop
+                                                                       {% endif %}
+                                                                       {% endfor %}" data-toggle="collapse" role="button" aria-expanded="true">{{block.settings.filter1heading}}</a>
+          <div id="{{block.settings.filter1heading | handle}}" class="collapse show  {% for tag in tags %}
+                                                                      {% if current_tags contains tag %}
+                                                                      filteractive
+                                                                      {% endif %}
+                                                                      {% endfor %}">
+            <div class="widget-content {% if block.settings.filter1heading == 'size' or  block.settings.filter1heading == 'Size'%}size {% endif %}">
+              <ul>
+                {% assign tags = block.settings.sort_a  | replace: ' ,', ',' | replace: ', ', ',' | split: ',' %}    
+
+                {% assign other_tags = '' %}
+                {% for tag in current_tags %}
+                {% unless tags contains tag %}
+
+                {% assign temp_tag = tag | handle %}
+
+                {% assign temp_tag = temp_tag | append: '+' %}
+
+                {% assign other_tags = other_tags | append: temp_tag %}
+                {% endunless %}
+                {% endfor %}
+
+
+
+
+
+                {% assign clear_url = collection.url | append: '/' | append: other_tags %} 
+
+
+                {% for tag in tags %}
+                {% assign tagCount = 0 %}
+                {% assign tagCount = tagCount | plus: 1 %}
+                {% if current_tags contains tag %}
+                <li>
+
+
+
+                  {% if block.settings.filter1heading == 'colors' or   block.settings.filter1heading == 'Colors' or  block.settings.filter1heading == 'COLOR' or block.settings.filter1heading == 'COLORS'%}
+                  {{ tag   | link_to_remove_tag: tag | replace: 'title=', 'selected class="main_Label active" title=' }} 
+                  {% else %}            
+                  {{ tag     | link_to_remove_tag: tag | replace: 'title=', 'selected class="active" title=' }} 
+
+                  {% endif %}                    
+
+                </li>
+                {% elsif collection.all_tags contains tag %}
+                {% assign temp_tag = tag | handle %}
+                {% unless other_tags == '' %}
+
+                {% assign temp_tag = temp_tag | prepend: '' %}
+
+                {% endunless %}
+                {% assign add_tag_url = clear_url | append: temp_tag %}
+
+                <li>
+
+                  {% if block.settings.filter1heading == 'colors' or   block.settings.filter1heading == 'Colors' or  block.settings.filter1heading == 'COLOR' or block.settings.filter1heading == 'COLORS'%}
+                  {{ tag | link_to: add_tag_url | replace: 'title=', ' class="main_Label" title='  }}
+
+                  {% else %}
+                  {{ tag  | link_to: add_tag_url | replace: 'title=', ' class="main_Label" title='  }}
+
+                  {% endif %}             
+
+
+                </li>
+                {% endif %}
+                {% endfor %}       
+
+
+
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+
+        {% endif %}
+        {% endfor %} 
+
+
+
+
+      </div>
+
+    </div>
+
+    <div class="collection-sider">
+      <div class="collection-header">
+        <h2>
+          {{collection.title}} -
+          {% for tag in tags %}
+          {% if current_tags contains tag %}
+          {{tag}}  
+          {% endif %}
+          {% endfor %}
+          ({{ products_count }})</h2>
+
+        <div class="collection_filter_dropdwon">
+
+
+
+
+
+          <select id="sort-by">
+            <option value="manual">Featured</option>
+            <option value="price-ascending">Price: Low to High</option>
+            <option value="price-descending">Price: High to Low</option>
+            <option value="title-ascending">A-Z</option>
+            <option value="title-descending">Z-A</option>
+            <option value="created-ascending">Oldest to Newest</option>
+            <option value="created-descending">Newest to Oldest</option>
+            <option value="best-selling">Best Selling</option>
+          </select>
+
+          <script>
+            Shopify.queryParams = {};
+            if (location.search.length) {
+              for (var aKeyValue, i = 0, aCouples = location.search.substr(1).split('&'); i < aCouples.length; i++) {
+                aKeyValue = aCouples[i].split('=');
+                if (aKeyValue.length > 1) {
+                  Shopify.queryParams[decodeURIComponent(aKeyValue[0])] = decodeURIComponent(aKeyValue[1]);
+                }
+              }
+            }
+            jQuery('#sort-by')
+            .val('{{ collection.sort_by | default: collection.default_sort_by | escape }}')
+                 .bind('change', function() {
+              Shopify.queryParams.sort_by = jQuery(this).val();
+              location.search = jQuery.param(Shopify.queryParams).replace(/\+/g, '%20');
+            });
+          </script>
+        </div>
+      </div>
+      <div class="product-card-wrap">
+
+        {% for product in collection.products %}
+        {% capture wrapper_id %}ProductCardImageWrapper-{{ section.id }}-{{ product.id }}{% endcapture %}
+
+          {% assign date_published = product.published_at | date:'%s' %}
+          {% assign date_now = 'now' | date:'%s' %}
+          {% assign date_difference = date_now | minus: date_published %}
+
+          {% if date_difference > 7776000 %}
+            {% continue %}
+          {% endif %}
+
+        <div class="product-card card-new" data-published-at="{{product.published_at}}">
+          <a class="grid-view-item__link grid-view-item__image-container full-width-link" href="{{ product.url | within: collection }}" tabindex="0">
+            <span class="visually-hidden">{{product.title}}</span>
+          </a>
+
+          <div id="{{ wrapper_id }}" class="grid-view-item__image-wrapper product-card__image-wrapper">
+            <div class="product_card_image">
+              {% if product.available %}
+              {% else %}
+              <p class="coldout"> Sold Out</p>
+              {% endif %}
+              {% if product.compare_at_price >=  product.price %}
+              {% if product.available %}
+              <p class="sle"> Sale</p>
+              {% endif %}
+              {% endif %}
+              <img src="{{ product.featured_image.src | img_url: 'large' }}" alt="{{product.title}}">
+              <div class="text-center custom-shop">
+                <a href="{{ product.url | within: collection }}" tabindex="0">SHOP NOW</a>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <!--       <ul class="filter_color">
+            {% for option in product.options %}
+            {% if option == 'Color' %}
+
+            {% assign index = forloop.index0 %}
+            {% assign colorlist = '' %}
+            {% assign color = '' %}
+            {% for variant in product.variants %}
+            {% capture color %}
+            {{ variant.options[index] }}
+            {% endcapture %}
+            {% unless colorlist contains color %}
+
+            <li><a href="javascript:;"><span data-color="{{ color }}"></span></a></li>
+
+
+            {% capture tempList %}
+            {{colorlist | append: color | append: ''}}
+            {% endcapture %}
+            {% assign colorlist = tempList %}
+            {% endunless %}
+            {% endfor %}
+            {% endif %}
+            {% endfor %} 
+
+
+            </ul> -->
+
+            {% include 'product-price-new', variant: product %}
+
+          </div>
+
+        </div>
+        {% endfor %}
+      </div>
+
+      <div class="collec_desc">{{collection.description}}</div>
+    </div>
+
+
+
+  </div>
+</div>
+{% comment %}
+<div class="instagram-wrap">
+  <h2>Shop Our Instagram</h2>
+  <div class="text-center">
+    <a href="" class="btn btn-svg btn--secondary btn--small" aria-label="View all products in the  collection">
+      <svg><rect x="0" y="0" fill="none" width="166" height="45"></rect></svg>
+      View all
+    </a>
+  </div>
+
+  <div id="insta-feed"></div>
+</div>
+{% endcomment %}
+
+<script>
+  $('.filter_color li').each(function() {
+    var DD = $(this).find('span').data('color');
+    $(this).find('span').css('backgroundColor', DD);
+  });
+
+
+  (function($) {  
+
+    var md = new MobileDetect(window.navigator.userAgent);
+
+    if ($(window).width()<992) {
+      //$('.toggleMobile').slideUp(300);
+      $('.mobile_Toggle').click(function(e){
+        $('.toggleMobile').slideToggle(300);
+        e.preventDefault();
+      });
+    }
+    else {
+      $('.mobile_Toggle').hide(300);
+    }
+
+
+
+
+
+    var mode  = $(window).innerWidth() >= 992 ? "PC" : "MOBILE";
+  })(jQuery);
+
+</script>
+
+
+{% schema %}
+{
+"name": "Collection",
+"class": "aaqh",
+"max_blocks": 10,
+
+"settings": [
+
+
+
+
+{
+"type": "range",
+"id": "rows",
+"label": {
+"de": "Reihen per Seite (nur Raster)",
+"en": "products per page (grid only)",
+"es": "Filas por página (solo cuadrícula)",
+"fr": "Rangées par page (grille uniquement)",
+"it": "Righe per pagina (solo griglia)",
+"ja": "ページあたりの行数（グリッドのみ）",
+"pt-BR": "Linhas por página (somente grade)"
+},
+"default": 24,
+"min": 3,
+"max": 45,
+"step": 1
+},
+{
+"type": "checkbox",
+"id": "show_collection_image",
+"label": {
+"de": "Kategorie-Foto anzeigen",
+"en": "Show collection image",
+"es": "Mostrar imagen de la colección",
+"fr": "Afficher l'image de la collection",
+"it": "Mostra immagine collezione",
+"ja": "コレクションの画像を表示する",
+"pt-BR": "Exibir imagem da coleção"
+},
+"default": true
+},
+
+
+
+{
+"type": "checkbox",
+"id": "enable-filters",
+"label": "Enable Filters"
+}
+
+],
+"blocks": [
+{
+"type": "image",
+"name": "Collection filter",
+"settings": [
+{
+"type": "checkbox",
+"id": "sort-dropdown-a-check",
+"label": "enable"
+}, {
+"type": "text",
+"id": "filter1heading",
+"label": "Filter heading"
+},
+{
+"type": "textarea",
+"id": "sort_a",
+"label": "tags"
+}
+
+]
+}
+
+] 
+}
+{% endschema %}
