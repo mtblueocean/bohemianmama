@@ -12,10 +12,14 @@
 {% if template.name == 'product' %}
   {%- assign og_title = product.title | strip_html -%}
   {%- assign og_type = 'product' -%}
-  {% if product.images.size > 0 %}
+  {% if product.featured_image %}
+    {%- capture og_image_tags -%}<meta property="og:image" content="http:{{ product.featured_image | product_img_url: '1200x1200' }}">{% endcapture -%}
+    {%- capture og_image_secure_url_tags -%}<meta property="og:image:secure_url" content="https:{{ product.featured_image | product_img_url: '1200x1200' }}">{% endcapture -%}
+  {% endif %}
+  {% comment %}{% if product.images.size > 0 %}
     {%- capture og_image_tags -%}{% for image in product.images limit:3 -%}<meta property="og:image" content="http:{{ image.src | product_img_url: '1200x1200' }}">{% endfor -%}{% endcapture -%}
     {%- capture og_image_secure_url_tags -%}{% for image in product.images limit:3 -%}<meta property="og:image:secure_url" content="https:{{ image.src | product_img_url: '1200x1200' }}">{% endfor -%}{% endcapture -%}
-  {% endif %}
+  {% endif %}{% endcomment %}
 
 {% elsif template.name == 'article' %}
   {%- assign og_title = article.title | strip_html -%}
@@ -30,8 +34,15 @@
   {%- assign og_title = collection.title | strip_html -%}
   {%- assign og_type = 'product.group' -%}
   {% if collection.image %}
+    {%- assign og_description = collection.description | strip_html -%}
     {%- capture og_image_tags -%}<meta property="og:image" content="http:{{ collection.image | img_url: '1200x1200' }}">{%- endcapture -%}
     {%- capture og_image_secure_url_tags -%}<meta property="og:image:secure_url" content="https:{{ collection.image | img_url: '1200x1200' }}">{%- endcapture -%}
+  {% else %}
+    {%- assign products = collection.products -%}
+    {%- assign og_title = products[0].title | strip_html -%}
+    {%- assign og_description = products[0].description | strip_html -%}
+    {%- capture og_image_tags -%}<meta property="og:image" content="http:{{ products[0].featured_image | img_url: '1200x1200' }}">{%- endcapture -%}
+    {%- capture og_image_secure_url_tags -%}<meta property="og:image:secure_url" content="https:{{ products[0].featured_image | img_url: '1200x1200' }}">{%- endcapture -%}
   {% endif %}
 
 {% elsif template.name == 'password' %}
@@ -40,6 +51,7 @@
   {%- assign og_description = shop.description | default: shop.name -%}
 {% endif %}
 
+<meta property="fb:app_id" content="818044971861513" />
 <meta property="og:site_name" content="{{ shop.name }}">
 <meta property="og:url" content="{{ og_url }}">
 <meta property="og:title" content="{{ og_title }}">
