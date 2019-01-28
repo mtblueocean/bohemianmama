@@ -172,8 +172,8 @@
           "mobile_menu": "mobile",
           "message": true,
           "home_page_only": false,
-          "message_text": "More Styles Added To Sale! Free Shipping on $150+.",
-          "message_link": "shopify:\/\/collections\/warm-cozy",
+          "message_text": "Free Shipping on orders of $150 or more",
+          "message_link": "shopify:\/\/collections\/health-beauty",
           "color_bg": "#000000",
           "color_text": "#ffffff"
         }
@@ -229,9 +229,9 @@
             "settings": {
               "enable_image": true,
               "swap_image": true,
-              "image": "shopify:\/\/shop_images\/Bohemian_Clothing_by_Show_Me_Your_Mumu.jpg",
+              "image": "shopify:\/\/shop_images\/2533A0CB-AABF-4A78-AE94-58119CD95131.png",
               "title": "COZY KNITS",
-              "text": "<p>Shop cozy sweaters and outerwear for women with this season's must haves. We'll keep you warm through the rest of winter with gorgeous sweaters from Show Me Your Mumu, Free People, and more for your fave bohemian clothing looks.<\/p>",
+              "text": "<p>Shop cozy sweaters and outerwear for women with this season's must haves. We'll keep you warm til spring with gorgeous sweaters from Show Me Your Mumu, Free People, Mink Pink and more for your fave bohemian clothing looks.<\/p>",
               "button_label": "SHOP NOW",
               "button_link": "shopify:\/\/collections\/womens-sweaters-outerwear"
             }
@@ -243,7 +243,7 @@
               "swap_image": false,
               "image": "shopify:\/\/shop_images\/Bohemian_Clothing_and_Dresses.jpeg",
               "title": "HOTTEST DRESSES",
-              "text": "<p>Shop the hottest dresses and rompers from Arnhem, Show Me Your Mumu, and Free People. In the mood for glitterati or flowy floral? We've got you covered for all your bohemian clothing needs.&nbsp;<\/p>",
+              "text": "<p>Shop the hottest dresses and rompers from Lack of Coloe, Arnhem, Show Me Your Mumu, and Free People. In the mood for glitterati or flowy floral? We've got you covered for all your bohemian clothing needs.&nbsp;<\/p>",
               "button_label": "SHOP NOW",
               "button_link": "shopify:\/\/collections\/womens-dresses"
             }
@@ -396,18 +396,18 @@
               "menu": "newsite-footer-explore"
             }
           },
-          "1540273754983": {
-            "type": "newsletter",
-            "settings": {
-              "title": "Join Our Tribe",
-              "sub_title": "<p>BoMa Rewards and exclusive discounts. Join Today!<\/p>\n<p><\/p>"
-            }
-          },
           "1547665107033": {
             "type": "link_list",
             "settings": {
               "title": "About Us",
               "menu": "newsite-footer-about-us"
+            }
+          },
+          "1540273754983": {
+            "type": "newsletter",
+            "settings": {
+              "title": "Join Our Tribe",
+              "sub_title": "<p>BoMa Rewards and exclusive discounts. Join Today!<\/p>\n<p><\/p>"
             }
           }
         },
@@ -460,7 +460,7 @@
             "settings": {
               "sort-dropdown-a-check": true,
               "filter1heading": "Type",
-              "sort_a": "Dresses, Tops + Tees, Bodysuits,  Bottoms, Sweaters, Skirts, Holiday, Jumpsuits + Rompers, Jewelry, Pajamas, Skirts, Swimwear, Maternity, Skincare, Candles, Ornaments, Pillows, Wall Art, Swaddles, Quilts, Bibs, Towels, Crib Sheets, Throws, Belts, Fragrance, Kimonos, Fedoras, Beanies, Berets, Sailor Hats, Boater Hats, Trucker Hats, Sun Hats, Headbands,  Sunglasses, Hats, Flats, Platforms, Slides, Boots, Sneakers, Sandals, Clogs, Mules, Clutches, Crossbody Bags, Weekenders, Backpacks + Messengers, Totes, Top Handle Bags, Bag Accessories, Earrings, Necklaces, Chokers, Bracelets, Rings, Bikini Tops, Bikini Bottoms, One Pieces, Sarongs + Wraps, Denim, Bells, Pants, Mini Skirts, Midi Skirts, Maxi Skirts, Shorts, Maxi Dresses, Midi Dresses, Tees, Tunics, Shirts, Crop Tops,  Blouses, Graphic Tees, Camis + Tanks, Thermals + Pullovers + Henleys, Intimates, Greeting Cards, Nail Polish, Mini Dresses, Day Dresses, Party Dresses, Printed Dresses, White Dresses, Black Dresses, Sweater Dresses, Knit Dresses, Sets, Sweatshirts, Pullovers, Cardigans, Tunics, Turtlenecks, Sweater Jackets, Statement Sweaters, Jumpsuits, Rompers, Maternity Dresses, Denim Jackets, Moto Jackets, Blazers, Statement Jackets, Military Jackets, Faux Fur + Vegan Leather, Maxi Jackets + Dusters, Lightweight Jackets, Cleansers, Moisturizers, Oils + Serums, Eye Creams, Scrubs + Exfoliators, Masks, Toners + Face Mists, Essential Oils, Bath + Shower, Perfumes, Room Sprays,  Onesies, Baby Pants, Maternity Swim, Kids Swim, Pins, Tassels"
+              "sort_a": "Dresses, Tops + Tees, Bodysuits,  Bottoms, Sweaters, Skirts, Holiday, Jumpsuits + Rompers,  Pajamas, Skirts, Swimwear, Maternity, Skincare, Candles, Ornaments, Pillows, Wall Art, Swaddles, Quilts, Bibs, Towels, Crib Sheets, Throws, Belts, Fragrance, Kimonos, Fedoras, Beanies, Berets, Sailor Hats, Boater Hats, Trucker Hats, Sun Hats, Headbands,  Sunglasses, Hats, Flats, Platforms, Slides, Boots, Sneakers, Sandals, Clogs, Mules, Clutches, Crossbody Bags, Weekenders, Backpacks + Messengers, Totes, Top Handle Bags, Bag Accessories, Earrings, Necklaces, Chokers, Bracelets, Rings, Bikini Tops, Bikini Bottoms, One Pieces, Sarongs + Wraps, Denim, Bells, Pants, Mini Skirts, Midi Skirts, Maxi Skirts, Shorts, Maxi Dresses, Midi Dresses, Tees, Tunics, Shirts, Crop Tops,  Blouses, Graphic Tees, Camis + Tanks, Thermals + Pullovers + Henleys, Intimates, Greeting Cards, Nail Polish, Mini Dresses, Day Dresses, Party Dresses, Printed Dresses, White Dresses, Black Dresses, Sweater Dresses, Knit Dresses, Sets, Sweatshirts, Pullovers, Cardigans, Tunics, Turtlenecks, Sweater Jackets, Statement Sweaters, Jumpsuits, Rompers, Maternity Dresses, Denim Jackets, Moto Jackets, Blazers, Statement Jackets, Military Jackets, Faux Fur + Vegan Leather, Maxi Jackets + Dusters, Lightweight Jackets, Cleansers, Moisturizers, Oils + Serums, Eye Creams, Scrubs + Exfoliators, Masks, Toners + Face Mists, Essential Oils, Bath + Shower, Perfumes, Room Sprays,  Onesies, Baby Pants, Maternity Swim, Kids Swim, Tassels"
             }
           },
           "1543448752616": {
@@ -754,43 +754,16 @@
       "1547449221153": {
         "type": "carousel-slider",
         "blocks": {
-          "1547615104913": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/banner_fromdownunder_1500x750_d424a3bf-521a-4de6-9af9-59b8c2094274.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/banner_fromdownunder_600x600_3c56715c-a60b-4f9d-9dfa-beb87be4306c.png",
-              "link": "shopify:\/\/collections\/favorite-australian-brands"
-            }
-          },
-          "1547492089253": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/BoMa_MoonWater_1500x750_01_04942986-818e-4108-b7f2-ac832670fa47.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/Bohemian_Mama_MoonWater_600x600_01.jpg",
-              "link": "https:\/\/www.bohemianmama.com\/collections\/moon-water-co"
-            }
-          },
-          "1547449221153-0": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/NEW-SUNNIES.gif",
-              "mobile_image": "shopify:\/\/shop_images\/New-Sunnies-600x_ed3170f7-7c4e-4219-b74b-f99203b86996.png",
-              "link": "shopify:\/\/collections\/bonnie-clyde"
-            }
-          },
           "1547449221153-1": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/FortheKids_1500x750_01.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/kids-square.jpg",
-              "link": "shopify:\/\/collections\/kids"
+              "image": "shopify:\/\/shop_images\/banner_beautywellness_1500x750_f6c5d95c-0355-4eb7-b260-76b05b82fb4b.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/banner_beautywellness_600x600_edba4158-ad11-4425-a46f-d953f598c9db.jpg",
+              "link": "shopify:\/\/collections\/health-beauty"
             }
           }
         },
         "block_order": [
-          "1547615104913",
-          "1547492089253",
-          "1547449221153-0",
           "1547449221153-1"
         ],
         "settings": {}
