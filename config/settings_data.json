@@ -73,7 +73,7 @@
     "megamenu_2_collection_7": "",
     "megamenu_2_staticlinks": "megamenu-2-static-links",
     "megamenu_3_enable": true,
-    "megamenu_3_text": "BoMa Home",
+    "megamenu_3_text": "Home",
     "megamenu_3_default_collection": "home-interior",
     "megamenu_3_link_text_1": "Decor",
     "megamenu_3_collection_1": "decor",
@@ -131,7 +131,7 @@
     "mega_menu_2_collection_4_links": "tweens",
     "mega_menu_2_collection_4_image": "",
     "mega_menu_3_enable": true,
-    "mega_menu_3_text": "BoMa Home",
+    "mega_menu_3_text": "Home",
     "mega_menu_3_link": "boma-home",
     "mega_menu_3_left_links": "",
     "mega_menu_3_collection_1_text": "Home Decor",
@@ -172,9 +172,9 @@
           "mobile_menu": "mobile",
           "message": true,
           "home_page_only": false,
-          "message_text": "Free Shipping on orders of $150 or more",
-          "message_link": "shopify:\/\/collections\/health-beauty",
-          "color_bg": "#000000",
+          "message_text": "Additional 30% Off ALL Sale Items with code SHOPSALE19!",
+          "message_link": "shopify:\/\/collections\/sale",
+          "color_bg": "#1a1a1a",
           "color_text": "#ffffff"
         }
       },
@@ -231,7 +231,7 @@
               "swap_image": true,
               "image": "shopify:\/\/shop_images\/2533A0CB-AABF-4A78-AE94-58119CD95131.png",
               "title": "COZY KNITS",
-              "text": "<p>Shop cozy sweaters and outerwear for women with this season's must haves. We'll keep you warm til spring with gorgeous sweaters from Show Me Your Mumu, Free People, Mink Pink and more for your fave bohemian clothing looks.<\/p>",
+              "text": "<p>Shop cozy sweaters and outerwear for women with this season's must haves. We'll keep you warm til spring with gorgeous sweaters from <a href=\"\/collections\/show-me-your-mumu\" title=\"Show Me Your Mumu\">Show Me Your Mumu<\/a>, Free People, Mink Pink and more for your fave bohemian clothing looks.<\/p>",
               "button_label": "SHOP NOW",
               "button_link": "shopify:\/\/collections\/womens-sweaters-outerwear"
             }
@@ -243,7 +243,7 @@
               "swap_image": false,
               "image": "shopify:\/\/shop_images\/Bohemian_Clothing_and_Dresses.jpeg",
               "title": "HOTTEST DRESSES",
-              "text": "<p>Shop the hottest dresses and rompers from Lack of Coloe, Arnhem, Show Me Your Mumu, and Free People. In the mood for glitterati or flowy floral? We've got you covered for all your bohemian clothing needs.&nbsp;<\/p>",
+              "text": "<p>Shop the hottest dresses and rompers from <a href=\"\/collections\/lack-of-color\" title=\"Lack of Color\">Lack of Color<\/a>, Arnhem, Show Me Your Mumu, and Free People. In the mood for glitterati or flowy floral? We've got you covered for all your bohemian clothing needs.&nbsp;<\/p>",
               "button_label": "SHOP NOW",
               "button_link": "shopify:\/\/collections\/womens-dresses"
             }
@@ -292,7 +292,7 @@
           "1539866522679-0": {
             "type": "image-with-text",
             "settings": {
-              "image": "shopify:\/\/shop_images\/bohemian_clothing_for_kids.jpg",
+              "image": "shopify:\/\/shop_images\/E7FF85EB-D6D8-402A-8D87-4A259B5B5D3E.jpeg",
               "image_on_right": false,
               "title": "BOYS",
               "content": "From newborn to teens and everything in between. Shop our hand curated boys collection.",
@@ -303,7 +303,7 @@
           "1539866522679-1": {
             "type": "image-with-text",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Bohemian_clothing_for_girls.jpg",
+              "image": "shopify:\/\/shop_images\/555C6936-287B-4B5D-9807-0136F302472A.jpeg",
               "image_on_right": true,
               "title": "GIRLS",
               "content": "From Mommy n' Me, to one-of-a-kind frilly boho dresses, tops + tees, and raglan pants",
@@ -648,18 +648,18 @@
               "sort_a": "417 Press,Ace of Something,Albetta,Alimrose Australia,Allia,ASH,Auguste the Label,Arnhem,Beach Riot,Bersuse,Blabla Kids,Blue Life,Canyon Leaf,Chaser,Chaser Kids,Chasing Unicorns,Cleobella,Courtney and The Babes,Coveted Things,Deco Miami,Dazey LA,Dolce Vita,Ettika,Fiona Walker,Five and Two,Flynn Skye,Free People,Full Unicorn,Glitter & Spice,Grom Squad,Handloom,Harlow Jade,Henny and Coco,House of Lloyd,Innkas,iiixkids Apparel,JaxKelly,Jen's Pirate Booty,Jolie,Junk Food Clothing,Kinsley Armelle,Kita Dua,Kivari,Lack of Color,Lilya,Little Shop of Oils,Lovestrength,Lost + Wander,Loulou LOLLIPOP,Madeleine Maternity,Mia Shoes,Miki Miette,Mer St. Barth,Moon Water Co.,Mother Denim,Mother Trucker & Co.,Mushmina,Novella Royale,Omamimini,Ondade Mar,One Hundred Eighty Degrees,Pez D'Or,Quay,Quincy Mae,Raga,Red Carter,Route508,Rylee and Cru,Rubyyaya,Stillwater,Sticks + Stones,Spiritual Gangster,Spell &,The Gypsy,Somedays Lovin',So Nikki,Snapper Rock,Skylar Luna,Show Me Your Mumu,Shilla The Label,The River Haze,Tiare Hawaii,Tigerlily,Tori Praver,Tulle & Batiste,Wish"
             }
           },
-          "1546544750518": {
-            "type": "text",
-            "settings": {
-              "product_image": "shopify:\/\/shop_images\/mini_461d21c6-bc2d-4141-bbb2-ebf5045997c5.jpg",
-              "product_link": "shopify:\/\/collections\/mini-dresses-boho"
-            }
-          },
           "1546544826908": {
             "type": "text",
             "settings": {
               "product_image": "shopify:\/\/shop_images\/midi-dresses.jpg",
               "product_link": "shopify:\/\/collections\/midi-dresses"
+            }
+          },
+          "1548357159456": {
+            "type": "text",
+            "settings": {
+              "product_image": "shopify:\/\/shop_images\/mini_461d21c6-bc2d-4141-bbb2-ebf5045997c5.jpg",
+              "product_link": "shopify:\/\/collections\/mini-dresses-boho"
             }
           },
           "1546544840386": {
@@ -676,6 +676,13 @@
               "product_link": "shopify:\/\/collections\/tunic-dresses"
             }
           },
+          "1546834080909": {
+            "type": "text",
+            "settings": {
+              "product_image": "shopify:\/\/shop_images\/maxi-dresses.jpg",
+              "product_link": "shopify:\/\/collections\/maxi-dresses"
+            }
+          },
           "1546834066621": {
             "type": "image",
             "settings": {
@@ -683,24 +690,17 @@
               "filter1heading": "",
               "sort_a": ""
             }
-          },
-          "1546834080909": {
-            "type": "text",
-            "settings": {
-              "product_image": "shopify:\/\/shop_images\/maxi-dresses.jpg",
-              "product_link": "shopify:\/\/collections\/maxi-dresses"
-            }
           }
         },
         "block_order": [
           "1546544712724",
           "1546544727489",
-          "1546544750518",
           "1546544826908",
+          "1548357159456",
           "1546544840386",
           "1546544850955",
-          "1546834066621",
-          "1546834080909"
+          "1546834080909",
+          "1546834066621"
         ],
         "settings": {
           "rows": 30,
@@ -754,17 +754,26 @@
       "1547449221153": {
         "type": "carousel-slider",
         "blocks": {
-          "1547449221153-1": {
+          "1548558351292": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/banner_beautywellness_1500x750_f6c5d95c-0355-4eb7-b260-76b05b82fb4b.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/banner_beautywellness_600x600_edba4158-ad11-4425-a46f-d953f598c9db.jpg",
-              "link": "shopify:\/\/collections\/health-beauty"
+              "image": "shopify:\/\/shop_images\/banner_saleonsale_1500x750_0434fa4c-5876-4258-846a-6a06e149f8d9.gif",
+              "mobile_image": "shopify:\/\/shop_images\/banner_saleonsale_600x600_890e5e5a-4fe5-40c1-88b5-0858665f69d6.gif",
+              "link": "shopify:\/\/collections\/sale"
+            }
+          },
+          "1548354291000": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/banner_freepeople_1500x750_3ff9e9c8-43c6-4bd6-846c-57eee7d69724.gif",
+              "mobile_image": "shopify:\/\/shop_images\/banner_freepeople_600x600_8d246b1c-63c2-45e4-86df-5a60cf297e79.gif",
+              "link": "shopify:\/\/collections\/free-people"
             }
           }
         },
         "block_order": [
-          "1547449221153-1"
+          "1548558351292",
+          "1548354291000"
         ],
         "settings": {}
       }
