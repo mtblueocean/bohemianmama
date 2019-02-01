@@ -1,83 +1,76 @@
+{% if section.settings.enable_section %}
 <div class="container indexx-section four_images_inner">
   <div class="row">
     <div class="col-sm-3 mb-3 mb-sm-3 mb-md-0">
       <a href="{{ section.settings.link1}}">
-    <img src="{{ section.settings.image1 | img_url: '2048x' }}" class="img-fluid" alt="Free-Spirited Gifts">
-   </a>
-  </div>
-     <div class="col-sm-3 mb-3 mb-sm-3 mb-md-0">
-   <a href="{{ section.settings.link2}}">
-    <img src="{{ section.settings.image2 | img_url: '2048x' }}" class="img-fluid"alt="Boho Holiday">
-   </a>
-  </div>
-     <div class="col-sm-3 mb-3 mb-sm-3 mb-md-0">
-   <a href="{{ section.settings.link3}}">
-    <img src="{{ section.settings.image3 | img_url: '2048x' }}" class="img-fluid" alt="Free-Spirited Gifts">
-   </a>
-  </div>
-     <div class="col-sm-3 mb-3 mb-sm-3 mb-md-0">
-   <a href="{{ section.settings.link4}}">
-    <img src="{{ section.settings.image4 | img_url: '2048x' }}" class="img-fluid" alt="Boho Holiday">
-   </a>
-  </div>
+      <img src="{{ section.settings.image1 | img_url: '2048x' }}" class="img-fluid" alt="Free-Spirited Gifts">
+     </a>
+    </div>
+    <div class="col-sm-3 mb-3 mb-sm-3 mb-md-0">
+      <a href="{{ section.settings.link2}}">
+        <img src="{{ section.settings.image2 | img_url: '2048x' }}" class="img-fluid"alt="Boho Holiday">
+      </a>
+    </div>
+    <div class="col-sm-3 mb-3 mb-sm-3 mb-md-0">
+      <a href="{{ section.settings.link3}}">
+        <img src="{{ section.settings.image3 | img_url: '2048x' }}" class="img-fluid" alt="Free-Spirited Gifts">
+      </a>
+    </div>
+    <div class="col-sm-3 mb-3 mb-sm-3 mb-md-0">
+      <a href="{{ section.settings.link4}}">
+        <img src="{{ section.settings.image4 | img_url: '2048x' }}" class="img-fluid" alt="Boho Holiday">
+      </a>
+    </div>
   </div>
 </div>
+{% endif %}
 
 {% schema %}
   {
     "name": "4 image section",
-     
-	"settings": [
- 
- {
+	  "settings": [
+      {
+        "type": "checkbox",
+        "id": "enable_section",
+        "label": "Enable Section",
+        "default": true
+      },
+      {
         "type": "image_picker",
         "id": "image1",
         "label": "Image 1" 
       },
- 
- 
-{
+      {
         "type": "url",
         "id": "link1",
         "label": "link 1" 
       },
- 
- {
+      {
         "type": "image_picker",
         "id": "image2",
         "label": "Image 2" 
       },
- 
- 
-{
+      {
         "type": "url",
         "id": "link2",
         "label": "link 2" 
-      }
-,
- 
- {
+      },
+      {
         "type": "image_picker",
         "id": "image3",
         "label": "Image 3" 
       },
- 
- 
-{
+      {
         "type": "url",
         "id": "link3",
         "label": "link 3" 
-      }
-,
- 
- {
+      },
+      {
         "type": "image_picker",
         "id": "image4",
         "label": "Image 4" 
       },
- 
- 
-{
+      {
         "type": "url",
         "id": "link4",
         "label": "link 4" 
