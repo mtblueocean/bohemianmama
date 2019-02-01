@@ -132,7 +132,7 @@
     "mega_menu_2_collection_4_image": "",
     "mega_menu_3_enable": true,
     "mega_menu_3_text": "Home",
-    "mega_menu_3_link": "boma-home",
+    "mega_menu_3_link": "home-interior",
     "mega_menu_3_left_links": "",
     "mega_menu_3_collection_1_text": "Home Decor",
     "mega_menu_3_collection_1_title_link": "decor",
@@ -172,7 +172,7 @@
           "mobile_menu": "mobile",
           "message": true,
           "home_page_only": false,
-          "message_text": "Additional 30% Off ALL Sale Items with code SHOPSALE19!",
+          "message_text": "Free Shipping on $150+",
           "message_link": "shopify:\/\/collections\/sale",
           "color_bg": "#1a1a1a",
           "color_text": "#ffffff"
@@ -241,7 +241,7 @@
             "settings": {
               "enable_image": true,
               "swap_image": false,
-              "image": "shopify:\/\/shop_images\/Bohemian_Clothing_and_Dresses.jpeg",
+              "image": "shopify:\/\/shop_images\/lost_wander_Boho_mini_dress.jpg",
               "title": "HOTTEST DRESSES",
               "text": "<p>Shop the hottest dresses and rompers from <a href=\"\/collections\/lack-of-color\" title=\"Lack of Color\">Lack of Color<\/a>, Arnhem, Show Me Your Mumu, and Free People. In the mood for glitterati or flowy floral? We've got you covered for all your bohemian clothing needs.&nbsp;<\/p>",
               "button_label": "SHOP NOW",
@@ -253,7 +253,7 @@
             "settings": {
               "enable_image": true,
               "swap_image": true,
-              "image": "shopify:\/\/shop_images\/Bohemian_style_clothing_resort_wear_and_swim.jpg",
+              "image": "shopify:\/\/shop_images\/Show-Me-Your-Mumu-Crop-Demin-Top.jpeg",
               "title": "RESORT READY",
               "text": "<p>Warm sand and ocean waters are calling and we have everything you need to make a splash. Shop this season's must have bikinis, one pieces, cover ups, dresses, accessories and more. Shop our fave boho style looks from top brands.<\/p>\n<p><\/p>",
               "button_label": "SHOP NOW",
@@ -292,10 +292,10 @@
           "1539866522679-0": {
             "type": "image-with-text",
             "settings": {
-              "image": "shopify:\/\/shop_images\/E7FF85EB-D6D8-402A-8D87-4A259B5B5D3E.jpeg",
+              "image": "shopify:\/\/shop_images\/IMG_1809_2.jpg",
               "image_on_right": false,
               "title": "BOYS",
-              "content": "From newborn to teens and everything in between. Shop our hand curated boys collection.",
+              "content": "Don't forget the boys. Shop from newborn to teens and everything in between with rocker tees, organic cotton and swim trunks for kids.",
               "btn_text": "SHOP NOW",
               "btn_link": "shopify:\/\/collections\/boys"
             }
@@ -303,10 +303,10 @@
           "1539866522679-1": {
             "type": "image-with-text",
             "settings": {
-              "image": "shopify:\/\/shop_images\/555C6936-287B-4B5D-9807-0136F302472A.jpeg",
+              "image": "shopify:\/\/shop_images\/harlow-jade-moon-flower-dress.jpg",
               "image_on_right": true,
               "title": "GIRLS",
-              "content": "From Mommy n' Me, to one-of-a-kind frilly boho dresses, tops + tees, and raglan pants",
+              "content": "Get your littles ready for spring with our organic cotton tees & pants, mommy n' me denim sets, and one of a kind boho dresses.",
               "btn_text": "SHOP NOW",
               "btn_link": "shopify:\/\/collections\/girls"
             }
@@ -353,12 +353,12 @@
       "1540210764690": {
         "type": "collection",
         "settings": {
-          "title": "NEW ARRIVALS",
+          "title": "Valentine's Gifts",
           "enable_carousel": true,
           "desktopimage": "",
           "mobileimage": "",
           "arrow_position": "middle",
-          "collection": "womens-new-arrivals",
+          "collection": "valentines-gifts",
           "grid": 5,
           "rows": 4,
           "show_vendor": false,
@@ -517,14 +517,14 @@
         "type": "collection2",
         "settings": {
           "enable_section": true,
-          "title": "Gifts for Littles",
+          "title": "In Bloom",
           "enable_carousel": true,
           "desktopimage": "shopify:\/\/shop_images\/Xmas_gifts_for_children.jpg",
           "mobileimage": "shopify:\/\/shop_images\/Xmas_gifts_for_children.jpg",
           "arrow_position": "middle",
-          "collection": "gifts-for-littles",
+          "collection": "in-bloom",
           "grid": 4,
-          "rows": 1,
+          "rows": 3,
           "show_vendor": false,
           "show_view_all": true
         }
@@ -533,13 +533,13 @@
         "type": "collection3",
         "settings": {
           "enable_section": true,
-          "title": "Gifts for Home",
+          "title": "Spring Brights",
           "enable_carousel": true,
           "desktopimage": "shopify:\/\/shop_images\/gifts-for-home_021e76a1-ed1f-4792-906d-2fac2b03bcb4.jpg",
           "mobileimage": "shopify:\/\/shop_images\/gifts-for-home-mobile.jpg",
           "arrow_position": "middle",
-          "collection": "gifts-for-home",
-          "grid": 3,
+          "collection": "spring-brights",
+          "grid": 4,
           "rows": 3,
           "show_vendor": false,
           "show_view_all": true
@@ -548,36 +548,36 @@
       "giftbanner": {
         "type": "giftbanner",
         "settings": {
-          "image": "shopify:\/\/shop_images\/Giftcard_Banner1.jpg",
+          "image": "shopify:\/\/shop_images\/1500x750_header.png",
           "link": ""
         }
       },
       "2imagesection": {
         "type": "2imagesection",
         "settings": {
-          "image1": "shopify:\/\/shop_images\/merry-xmas-gift-card.jpg",
-          "link1": "shopify:\/\/collections\/holiday-gift-cards-1",
-          "image2": "shopify:\/\/shop_images\/holiday-gift-card.jpg",
-          "link2": "shopify:\/\/collections\/holiday-gift-cards-1"
+          "image1": "shopify:\/\/shop_images\/633x823_LackofColor.png",
+          "link1": "shopify:\/\/collections\/lack-of-color",
+          "image2": "shopify:\/\/shop_images\/633x823_Cleobella.png",
+          "link2": "shopify:\/\/collections\/cleobella"
         }
       },
       "4imagesection": {
         "type": "4imagesection",
         "settings": {
-          "image1": "shopify:\/\/shop_images\/giftsunder25_2048x_645e327f-ee98-4753-b8ef-cd40505f9a79.jpg",
-          "link1": "https:\/\/www.bohemianmama.com\/collections\/gifts-under-25",
-          "image2": "shopify:\/\/shop_images\/giftsunder50_2048x_f86538e2-c35b-4372-866b-7d4c6cb42c47.jpg",
-          "link2": "https:\/\/www.bohemianmama.com\/collections\/gifts-under-50",
-          "image3": "shopify:\/\/shop_images\/giftsunder100_2048x_3a944cf1-1e72-4700-8144-b822fe8f3d56.jpg",
-          "link3": "https:\/\/www.bohemianmama.com\/collections\/gifts-under-100",
-          "image4": "shopify:\/\/shop_images\/giftsunder200_2048x_08826a23-5bd7-46b4-a125-edfe84c54f5d.jpg",
-          "link4": "https:\/\/www.bohemianmama.com\/collections\/gifts-under-200"
+          "image1": "shopify:\/\/shop_images\/600x600_minkpink.jpg",
+          "link1": "shopify:\/\/collections\/mink-pink",
+          "image2": "shopify:\/\/shop_images\/600x600_DL1961.jpg",
+          "link2": "shopify:\/\/collections\/dl1961",
+          "image3": "shopify:\/\/shop_images\/600x600_spiritualgangster.png",
+          "link3": "shopify:\/\/collections\/spiritual-gangster",
+          "image4": "shopify:\/\/shop_images\/600x600_boyish.png",
+          "link4": "shopify:\/\/collections\/boyish"
         }
       },
       "giftbanner1": {
         "type": "giftbanner1",
         "settings": {
-          "image": "shopify:\/\/shop_images\/banner_7e2d42da-1a6a-4ab6-920a-ef124d73298a.jpg",
+          "image": "shopify:\/\/shop_images\/1500x750_bottomheader.png",
           "link": "shopify:\/\/collections\/health-beauty"
         }
       },
@@ -601,14 +601,14 @@
         "type": "collection1",
         "settings": {
           "enable_section": true,
-          "title": "Gifts for Her",
+          "title": "Sorbet Mood",
           "enable_carousel": true,
           "desktopimage": "shopify:\/\/shop_images\/gifts-for-her.jpg",
           "mobileimage": "shopify:\/\/shop_images\/home_decor_mobile_image.jpg",
           "arrow_position": "middle",
-          "collection": "gifts-for-her",
+          "collection": "sorbet",
           "grid": 4,
-          "rows": 1,
+          "rows": 3,
           "show_vendor": false,
           "show_view_all": true
         }
@@ -754,26 +754,26 @@
       "1547449221153": {
         "type": "carousel-slider",
         "blocks": {
-          "1548558351292": {
+          "1548887652836": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/banner_saleonsale_1500x750_0434fa4c-5876-4258-846a-6a06e149f8d9.gif",
-              "mobile_image": "shopify:\/\/shop_images\/banner_saleonsale_600x600_890e5e5a-4fe5-40c1-88b5-0858665f69d6.gif",
-              "link": "shopify:\/\/collections\/sale"
+              "image": "shopify:\/\/shop_images\/banner_blushing_1500x750_2810348a-bf90-4508-b9b9-7496a2d89b5c.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/banner_blushing_600x600_670ae105-e4c5-4028-86bd-52cd942ab7d8.png",
+              "link": "shopify:\/\/collections\/blushing-pink-red"
             }
           },
-          "1548354291000": {
+          "1548971727410": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/banner_freepeople_1500x750_3ff9e9c8-43c6-4bd6-846c-57eee7d69724.gif",
-              "mobile_image": "shopify:\/\/shop_images\/banner_freepeople_600x600_8d246b1c-63c2-45e4-86df-5a60cf297e79.gif",
-              "link": "shopify:\/\/collections\/free-people"
+              "image": "shopify:\/\/shop_images\/1500x750_header.png",
+              "mobile_image": "shopify:\/\/shop_images\/600x600_header.png",
+              "link": "shopify:\/\/pages\/bohemian-spring-styles"
             }
           }
         },
         "block_order": [
-          "1548558351292",
-          "1548354291000"
+          "1548887652836",
+          "1548971727410"
         ],
         "settings": {}
       }
