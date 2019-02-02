@@ -172,8 +172,8 @@
           "mobile_menu": "mobile",
           "message": true,
           "home_page_only": false,
-          "message_text": "Free Shipping on $150+",
-          "message_link": "shopify:\/\/collections\/sale",
+          "message_text": "Shop 30% Off Select Free People! Free Shipping on orders $150+",
+          "message_link": "shopify:\/\/collections\/free-people-sale",
           "color_bg": "#1a1a1a",
           "color_text": "#ffffff"
         }
@@ -548,13 +548,16 @@
       "giftbanner": {
         "type": "giftbanner",
         "settings": {
+          "enable_section": true,
           "image": "shopify:\/\/shop_images\/1500x750_header.png",
-          "link": ""
+          "mobile_image": "shopify:\/\/shop_images\/600x600_header.png",
+          "link": "shopify:\/\/collections\/new-arrivals-all"
         }
       },
       "2imagesection": {
         "type": "2imagesection",
         "settings": {
+          "enable_section": true,
           "image1": "shopify:\/\/shop_images\/633x823_LackofColor.png",
           "link1": "shopify:\/\/collections\/lack-of-color",
           "image2": "shopify:\/\/shop_images\/633x823_Cleobella.png",
@@ -564,6 +567,7 @@
       "4imagesection": {
         "type": "4imagesection",
         "settings": {
+          "enable_section": true,
           "image1": "shopify:\/\/shop_images\/600x600_minkpink.jpg",
           "link1": "shopify:\/\/collections\/mink-pink",
           "image2": "shopify:\/\/shop_images\/600x600_DL1961.jpg",
@@ -577,7 +581,9 @@
       "giftbanner1": {
         "type": "giftbanner1",
         "settings": {
+          "enable_section": true,
           "image": "shopify:\/\/shop_images\/1500x750_bottomheader.png",
+          "mobile_image": "",
           "link": "shopify:\/\/collections\/health-beauty"
         }
       },
@@ -615,16 +621,15 @@
       },
       "1544898153341": {
         "type": "collection",
-        "disabled": true,
         "settings": {
-          "title": "Holiday Gift Cards",
+          "title": "Date Night Looks",
           "enable_carousel": true,
           "desktopimage": "",
           "mobileimage": "",
           "arrow_position": "middle",
-          "collection": "gift-cards",
+          "collection": "date-night-looks",
           "grid": 4,
-          "rows": 1,
+          "rows": 3,
           "show_vendor": false,
           "show_view_all": true
         }
@@ -754,6 +759,14 @@
       "1547449221153": {
         "type": "carousel-slider",
         "blocks": {
+          "1549040198206": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/banner_freepeoplesale_1500x750_1349826a-9faf-4baa-97c4-73ea437faa16.png",
+              "mobile_image": "shopify:\/\/shop_images\/banner_freepeoplesale_600x600_c4e69e96-7f80-45d0-bc80-19522b954029.png",
+              "link": "shopify:\/\/collections\/free-people-sale"
+            }
+          },
           "1548887652836": {
             "type": "image",
             "settings": {
@@ -772,6 +785,7 @@
           }
         },
         "block_order": [
+          "1549040198206",
           "1548887652836",
           "1548971727410"
         ],
@@ -781,9 +795,9 @@
     "content_for_index": [
       "1547449221153",
       "1539774767765",
+      "1544898153341",
       "1540210764690",
       "1539866522679",
-      "1544898153341",
       "featured-collections",
       "1540204785071",
       "1540200984195"
