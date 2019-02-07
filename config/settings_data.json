@@ -172,8 +172,8 @@
           "mobile_menu": "mobile",
           "message": true,
           "home_page_only": false,
-          "message_text": "Shop 30% Off Select Free People! Free Shipping on orders $150+",
-          "message_link": "shopify:\/\/collections\/free-people-sale",
+          "message_text": "Shop date night looks for Valentine's Day. Free Shipping on orders $150+",
+          "message_link": "shopify:\/\/collections\/date-night-looks",
           "color_bg": "#1a1a1a",
           "color_text": "#ffffff"
         }
@@ -292,23 +292,23 @@
           "1539866522679-0": {
             "type": "image-with-text",
             "settings": {
-              "image": "shopify:\/\/shop_images\/IMG_1809_2.jpg",
+              "image": "shopify:\/\/shop_images\/E70AD9B0-F1F5-4373-851D-98D3533A3CAA.jpeg",
               "image_on_right": false,
-              "title": "BOYS",
-              "content": "Don't forget the boys. Shop from newborn to teens and everything in between with rocker tees, organic cotton and swim trunks for kids.",
+              "title": "GIRLS",
+              "content": "Get your littles ready for spring with our organic cotton tees & pants, mommy n' me denim sets, and one of a kind boho dresses.",
               "btn_text": "SHOP NOW",
-              "btn_link": "shopify:\/\/collections\/boys"
+              "btn_link": "shopify:\/\/collections\/girls"
             }
           },
           "1539866522679-1": {
             "type": "image-with-text",
             "settings": {
-              "image": "shopify:\/\/shop_images\/harlow-jade-moon-flower-dress.jpg",
+              "image": "shopify:\/\/shop_images\/5F28389D-D9B1-4020-8634-5D4F48054E74.jpeg",
               "image_on_right": true,
-              "title": "GIRLS",
-              "content": "Get your littles ready for spring with our organic cotton tees & pants, mommy n' me denim sets, and one of a kind boho dresses.",
+              "title": "BOYS",
+              "content": "Don't forget the boys. Shop from newborn to teens and everything in between with rocker tees, organic cotton and swim trunks for kids.",
               "btn_text": "SHOP NOW",
-              "btn_link": "shopify:\/\/collections\/girls"
+              "btn_link": "shopify:\/\/collections\/boys"
             }
           }
         },
@@ -519,8 +519,8 @@
           "enable_section": true,
           "title": "In Bloom",
           "enable_carousel": true,
-          "desktopimage": "shopify:\/\/shop_images\/Xmas_gifts_for_children.jpg",
-          "mobileimage": "shopify:\/\/shop_images\/Xmas_gifts_for_children.jpg",
+          "desktopimage": "",
+          "mobileimage": "",
           "arrow_position": "middle",
           "collection": "in-bloom",
           "grid": 4,
@@ -609,8 +609,8 @@
           "enable_section": true,
           "title": "Sorbet Mood",
           "enable_carousel": true,
-          "desktopimage": "shopify:\/\/shop_images\/gifts-for-her.jpg",
-          "mobileimage": "shopify:\/\/shop_images\/home_decor_mobile_image.jpg",
+          "desktopimage": "",
+          "mobileimage": "",
           "arrow_position": "middle",
           "collection": "sorbet",
           "grid": 4,
@@ -642,7 +642,7 @@
             "settings": {
               "sort-dropdown-a-check": true,
               "filter1heading": "Type",
-              "sort_a": "Dresses, Tops + Tees, Bottoms, Sweaters, Skirts, Holiday, Jumpsuits + Rompers, Jewelry, Pajamas, Skirts, Swimwear, Maternity, Skincare, Candles, Ornaments, Pillows, Wall Art, Swaddles, Quilts, Bibs, Towels, Crib Sheets, Throws, Belts, Fragrance, Kimonos, Fedoras, Beanies, Berets, Sailor Hats, Boater Hats, Trucker Hats, Sun Hats, Headbands,  Sunglasses, Hats, Flats, Platforms, Slides, Boots, Sneakers, Sandals, Clogs, Mules, Clutches, Crossbody Bags, Weekenders, Backpacks + Messengers, Totes, Top Handle Bags, Bag Accessories, Earrings, Necklaces, Chokers, Bracelets, Rings, Bikini Tops, Bikini Bottoms, One Pieces, Sarongs + Wraps, Denim, Bells, Pants, Mini Skirts, Midi Skirts, Maxi Skirts, Shorts, Maxi Dresses, Midi Dresses, Tees, Tunics, Shirts, Crop Tops, Blouses, Graphic Tees, Camis + Tanks, Thermals + Pullovers + Henleys, Intimates, Greeting Cards, Nail Polish, Mini Dresses, Day Dresses, Party Dresses, Printed Dresses, White Dresses, Black Dresses, Sweater Dresses, Knit Dresses, Sweatshirts, Pullovers, Cardigans, Tunics, Turtlenecks, Sweater Jackets, Statement Sweaters, Jumpsuits, Rompers, Maternity Dresses, Tunic Dresses, Denim Jackets, Moto Jackets, Blazers, Statement Jackets, Military Jackets, Faux Fur + Vegan Leather, Maxi Jackets + Dusters, Lightweight Jackets, Cleansers, Moisturizers, Oils + Serums, Eye Creams, Scrubs + Exfoliators, Masks, Toners + Face Mists, Essential Oils, Bath + Shower, Perfumes, Room Sprays,  Onesies, Baby Pants, Maternity Swim, Kids Swim"
+              "sort_a": "Tops + Tees, Bottoms, Sweaters, Skirts, Holiday, Jumpsuits + Rompers, Jewelry, Pajamas, Skirts, Swimwear, Maternity, Skincare, Candles, Ornaments, Pillows, Wall Art, Swaddles, Quilts, Bibs, Towels, Crib Sheets, Throws, Belts, Fragrance, Kimonos, Fedoras, Beanies, Berets, Sailor Hats, Boater Hats, Trucker Hats, Sun Hats, Headbands,  Sunglasses, Hats, Flats, Platforms, Slides, Boots, Sneakers, Sandals, Clogs, Mules, Clutches, Crossbody Bags, Weekenders, Backpacks + Messengers, Totes, Top Handle Bags, Bag Accessories, Earrings, Necklaces, Chokers, Bracelets, Rings, Bikini Tops, Bikini Bottoms, One Pieces, Sarongs + Wraps, Denim, Bells, Pants, Mini Skirts, Midi Skirts, Maxi Skirts, Shorts, Maxi Dresses, Midi Dresses, Tees, Tunics, Shirts, Crop Tops, Blouses, Graphic Tees, Camis + Tanks, Thermals + Pullovers + Henleys, Intimates, Greeting Cards, Nail Polish, Mini Dresses, Day Dresses, Party Dresses, Printed Dresses, White Dresses, Black Dresses, Sweater Dresses, Knit Dresses, Sweatshirts, Pullovers, Cardigans, Tunics, Turtlenecks, Sweater Jackets, Statement Sweaters, Jumpsuits, Rompers, Maternity Dresses, Tunic Dresses, Denim Jackets, Moto Jackets, Blazers, Statement Jackets, Military Jackets, Faux Fur + Vegan Leather, Maxi Jackets + Dusters, Lightweight Jackets, Cleansers, Moisturizers, Oils + Serums, Eye Creams, Scrubs + Exfoliators, Masks, Toners + Face Mists, Essential Oils, Bath + Shower, Perfumes, Room Sprays,  Onesies, Baby Pants, Maternity Swim, Kids Swim"
             }
           },
           "1546544727489": {
@@ -759,14 +759,6 @@
       "1547449221153": {
         "type": "carousel-slider",
         "blocks": {
-          "1549040198206": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/banner_freepeoplesale_1500x750_1349826a-9faf-4baa-97c4-73ea437faa16.png",
-              "mobile_image": "shopify:\/\/shop_images\/banner_freepeoplesale_600x600_c4e69e96-7f80-45d0-bc80-19522b954029.png",
-              "link": "shopify:\/\/collections\/free-people-sale"
-            }
-          },
           "1548887652836": {
             "type": "image",
             "settings": {
@@ -782,10 +774,18 @@
               "mobile_image": "shopify:\/\/shop_images\/600x600_header.png",
               "link": "shopify:\/\/pages\/bohemian-spring-styles"
             }
+          },
+          "1549515141915": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/banner_galentine_1500x750_9aa667aa-cb7f-488c-82eb-c9fc779c0a2a.png",
+              "mobile_image": "shopify:\/\/shop_images\/banner_galentine_New_600x600_copy.png",
+              "link": "shopify:\/\/collections\/valentines-gifts"
+            }
           }
         },
         "block_order": [
-          "1549040198206",
+          "1549515141915",
           "1548887652836",
           "1548971727410"
         ],
