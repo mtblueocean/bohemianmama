@@ -121,7 +121,7 @@
     "mega_menu_2_collection_1_title_link": "mini",
     "mega_menu_2_collection_1_links": "minis",
     "mega_menu_2_collection_2_text": "Little Girls | 3-8 years",
-    "mega_menu_2_collection_2_title_link": "girls-3-8-years",
+    "mega_menu_2_collection_2_title_link": "",
     "mega_menu_2_collection_2_links": "girls-3-8",
     "mega_menu_2_collection_3_text": "Little Boys | 3-8 years",
     "mega_menu_2_collection_3_title_link": "boys-3-8",
@@ -172,9 +172,9 @@
           "mobile_menu": "mobile",
           "message": true,
           "home_page_only": false,
-          "message_text": "Shop date night looks for Valentine's Day. Free Shipping on orders $150+",
-          "message_link": "shopify:\/\/collections\/date-night-looks",
-          "color_bg": "#1a1a1a",
+          "message_text": "Treat your sweetheart to something she'll love. Shop Gift Cards.",
+          "message_link": "shopify:\/\/products\/gift-card",
+          "color_bg": "#d25eaf",
           "color_text": "#ffffff"
         }
       },
@@ -353,14 +353,14 @@
       "1540210764690": {
         "type": "collection",
         "settings": {
-          "title": "Valentine's Gifts",
+          "title": "Treat Yourself",
           "enable_carousel": true,
           "desktopimage": "",
           "mobileimage": "",
           "arrow_position": "middle",
-          "collection": "valentines-gifts",
-          "grid": 5,
-          "rows": 4,
+          "collection": "health-and-beauty",
+          "grid": 4,
+          "rows": 3,
           "show_vendor": false,
           "show_view_all": true
         }
@@ -447,7 +447,7 @@
         "type": "related-products",
         "settings": {
           "show_related_products": true,
-          "related_title": "Other Items You'll Love",
+          "related_title": "You'll Also Love",
           "related_grid_num": "5",
           "related_grid_row": "2"
         }
@@ -460,7 +460,7 @@
             "settings": {
               "sort-dropdown-a-check": true,
               "filter1heading": "Type",
-              "sort_a": "Dresses, Tops + Tees, Bodysuits,  Bottoms, Sweaters, Skirts, Holiday, Jumpsuits + Rompers,  Pajamas, Skirts, Swimwear, Maternity, Skincare, Candles, Ornaments, Pillows, Wall Art, Swaddles, Quilts, Bibs, Towels, Crib Sheets, Throws, Belts, Fragrance, Kimonos, Fedoras, Beanies, Berets, Sailor Hats, Boater Hats, Trucker Hats, Sun Hats, Headbands,  Sunglasses, Hats, Flats, Platforms, Slides, Boots, Sneakers, Sandals, Clogs, Mules, Clutches, Crossbody Bags, Weekenders, Backpacks + Messengers, Totes, Top Handle Bags, Bag Accessories, Earrings, Necklaces, Chokers, Bracelets, Rings, Bikini Tops, Bikini Bottoms, One Pieces, Sarongs + Wraps, Denim, Bells, Pants, Mini Skirts, Midi Skirts, Maxi Skirts, Shorts, Maxi Dresses, Midi Dresses, Tees, Tunics, Shirts, Crop Tops,  Blouses, Graphic Tees, Camis + Tanks, Thermals + Pullovers + Henleys, Intimates, Greeting Cards, Nail Polish, Mini Dresses, Day Dresses, Party Dresses, Printed Dresses, White Dresses, Black Dresses, Sweater Dresses, Knit Dresses, Sets, Sweatshirts, Pullovers, Cardigans, Tunics, Turtlenecks, Sweater Jackets, Statement Sweaters, Jumpsuits, Rompers, Maternity Dresses, Denim Jackets, Moto Jackets, Blazers, Statement Jackets, Military Jackets, Faux Fur + Vegan Leather, Maxi Jackets + Dusters, Lightweight Jackets, Cleansers, Moisturizers, Oils + Serums, Eye Creams, Scrubs + Exfoliators, Masks, Toners + Face Mists, Essential Oils, Bath + Shower, Perfumes, Room Sprays,  Onesies, Baby Pants, Maternity Swim, Kids Swim, Tassels"
+              "sort_a": "Dresses, Bodysuits,  Bottoms, Skirts, Holiday, Jumpsuits + Rompers,  Pajamas, Skirts, Swimwear, Sweaters, Sweatshirts, Maternity, Skincare, Candles, Ornaments, Pillows, Wall Art, Swaddles, Quilts, Bibs, Towels, Crib Sheets, Throws, Belts, Fragrance, Kimonos, Fedoras, Beanies, Berets, Sailor Hats, Boater Hats, Trucker Hats, Sun Hats, Headbands,  Sunglasses, Hats, Flats, Platforms, Slides, Boots, Sneakers, Sandals, Clogs, Mules, Clutches, Crossbody Bags, Weekenders, Backpacks + Messengers, Totes, Top Handle Bags, Bag Accessories, Earrings, Necklaces, Chokers, Bracelets, Rings, Bikini Tops, Bikini Bottoms, One Pieces, Sarongs + Wraps, Denim, Bells, Pants, Mini Skirts, Midi Skirts, Maxi Skirts, Shorts, Maxi Dresses, Midi Dresses, Tees, Tunics, Shirts, Crop Tops,  Blouses, Graphic Tees, Camis + Tanks, Thermals + Pullovers + Henleys, Intimates, Greeting Cards, Nail Polish, Mini Dresses, Day Dresses, Party Dresses, Printed Dresses, White Dresses, Black Dresses, Sweater Dresses, Knit Dresses, Sets, Pullovers, Cardigans, Tunics, Turtlenecks, Sweater Jackets, Statement Sweaters, Jumpsuits, Rompers, Maternity Dresses, Denim Jackets, Moto Jackets, Blazers, Statement Jackets, Military Jackets, Faux Fur + Vegan Leather, Maxi Jackets + Dusters, Lightweight Jackets, Cleansers, Moisturizers, Oils + Serums, Eye Creams, Scrubs + Exfoliators, Masks, Toners + Face Mists, Essential Oils, Bath + Shower, Perfumes, Room Sprays,  Onesies, Baby Pants, Maternity Swim, Tassels, Littles Sweaters, Littles Sweatshirts,  Littles Outerwear"
             }
           },
           "1543448752616": {
@@ -549,7 +549,7 @@
         "type": "giftbanner",
         "settings": {
           "enable_section": true,
-          "image": "shopify:\/\/shop_images\/1500x750_header.png",
+          "image": "shopify:\/\/shop_images\/Bohemian_Spring_Styles_1000x500_0a1b8a85-7b16-486c-b52a-2b1e57137ef6.png",
           "mobile_image": "shopify:\/\/shop_images\/600x600_header.png",
           "link": "shopify:\/\/collections\/new-arrivals-all"
         }
@@ -582,8 +582,8 @@
         "type": "giftbanner1",
         "settings": {
           "enable_section": true,
-          "image": "shopify:\/\/shop_images\/1500x750_bottomheader.png",
-          "mobile_image": "",
+          "image": "shopify:\/\/shop_images\/Spring_Beauty_1000x500_b092221a-37b5-4e2d-b303-0d3d9fd87783.png",
+          "mobile_image": "shopify:\/\/shop_images\/600x600_Spring_Beauty.png",
           "link": "shopify:\/\/collections\/health-beauty"
         }
       },
@@ -622,12 +622,12 @@
       "1544898153341": {
         "type": "collection",
         "settings": {
-          "title": "Date Night Looks",
+          "title": "New ARRIVALS",
           "enable_carousel": true,
           "desktopimage": "",
           "mobileimage": "",
           "arrow_position": "middle",
-          "collection": "date-night-looks",
+          "collection": "new-arrivals",
           "grid": 4,
           "rows": 3,
           "show_vendor": false,
@@ -759,6 +759,14 @@
       "1547449221153": {
         "type": "carousel-slider",
         "blocks": {
+          "1549515141915": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Bohemian_Sorbet_Sweaters_1500x750_10558d3c-fbe4-48cb-848b-36009cca2324.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/Bohemian_Spring_Dresses.png",
+              "link": "shopify:\/\/collections\/sorbet"
+            }
+          },
           "1548887652836": {
             "type": "image",
             "settings": {
@@ -770,24 +778,16 @@
           "1548971727410": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/1500x750_header.png",
-              "mobile_image": "shopify:\/\/shop_images\/600x600_header.png",
-              "link": "shopify:\/\/pages\/bohemian-spring-styles"
-            }
-          },
-          "1549515141915": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/banner_galentine_1500x750_9aa667aa-cb7f-488c-82eb-c9fc779c0a2a.png",
-              "mobile_image": "shopify:\/\/shop_images\/banner_galentine_New_600x600_copy.png",
-              "link": "shopify:\/\/collections\/valentines-gifts"
+              "image": "shopify:\/\/shop_images\/Bohemian_Floral_Jumpsuits_and_Dresses_1500x750_d4869c88-004d-4773-ae09-0e5d46f2a9cd.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/Bohemian_Floral_Jumpsuits_and_Dresses_600x600_53f6429d-0ce5-4dc9-9050-9c7421b67d35.jpg",
+              "link": "shopify:\/\/collections\/in-bloom"
             }
           }
         },
         "block_order": [
+          "1548971727410",
           "1549515141915",
-          "1548887652836",
-          "1548971727410"
+          "1548887652836"
         ],
         "settings": {}
       }

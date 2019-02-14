@@ -47,6 +47,12 @@
           {% else %}
           <p class="coldout"> Sold Out</p>
           {% endif %}
+              
+          {% for tag in product.tags %}
+  			{% if tag contains 'Sneakpeek' %}
+    			 <p class="coldout sneakpeek"> Sneak<br>peek</p>
+  			{% endif %}
+	  	{% endfor %}
            {% if product.compare_at_price >=  product.price %}
               {% if product.available %}
                 <p class="sle"> Sale</p>

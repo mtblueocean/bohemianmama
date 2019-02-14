@@ -19,6 +19,13 @@
       {% else %}
       <p class="coldout"> Sold Out</p>
       {% endif %}
+    
+   	{% for tag in product.tags %}
+  			{% if tag contains 'Sneakpeek' %}
+    			 <p class="coldout sneakpeek"> Sneak<br>peek</p>
+  			{% endif %}
+	  {% endfor %}
+    
     <div class="product_card_image">
       
        

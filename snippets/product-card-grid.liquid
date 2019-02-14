@@ -14,10 +14,15 @@
   <div id="{{ wrapper_id }}" class="grid-view-item__image-wrapper product-card__image-wrapper js">
   
     <div style="padding-top:{% unless product.featured_image == blank %}{{ 1 | divided_by: product.featured_image.aspect_ratio | times: 100}}%{% else %}100%{% endunless %};">
+      
       {% if product.available %}
       {% else %}
       <p class="coldout"> Sold Out</p>
       {% endif %}
+      
+       
+      
+      
        {% if product.compare_at_price >=  product.price%}
       <p class="sle"> Sale</p>
       {% endif %}
